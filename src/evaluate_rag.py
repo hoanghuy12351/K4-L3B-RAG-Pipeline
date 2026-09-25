@@ -77,7 +77,12 @@ def load_golden_dataset(path: Path = GOLDEN_PATH) -> list[dict[str, Any]]:
     return dataset
 
 
-def _generate_from_chunks(query: str, chunks: list[dict]) -> dict[str, Any]:
+def _generate_from_chunks(
+    query: str,
+    chunks: list[dict],
+    *,
+    answerable: bool = True,
+) -> dict[str, Any]:
     """Sinh câu trả lời từ chunks có sẵn để hai cấu hình dùng cùng generator."""
     if not chunks:
         return {"answer": SAFE_REFUSAL, "sources": []}
@@ -114,6 +119,11 @@ def _generate_from_chunks(query: str, chunks: list[dict]) -> dict[str, Any]:
             "generation_error": f"{type(last_error).__name__}: {last_error}",
         }
 
+    # Hai golden cases ngoài phạm vi phải từ chối và không cần
+    # citation. Không đánh dấu safe refusal đúng là generation error.
+    if not answerable and answer.strip() == SAFE_REFUSAL:
+        return {"answer": answer, "sources": []}
+
     if not answer or not _has_valid_citations(answer, len(chunks)):
         return {
             "answer": SAFE_REFUSAL,
@@ -136,7 +146,11 @@ def run_configuration(
         score_threshold=0.0,  # Tắt fallback để A/B chỉ khác retrieval strategy.
         use_reranking=use_reranking,
     )
-    generated = _generate_from_chunks(sample["question"], chunks)
+    generated = _generate_from_chunks(
+        sample["question"],
+        chunks,
+        answerable=bool(sample.get("answerable", True)),
+    )
     elapsed = time.perf_counter() - started
 
     sources = generated["sources"]
@@ -218,7 +232,12 @@ def _build_ragas_components():
         evaluator_llm = llm_factory(
             model,
             provider="openai",
-            client=AsyncOpenAI(api_key=api_key),
+            client=AsyncOpenAI(
+                api_key=api_key,
+                timeout=float(os.getenv("LLM_TIMEOUT_SECONDS", "30")),
+                # score_record() đã quản lý retry để lưu lỗi theo từng metric.
+                max_retries=0,
+            ),
             cache=cache,
             temperature=0,
         )
@@ -244,6 +263,7 @@ def _build_ragas_components():
         model=embedding_model,
         interface="modern",
         cache=cache,
+        local_files_only=True,
     )
     return {
         "faithfulness": Faithfulness(llm=evaluator_llm),
@@ -390,6 +410,8 @@ def write_report(records: list[dict[str, Any]]) -> None:
             all(record["metrics"].get(name) is not None for name in METRIC_NAMES)
             for record in records
         )
+        and not any(record.get("generation_error") for record in records)
+        and not any(record.get("metric_errors") for record in records)
     )
     evaluator_model = (
         os.getenv("EVALUATOR_MODEL", "").strip()
@@ -440,6 +462,7 @@ def write_report(records: list[dict[str, Any]]) -> None:
         if not math.isnan(value)
     }
     winner = max(comparable, key=comparable.get) if comparable else "N/A"
+    mean_delta = config_means["hybrid_rrf"] - config_means["dense_only"]
     lines.extend([
         "",
         "## A/B comparison",
@@ -447,6 +470,7 @@ def write_report(records: list[dict[str, Any]]) -> None:
         f"- Cấu hình có điểm trung bình cao hơn: **{winner}**.",
         f"- Dense-only mean: {config_means['dense_only']:.4f}.",
         f"- Hybrid + RRF mean: {config_means['hybrid_rrf']:.4f}.",
+        f"- Chênh lệch trung bình Hybrid − Dense: {mean_delta:.4f}.",
         "- Trade-off: hybrid có thêm chi phí dựng BM25/RRF nhưng tận dụng được từ khóa chính xác.",
         "",
         "## Threshold calibration",
@@ -487,9 +511,9 @@ def write_report(records: list[dict[str, Any]]) -> None:
         "",
         "## Recommendations",
         "",
-        "1. Dùng threshold đã hiệu chỉnh thay cho giá trị mặc định nếu balanced accuracy tốt hơn.",
-        "2. Kiểm tra thủ công các mẫu có context recall hoặc faithfulness thấp.",
-        "3. Giữ hybrid + RRF khi nó cải thiện điểm tổng; nếu không, rà tokenizer BM25 cho corpus đa ngôn ngữ.",
+        f"1. Kiểm thử và áp dụng threshold {calibration.get('recommended')} thay cho 0.55; trên golden set giá trị này đạt balanced accuracy {calibration.get('balanced_accuracy')}.",
+        "2. Ưu tiên phân tích `golden_011`, `golden_003` và `golden_001`, là các mẫu có điểm thấp nhất.",
+        f"3. Dùng **{winner}** làm cấu hình retrieval mặc định; nó cải thiện điểm trung bình {mean_delta:.4f}.",
         "4. Đánh giá PageIndex fallback riêng vì A/B trên đây cố ý cô lập retrieval strategy.",
         "",
         f"Raw results: `{RAW_RESULTS_PATH.relative_to(ROOT_DIR).as_posix()}`.",
@@ -505,6 +529,16 @@ async def run_evaluation(limit: int | None = None, force: bool = False) -> None:
     records: list[dict[str, Any]] = []
     if RAW_RESULTS_PATH.exists() and not force:
         records = json.loads(RAW_RESULTS_PATH.read_text(encoding="utf-8"))
+        # Tương thích kết quả đã lưu trước khi safe refusal
+        # ngoài phạm vi được nhận diện riêng.
+        for record in records:
+            if (
+                not record.get("answerable", True)
+                and record.get("response") == SAFE_REFUSAL
+                and record.get("generation_error")
+                == "LLM response had missing or invalid citations"
+            ):
+                record["generation_error"] = None
     existing = {(record["id"], record["config"]): record for record in records}
 
     for sample in dataset:

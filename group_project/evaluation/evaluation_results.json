@@ -12,7 +12,7 @@
     "answerable": true,
     "category": "laws_of_chess",
     "difficulty": "single_hop",
-    "response": "Based on the provided documents, the penalties are as follows:\n\n* **First illegal move:** The player does not lose the game. The penalty is the addition of one minute to the opponent's time [Document 3].\n* **Second illegal move:** The player loses the game [Document 3].",
+    "response": "Theo các quy định của FIDE Laws of Chess có hiệu lực từ ngày 1 tháng 1 năm 2023, một người chơi không bị thua trận với nước đi bất hợp pháp đầu tiên, mà chỉ bị thua với nước đi bất hợp pháp thứ hai. Hình phạt cho nước đi bất hợp pháp thứ hai là thêm một phút vào thời gian của đối thủ, thay vì hai phút như trong cờ vua tiêu chuẩn [Document 3].",
     "contexts": [
       "FIDE LAWS OF CHESS\nApproved by the FIDE General Assembly on 07/08/2022\nApplied from 01/01/2023\n0.1 Introduction\nFIDE Laws of Chess cover over-the-board play.\nThe Laws of Chess have two parts: 1. Basic Rules of Play and 2. Competitive Rules of Play.\nThe English text is the authentic version of the Laws of Chess (which were adopted at the\n93rd FIDE Congress at Chennai, India) coming into force on 1 January 2023.\n0.2 Preface",
       "The English text is the authentic version of the Laws of Chess (which were adopted at the 93\nrd\nFIDE Congress at Chennai, India) coming into force on 1 January 2023.\n0.2     Preface",
@@ -42,17 +42,15 @@
       "dense"
     ],
     "best_dense_score": 0.6435080766677856,
-    "latency_seconds": 40.593,
+    "latency_seconds": 11.707,
     "generation_error": null,
     "metrics": {
       "faithfulness": 1.0,
-      "answer_relevance": 0.687454,
+      "answer_relevance": 0.909628,
       "context_recall": 0.0,
-      "context_precision": null
+      "context_precision": 0.0
     },
-    "metric_errors": {
-      "context_precision": "InstructorRetryException: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 39.120397345s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}"
-    }
+    "metric_errors": {}
   },
   {
     "id": "golden_001",
@@ -67,7 +65,7 @@
     "answerable": true,
     "category": "laws_of_chess",
     "difficulty": "single_hop",
-    "response": "Under the FIDE Laws of Chess effective from 2023, the penalties for a player's completed illegal moves are as follows:\n\n* **First completed illegal move:** The arbiter shall give two minutes of extra time to the player's opponent [Document 5].\n* **Second completed illegal move:** The arbiter shall declare the game lost by the player [Document 5]. However, if the position is such that the opponent cannot checkmate the player's king by any possible series of legal moves, the game is declared a draw [Document 5].",
+    "response": "Theo các quy định của FIDE Laws of Chess có hiệu lực từ ngày 1 tháng 1 năm 2023, khi một người chơi thực hiện các nước đi bất hợp pháp, các hình phạt như sau sẽ được áp dụng:\n\n1. Đối với nước đi bất hợp pháp đầu tiên, trọng tài sẽ cho đối thủ thêm hai phút thời gian.\n2. Đối với nước đi bất hợp pháp thứ hai của cùng một người chơi, trọng tài sẽ tuyên bố người chơi đó thua trận. Tuy nhiên, nếu vị trí trên bàn cờ là như vậy mà đối thủ không thể chiếu hết vua của người chơi đó bằng bất kỳ chuỗi nước đi hợp pháp nào, thì trận đấu sẽ được coi là hòa [Document 5].",
     "contexts": [
       "Starting from 1997 the FIDE Rules Commission (RC) makes changes to the Laws of\nChess only every four years which come into force on 1st July of the year following\nthe decision. [Exception 2014-2017-2018] The current Laws of Chess is effective from\n1st January 2023.\n5",
       "01. Laws of Chess (translation in Russian)\nE. MISCELLANEOUS / 01. Laws of Chess / FIDE Laws of Chess taking effect from 1 January 2023 /\nFIDE Laws of Chess taking effect from 1 January 2023\nFIDE LAWS OF CHESS\nApproved by the FIDE General Assembly on 07/08/2022\nApplied from 01/01/2023\n0.1     Introduction\nFIDE Laws of Chess cover over-the-board play.\nThe Laws of Chess have two parts: 1. Basic Rules of Play and 2. Competitive Rules of Play.",
@@ -97,19 +95,1378 @@
       "hybrid"
     ],
     "best_dense_score": null,
-    "latency_seconds": 5.45,
+    "latency_seconds": 3.384,
     "generation_error": null,
     "metrics": {
-      "faithfulness": null,
-      "answer_relevance": null,
-      "context_recall": null,
-      "context_precision": null
+      "faithfulness": 1.0,
+      "answer_relevance": 0.912515,
+      "context_recall": 1.0,
+      "context_precision": 0.366667
     },
-    "metric_errors": {
-      "faithfulness": "InstructorRetryException: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 31.991258492s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}",
-      "answer_relevance": "InstructorRetryException: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 25.221388356s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}",
-      "context_recall": "InstructorRetryException: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 18.069507204s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}",
-      "context_precision": "InstructorRetryException: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 11.268881949s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}"
-    }
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_002",
+    "config": "dense_only",
+    "question": "What do the FIDE Laws of Chess effective from 2023 say about a player carrying an electronic device in the playing venue during a game?",
+    "reference_answer": "A player may not have an electronic device in the playing venue unless the arbiter has specifically approved it. Event regulations may allow a completely switched-off device to be stored in a bag placed as agreed with the arbiter. If a player is evidently carrying a forbidden device, the normal penalty is loss of the game and a win for the opponent, although event regulations may specify a less severe penalty.",
+    "reference_context": "11.3.2 During a game, a player is forbidden to have any electronic device not specifically approved by the arbiter in the playing venue. 11.3.2.1 However, the regulations of an event may allow such devices to be stored in a player’s bag, provided the device is completely switched off. This bag must be placed as agreed with the arbiter. Both players are forbidden to use this bag without permission of the arbiter. 11.3.2.2 If it is evident that a player has such a device on their person in the playing venue, the player shall lose the game. The opponent shall win. The regulations of an event may specify a different, less severe, penalty.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "multi_chunk",
+    "response": "According to the FIDE Laws of Chess effective from 2023, players are forbidden to have any electronic device not specifically approved by the arbiter in the playing venue during a game. If a player violates this rule, they may lose the current game [Document 3]. Additionally, players are not allowed to use their own playing devices in the playing venue unless the competition regulations state otherwise [Document 2].",
+    "contexts": [
+      "in 11.2.3.2 it is prohibited to leave the playing area for the player having the move. But in\n11.2.4 it is possible to include, in the regulations, prohibition of the opponent leaving the\nplaying area without the permission of the arbiter.\n11.3 Notes and electronic devices:\n11.3.1 During play the players are forbidden to use any notes, sources of information\nor advice, or analyse any game on another chessboard.\n11.3.2 During a game, a player is forbidden to have any electronic device not",
+      "The players shall take no action that will bring the game of chess into disrepute.\nThe players are not allowed to use their own playing devices in the playing venue, unless the competition\nregulations say otherwise.\nDuring the game, the players are forbidden to have any electronic device not specifically approved by\nthe arbiter. The arbiter may require the player to allow his/her clothes, bags, other items or body to be",
+      "stewards are allowed in the playing area. The Organiser shall provide easily visible passes for the players, the captains, FIDE\nPrincipals and accredited media.\n4. 11. 3. During a playing session, the players and the captains are forbidden to have any electronic device not specifically approved\nby the Chief Arbiter in the playing venue. In case of this rule violation by a player, he/she loses the current game. In case of this rule",
+      "The FIDE Laws of Chess have introduced provisions against cheating. Specifically:\n12.2 The arbiter shall:\n12.2.1 ensure fair play.\n12.2.7 follow the Anti-Cheating Rules or Guidelines\nIt means that it is the arbiter’s duty to avoid the cheating by the players. The Laws also\nexplicitly forbid electronic devices:\n11.3.1 During play the players are forbidden to use any notes, sources of information\nor advice, or analyse any game on another chessboard.",
+      "These requirements also apply when a player asks for the intervention of an\narbiter.\n16.14 The competition regulations may impose the mandatory use of a scoresheet.\n17. Players’ Conduct\n17.1 The players shall take no action that will bring the game of chess into disrepute.\n17.2 The players are not allowed to use their own playing devices in the playing venue,\nunless the competition regulations say otherwise.\n17.3 During the game, the players are forbidden to have any electronic device not"
+    ],
+    "source_ids": [
+      "legal/fide_arbiters_manual_2025.md::chunk-259",
+      "legal/fide_online_chess_regulations.md::chunk-76",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-35",
+      "legal/fide_arbiters_manual_2025.md::chunk-390",
+      "legal/fide_arbiters_manual_2025.md::chunk-1542"
+    ],
+    "source_files": [
+      "fide_arbiters_manual_2025.md",
+      "fide_online_chess_regulations.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.6806122064590454,
+    "latency_seconds": 1.991,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.94698,
+      "context_recall": 0.5,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_002",
+    "config": "hybrid_rrf",
+    "question": "What do the FIDE Laws of Chess effective from 2023 say about a player carrying an electronic device in the playing venue during a game?",
+    "reference_answer": "A player may not have an electronic device in the playing venue unless the arbiter has specifically approved it. Event regulations may allow a completely switched-off device to be stored in a bag placed as agreed with the arbiter. If a player is evidently carrying a forbidden device, the normal penalty is loss of the game and a win for the opponent, although event regulations may specify a less severe penalty.",
+    "reference_context": "11.3.2 During a game, a player is forbidden to have any electronic device not specifically approved by the arbiter in the playing venue. 11.3.2.1 However, the regulations of an event may allow such devices to be stored in a player’s bag, provided the device is completely switched off. This bag must be placed as agreed with the arbiter. Both players are forbidden to use this bag without permission of the arbiter. 11.3.2.2 If it is evident that a player has such a device on their person in the playing venue, the player shall lose the game. The opponent shall win. The regulations of an event may specify a different, less severe, penalty.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "multi_chunk",
+    "response": "According to the FIDE Laws of Chess effective from 2023, players are forbidden from having any electronic device in the playing venue during a game unless it is specifically approved by the arbiter. This rule applies to all players and is intended to maintain the integrity of the game [Document 2]. If a player violates this rule, they may face penalties, including the loss of the current game [Document 3].",
+    "contexts": [
+      "These requirements also apply when a player asks for the intervention of an\narbiter.\n16.14 The competition regulations may impose the mandatory use of a scoresheet.\n17. Players’ Conduct\n17.1 The players shall take no action that will bring the game of chess into disrepute.\n17.2 The players are not allowed to use their own playing devices in the playing venue,\nunless the competition regulations say otherwise.\n17.3 During the game, the players are forbidden to have any electronic device not",
+      "the permission of the arbiter.\n9.6 During play the players are forbidden from using any electronic device, notes,\nsources of information or advice, or to analyse any game on another chessboard.\n9.7 Players are not allowed to have headphones in or over their ears during play.\n9.8 During a game, a player is forbidden from having in the playing venue any\nelectronic device which is not specifically approved by the arbiter. However, the",
+      "stewards are allowed in the playing area. The Organiser shall provide easily visible passes for the players, the captains, FIDE\nPrincipals and accredited media.\n4. 11. 3. During a playing session, the players and the captains are forbidden to have any electronic device not specifically approved\nby the Chief Arbiter in the playing venue. In case of this rule violation by a player, he/she loses the current game. In case of this rule",
+      "The players shall take no action that will bring the game of chess into disrepute.\nThe players are not allowed to use their own playing devices in the playing venue, unless the competition\nregulations say otherwise.\nDuring the game, the players are forbidden to have any electronic device not specifically approved by\nthe arbiter. The arbiter may require the player to allow his/her clothes, bags, other items or body to be",
+      "in 11.2.3.2 it is prohibited to leave the playing area for the player having the move. But in\n11.2.4 it is possible to include, in the regulations, prohibition of the opponent leaving the\nplaying area without the permission of the arbiter.\n11.3 Notes and electronic devices:\n11.3.1 During play the players are forbidden to use any notes, sources of information\nor advice, or analyse any game on another chessboard.\n11.3.2 During a game, a player is forbidden to have any electronic device not"
+    ],
+    "source_ids": [
+      "legal/fide_arbiters_manual_2025.md::chunk-1542",
+      "legal/fide_arbiters_manual_2025.md::chunk-1496",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-35",
+      "legal/fide_online_chess_regulations.md::chunk-76",
+      "legal/fide_arbiters_manual_2025.md::chunk-259"
+    ],
+    "source_files": [
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 2.47,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 0.4,
+      "answer_relevance": 0.933307,
+      "context_recall": 0.75,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_003",
+    "config": "dense_only",
+    "question": "When is a chess game automatically drawn because of fivefold repetition or the 75-move rule under the FIDE Laws effective from 2023?",
+    "reference_answer": "The game is automatically drawn if the same position appears at least five times, or if each player has made at least 75 moves without a pawn move or capture. If the final move of the 75-move sequence is checkmate, checkmate takes precedence.",
+    "reference_context": "9.6 If one or both of the following occur(s) then the game is drawn: 9.6.1 the same position has appeared, as in 9.2.2 at least five times. 9.6.2 any series of at least 75 moves have been made by each player without the movement of any pawn and without any capture. If the last move resulted in checkmate, that shall take precedence.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "multi_fact",
+    "response": "Theo các Luật Cờ Vua FIDE có hiệu lực từ ngày 1 tháng 1 năm 2023, một ván cờ sẽ tự động bị hòa nếu có năm lần lặp lại vị trí hoặc nếu 75 nước đi đã được thực hiện bởi mỗi người chơi mà không có sự di chuyển của bất kỳ quân tốt nào và không có bất kỳ quân nào bị bắt [Document 2].",
+    "contexts": [
+      "Starting from 1997 the FIDE Rules Commission (RC) makes changes to the Laws of\nChess only every four years which come into force on 1st July of the year following\nthe decision. [Exception 2014-2017-2018] The current Laws of Chess is effective from\n1st January 2023.\n5",
+      "75-move rule\n9.6.2\nThe game is drawn if the last 75 moves have been completed by each player without the movement of any pawn and without any capture.\nFIDE CHARTER\nFIDE Charter effective from March 1, 2020\nA. ADMINISTRATIVE SUBJECTS\n01. Non-Elected Commissions\nNon-Elected Commissions (effective from 25 November 2022)\nNon-Elected Commissions (effective from 1 August till 24 November 2022)\nNon-Elected Commissions (effective from 1 July 2021 till 31 July 2022)",
+      "The English text is the authentic version of the Laws of Chess (which were adopted at the 93\nrd\nFIDE Congress at Chennai, India) coming into force on 1 January 2023.\n0.2     Preface",
+      "FIDE LAWS OF CHESS\nApproved by the FIDE General Assembly on 07/08/2022\nApplied from 01/01/2023\n0.1 Introduction\nFIDE Laws of Chess cover over-the-board play.\nThe Laws of Chess have two parts: 1. Basic Rules of Play and 2. Competitive Rules of Play.\nThe English text is the authentic version of the Laws of Chess (which were adopted at the\n93rd FIDE Congress at Chennai, India) coming into force on 1 January 2023.\n0.2 Preface",
+      "01. Rules for the FIDE Open World Rapid Championship & FIDE Open World Blitz Championship\n02. Rules for the FIDE Women’s World Rapid Championship & FIDE Women’s World Blitz Championship\n08. Regulations for the FIDE World Fischer Random Chess Championship and FIDE Freestyle Chess World Championship\nE. MISCELLANEOUS\n01. Laws of Chess\nFIDE Laws of Chess taking effect from 1 January 2023\nLaws of Chess: For competitions starting from 1 January 2018 till 31 December 2022"
+    ],
+    "source_ids": [
+      "legal/fide_arbiters_manual_2025.md::chunk-109",
+      "news/article_01.md::chunk-189",
+      "news/article_01.md::chunk-3",
+      "legal/fide_arbiters_manual_2025.md::chunk-116",
+      "news/article_01.md::chunk-214"
+    ],
+    "source_files": [
+      "fide_arbiters_manual_2025.md",
+      "article_01.md",
+      "article_01.md",
+      "fide_arbiters_manual_2025.md",
+      "article_01.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.7106945514678955,
+    "latency_seconds": 2.024,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 0.25,
+      "answer_relevance": 0.768132,
+      "context_recall": 0.333333,
+      "context_precision": 0.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_003",
+    "config": "hybrid_rrf",
+    "question": "When is a chess game automatically drawn because of fivefold repetition or the 75-move rule under the FIDE Laws effective from 2023?",
+    "reference_answer": "The game is automatically drawn if the same position appears at least five times, or if each player has made at least 75 moves without a pawn move or capture. If the final move of the 75-move sequence is checkmate, checkmate takes precedence.",
+    "reference_context": "9.6 If one or both of the following occur(s) then the game is drawn: 9.6.1 the same position has appeared, as in 9.2.2 at least five times. 9.6.2 any series of at least 75 moves have been made by each player without the movement of any pawn and without any capture. If the last move resulted in checkmate, that shall take precedence.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "multi_fact",
+    "response": "A chess game is automatically drawn under the FIDE Laws effective from 2023 in the following cases:\n\n1. **75-move rule**: The game is drawn if the last 75 moves have been completed by each player without the movement of any pawn and without any capture [Document 1].\n\n2. **Fivefold repetition**: The game is automatically drawn when the same position appears for the third time, as described in Article 9.2.2 of the FIDE Laws of Chess [Document 3].",
+    "contexts": [
+      "75-move rule\n9.6.2\nThe game is drawn if the last 75 moves have been completed by each player without the movement of any pawn and without any capture.\nFIDE CHARTER\nFIDE Charter effective from March 1, 2020\nA. ADMINISTRATIVE SUBJECTS\n01. Non-Elected Commissions\nNon-Elected Commissions (effective from 25 November 2022)\nNon-Elected Commissions (effective from 1 August till 24 November 2022)\nNon-Elected Commissions (effective from 1 July 2021 till 31 July 2022)",
+      "Starting from 1997 the FIDE Rules Commission (RC) makes changes to the Laws of\nChess only every four years which come into force on 1st July of the year following\nthe decision. [Exception 2014-2017-2018] The current Laws of Chess is effective from\n1st January 2023.\n5",
+      "move or the game is concluded in some other way.\nThe game is automatically drawn when:\nthe same position appeared for the third time (as described in Article 9.2.2 of the FIDE Laws of Chess);\nthe player to move has no legal move and his/her king is not in check. The game is said to end in\n‘stalemate’;\na position has arisen in which neither player can checkmate the opponent’s king with any series of\nlegal moves;",
+      "01. Laws of Chess (translation in Russian)\nE. MISCELLANEOUS / 01. Laws of Chess / FIDE Laws of Chess taking effect from 1 January 2023 /\nFIDE Laws of Chess taking effect from 1 January 2023\nFIDE LAWS OF CHESS\nApproved by the FIDE General Assembly on 07/08/2022\nApplied from 01/01/2023\n0.1     Introduction\nFIDE Laws of Chess cover over-the-board play.\nThe Laws of Chess have two parts: 1. Basic Rules of Play and 2. Competitive Rules of Play.",
+      "some other way.\nSome playing platforms allow players to agree to a draw without making any\nmoves, while others have a restriction on the number of moves for a draw\noffer.\n5.4 The playing zone shall automatically declare the game as drawn when:\n5.4.1 the same position appeared for the third time (as described in Article\n9.2.2 of the FIDE Laws of Chess);\n5.4.2 the player to move has no legal move and their king is not in check. The\ngame is said to end in ‘stalemate’;\n259"
+    ],
+    "source_ids": [
+      "news/article_01.md::chunk-189",
+      "legal/fide_arbiters_manual_2025.md::chunk-109",
+      "legal/fide_online_chess_regulations.md::chunk-23",
+      "news/article_01.md::chunk-2",
+      "legal/fide_arbiters_manual_2025.md::chunk-1482"
+    ],
+    "source_files": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_online_chess_regulations.md",
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 2.145,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 0.5,
+      "answer_relevance": 0.859922,
+      "context_recall": 0.333333,
+      "context_precision": 0.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_004",
+    "config": "dense_only",
+    "question": "How many players and reserves make up a team in each section of the 2026 FIDE Chess Olympiad?",
+    "reference_answer": "Each team consists of four players plus one reserve.",
+    "reference_context": "In both sections, the teams shall be made up of four players plus one reserve.",
+    "expected_sources": [
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "answerable": true,
+    "category": "olympiad_2026",
+    "difficulty": "single_hop",
+    "response": "Mỗi đội trong cả hai phần của FIDE Chess Olympiad 2026 bao gồm bốn người chơi và một dự bị [Document 2].",
+    "contexts": [
+      "FIDE Chess Olympiad 2026\nRegulations for the Main Competition\n1.Scope\n1. 1. The Chess Olympiad shall be organised in 2026.\n1. 2. The governing body is the International Chess Federation (FIDE).\n1. 3. FIDE Global Strategy Commission (hereinafter referred to as GSC) is in charge of preparing Regulations for the Main\nCompetition of the FIDE Chess Olympiad (hereinafter referred to as the Main Competition), communicating with the Organiser and\nthe participating federations, conducting inspections.",
+      "4. 1. Format & System\nIn both sections: Swiss system, 11 rounds. The pairing system is described in “FIDE Olympiad Pairing Rules”. The teams ranked first\nin the pairing list shall have the white pieces on the odd-numbered boards, the black pieces on the even-numbered boards.\n4. 2. Composition of Teams\n4. 2. 1. In both sections, the teams shall be made up of four players plus one reserve.",
+      "25% of the total number of Match Arbiters, who do not have to be on a Panel,\nbut need to comply with the published Regulations for the FIDE Chess\nOlympiad and only if they are from the host Federation, or a Federation with\nwhich the host Federation shares a land border. These nominations must be\napproved by both the GSC and the FIDE President. Other nominated arbiters\nmust be approved by both GSC and the FIDE President, respecting the following\ncriteria:",
+      "4. 13. 8. If a player or a captain undermines the reputation of FIDE, the FIDE Chess Olympiad Organiser and sponsors, other players,\nhosting country or city or conducts him-/herself in a manner contrary to the spirit of sportsmanship, he/she shall be penalised in\naccordance with the FIDE Ethics & Disciplinary Code (FIDE Handbook A.08).\n4. 14. FIDE Principals\nThe FIDE Principals shall be Appointed at least 8 weeks before the beginning of the Main Competition.\nThe FIDE Principles are:",
+      "APPENDIX 3\nFIDE Chess Olympiad and Congress 2026\nBidding Form\nREQUIRED INFORMATION\nCompany Full Name\nOrganiser\nFederation\nEmail Phone\nContact\nMain Competition\nDates\nPlanned budget, €\nName and address of the playing venue\nPlaying venue surface available for the\nevent, m2\nPlaying area surface, m2\nNames, category and address of the official\nhotels\nTotal number of hotel rooms (single, double\nand superior) available\nDistance from the main airport to the offi-\ncial hotels, km"
+    ],
+    "source_ids": [
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-1",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-15",
+      "legal/fide_arbiters_manual_2025.md::chunk-1413",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-44",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-133"
+    ],
+    "source_files": [
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.6124918460845947,
+    "latency_seconds": 1.668,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.946735,
+      "context_recall": 1.0,
+      "context_precision": 0.5
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_004",
+    "config": "hybrid_rrf",
+    "question": "How many players and reserves make up a team in each section of the 2026 FIDE Chess Olympiad?",
+    "reference_answer": "Each team consists of four players plus one reserve.",
+    "reference_context": "In both sections, the teams shall be made up of four players plus one reserve.",
+    "expected_sources": [
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "answerable": true,
+    "category": "olympiad_2026",
+    "difficulty": "single_hop",
+    "response": "Mỗi đội trong mỗi phần của FIDE Chess Olympiad 2026 bao gồm bốn người chơi và một dự bị [Document 3].",
+    "contexts": [
+      "FIDE Chess Olympiad 2026\nRegulations for the Main Competition\n1.Scope\n1. 1. The Chess Olympiad shall be organised in 2026.\n1. 2. The governing body is the International Chess Federation (FIDE).\n1. 3. FIDE Global Strategy Commission (hereinafter referred to as GSC) is in charge of preparing Regulations for the Main\nCompetition of the FIDE Chess Olympiad (hereinafter referred to as the Main Competition), communicating with the Organiser and\nthe participating federations, conducting inspections.",
+      "Trophy”.\n4. 6. 1. 4. The dates of the Main Competition and the name of the winning federation shall be engraved on the base of the respective\nCup.\n4. 6. 1. 5. The federation of the respective winning teams have custody of the Trophies, which are property of FIDE, until the\nfollowing Chess Olympiad.\n4. 6. 2. Team Medals\n4. 6. 2. 1. In each section, every member of the winning team (players, reserves and captain) shall receive a gold medal. Similarly, the",
+      "4. 1. Format & System\nIn both sections: Swiss system, 11 rounds. The pairing system is described in “FIDE Olympiad Pairing Rules”. The teams ranked first\nin the pairing list shall have the white pieces on the odd-numbered boards, the black pieces on the even-numbered boards.\n4. 2. Composition of Teams\n4. 2. 1. In both sections, the teams shall be made up of four players plus one reserve.",
+      "25% of the total number of Match Arbiters, who do not have to be on a Panel,\nbut need to comply with the published Regulations for the FIDE Chess\nOlympiad and only if they are from the host Federation, or a Federation with\nwhich the host Federation shares a land border. These nominations must be\napproved by both the GSC and the FIDE President. Other nominated arbiters\nmust be approved by both GSC and the FIDE President, respecting the following\ncriteria:",
+      "5. 3. Communications\n5. 3. 1. All official written communications, in print or online form, shall identify FIDE as the Governing Body of the FIDE Chess\nOlympiad.\n5. 3. 2. All official communications shall use the official name for the event, in full: FIDE Chess Olympiad 2026.\n5. 3. 3. All pre-tournament public communications regarding the FIDE Chess Olympiad (e.g. joint press releases from FIDE and the"
+    ],
+    "source_ids": [
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-1",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-22",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-15",
+      "legal/fide_arbiters_manual_2025.md::chunk-1413",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-68"
+    ],
+    "source_files": [
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 1.705,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.946735,
+      "context_recall": 1.0,
+      "context_precision": 0.583333
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_005",
+    "config": "dense_only",
+    "question": "Under the 2026 FIDE Chess Olympiad regulations, may a team captain also be a player and appoint a deputy?",
+    "reference_answer": "Yes. The captain may also be one of the players and may appoint a deputy to perform the captain's functions, but the Chief Arbiter must be informed of the substitution in writing.",
+    "reference_context": "Each team shall have a captain, who may also be one of the players. The captain shall be permitted to appoint a deputy to exercise his/her functions, the Chief Arbiter shall be informed in writing of such a substitution.",
+    "expected_sources": [
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "answerable": true,
+    "category": "olympiad_2026",
+    "difficulty": "single_hop",
+    "response": "Yes, under the 2026 FIDE Chess Olympiad regulations, a team captain may also be one of the players and is permitted to appoint a deputy to exercise his/her functions, provided that the Chief Arbiter is informed in writing of such a substitution [Document 1].",
+    "contexts": [
+      "4. 2. 2. Each team shall have a captain, who may also be one of the players. The captain shall be permitted to appoint a deputy to ex-\nercise his/her functions, the Chief Arbiter shall be informed in writing of such a substitution.\n4. 2. 3. Each federation shall be represented by a Chief of delegation. It may either appoint a person exclusively to this function, or",
+      "4. 13. 8. If a player or a captain undermines the reputation of FIDE, the FIDE Chess Olympiad Organiser and sponsors, other players,\nhosting country or city or conducts him-/herself in a manner contrary to the spirit of sportsmanship, he/she shall be penalised in\naccordance with the FIDE Ethics & Disciplinary Code (FIDE Handbook A.08).\n4. 14. FIDE Principals\nThe FIDE Principals shall be Appointed at least 8 weeks before the beginning of the Main Competition.\nThe FIDE Principles are:",
+      "appropriate officer.\nTeam Captains, MUST CHECK the Teams Compositions for every round, in order to avoid\nincorrect board order\nRefer to the new Team Captains and Heads of Delegation\n8. Tie-breaks and unplayed games\nSee FIDE Handbook C.02 - Standards of Chess Equipment and tournament\nvenue for FIDE Tournaments.\n9. Conduct of the Players\n9.1 Once a player has formally accepted an invitation, he/she must play except in\nexceptional circumstances (force majeure), such as illness or incapacity.",
+      "7.1 The team captain may delegate his/her functions to another person, provided\nhe/she informs the CA of this in writing in advance.\nIn the regulations of a Team Tournament, details about the Team Compositions should be\nincluded.\nNormally the following may be applied:\nA fixed board order (it might be according to the FIDE rating of the players; the highest rating\ngets no 1. Some events allow the captain full discretion, others do not permit a player to play",
+      "supported by one appointed Captain per team.\n2. The Role of the Head of Delegation\n2.1 For team events, if there is no Head of Delegation appointed by the Federation,\nor the specific regulations of the tournament do not provide for one, the\nfunctions listed below shall be responsibility of the Captain.\n2.2 The Head of Delegation is an ambassador for the National Federation. They are\nexpected to maintain high standards of behaviour, both personally and amongst\ntheir players."
+    ],
+    "source_ids": [
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-16",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-44",
+      "legal/fide_arbiters_manual_2025.md::chunk-1148",
+      "legal/fide_arbiters_manual_2025.md::chunk-1143",
+      "legal/fide_arbiters_manual_2025.md::chunk-1243"
+    ],
+    "source_files": [
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.6404658555984497,
+    "latency_seconds": 1.669,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.916625,
+      "context_recall": 1.0,
+      "context_precision": 0.7
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_005",
+    "config": "hybrid_rrf",
+    "question": "Under the 2026 FIDE Chess Olympiad regulations, may a team captain also be a player and appoint a deputy?",
+    "reference_answer": "Yes. The captain may also be one of the players and may appoint a deputy to perform the captain's functions, but the Chief Arbiter must be informed of the substitution in writing.",
+    "reference_context": "Each team shall have a captain, who may also be one of the players. The captain shall be permitted to appoint a deputy to exercise his/her functions, the Chief Arbiter shall be informed in writing of such a substitution.",
+    "expected_sources": [
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "answerable": true,
+    "category": "olympiad_2026",
+    "difficulty": "single_hop",
+    "response": "Yes, under the 2026 FIDE Chess Olympiad regulations, a team captain may also be one of the players and is permitted to appoint a deputy to exercise his/her functions, provided that the Chief Arbiter is informed in writing of such a substitution [Document 1].",
+    "contexts": [
+      "4. 2. 2. Each team shall have a captain, who may also be one of the players. The captain shall be permitted to appoint a deputy to ex-\nercise his/her functions, the Chief Arbiter shall be informed in writing of such a substitution.\n4. 2. 3. Each federation shall be represented by a Chief of delegation. It may either appoint a person exclusively to this function, or",
+      "4. 13. 8. If a player or a captain undermines the reputation of FIDE, the FIDE Chess Olympiad Organiser and sponsors, other players,\nhosting country or city or conducts him-/herself in a manner contrary to the spirit of sportsmanship, he/she shall be penalised in\naccordance with the FIDE Ethics & Disciplinary Code (FIDE Handbook A.08).\n4. 14. FIDE Principals\nThe FIDE Principals shall be Appointed at least 8 weeks before the beginning of the Main Competition.\nThe FIDE Principles are:",
+      "7.1 The team captain may delegate his/her functions to another person, provided\nhe/she informs the CA of this in writing in advance.\nIn the regulations of a Team Tournament, details about the Team Compositions should be\nincluded.\nNormally the following may be applied:\nA fixed board order (it might be according to the FIDE rating of the players; the highest rating\ngets no 1. Some events allow the captain full discretion, others do not permit a player to play",
+      "draw unless the regulations of the event stipulate otherwise. He shall not intervene in a game\nin any other way. He must not discuss any position on any board during play. The player can\nalso ask his captain if he may offer or accept a draw.\nThe team captain may delegate his functions to another person, provided he informs the CA\nof this in writing in advance.",
+      "appropriate officer.\nTeam Captains, MUST CHECK the Teams Compositions for every round, in order to avoid\nincorrect board order\nRefer to the new Team Captains and Heads of Delegation\n8. Tie-breaks and unplayed games\nSee FIDE Handbook C.02 - Standards of Chess Equipment and tournament\nvenue for FIDE Tournaments.\n9. Conduct of the Players\n9.1 Once a player has formally accepted an invitation, he/she must play except in\nexceptional circumstances (force majeure), such as illness or incapacity."
+    ],
+    "source_ids": [
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-16",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-44",
+      "legal/fide_arbiters_manual_2025.md::chunk-1143",
+      "legal/fide_general_competition_rules.md::chunk-32",
+      "legal/fide_arbiters_manual_2025.md::chunk-1148"
+    ],
+    "source_files": [
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_general_competition_rules.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 1.87,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.916625,
+      "context_recall": 1.0,
+      "context_precision": 0.805556
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_006",
+    "config": "dense_only",
+    "question": "According to the FIDE Online Chess Regulations, what happens to a player's clock and game when the player disconnects from the playing zone?",
+    "reference_answer": "The player's clock continues running. If the player reconnects before the remaining time expires, play continues with the time left and the arbiter may decide on further sanctions. If the player does not reconnect before the time expires, the player loses unless the competition regulations provide otherwise; the game is drawn where the specified no-checkmate exception applies.",
+    "reference_context": "During a game, if a player disconnects from the playing zone, the clock shall continue running. If the player can reconnect to the game before his/her remaining thinking time elapsed, he/she shall continue playing with the thinking time remaining on his/her clock. The arbiter shall decide whether further sanctions are appropriate. If the player cannot reconnect to the game before his/her remaining thinking time is over, then that player shall lose the game unless the competition regulations specify otherwise (including the amount of time that a disconnected player must reconnect within). However, the game is drawn in the situation described in Article 4.5.",
+    "expected_sources": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "online_chess",
+    "difficulty": "multi_fact",
+    "response": "According to the FIDE Online Chess Regulations, if a player disconnects from the playing zone during a game, the clock shall continue running. If the player can reconnect to the game before their remaining thinking time has elapsed, they shall continue playing with the thinking time remaining on their clock [Document 1].",
+    "contexts": [
+      "zone.\nThe  competition  regulations  shall  state  the  consequences  and  potential  sanctions  in  the  case  of  a\ndisconnection from the playing zone during a playing session.\nDuring a game, if a player disconnects from the playing zone, the clock shall continue running.\nIf  the  player  can  reconnect  to  the  game  before  his/her  remaining  thinking  time  elapsed,  he/she  shall\ncontinue playing with the thinking time remaining on his/her clock. The  arbiter shall  decide whether",
+      "depending on the type of event.\n11.3 The competition regulations shall state the consequences and potential sanctions\nin the case of a disconnection from the playing zone during a playing session.\n11.4 During a game, if a player disconnects from the playing zone, the clock shall\ncontinue running.\n11.4.1 If the player can reconnect to the game before their remaining thinking\ntime has elapsed, the game shall continue with the thinking time",
+      "Each player is required to connect to the VCS at a time specified by the arbiter and remain connected\nduring the entire session.\nIf a player disconnects from the VCS, but is still connected to the playing zone, then the player is\nforbidden from moving a piece on the chess board, until he/she reconnects to the VCS.\nThe  competition  regulations  may  specify  that  a  system  of  yellow  (warning)  and  red  (loss)  cards  is",
+      "but in tournaments with more than one round a day it is their responsibility to\nreconnect in good time for the next round.\n13.3 If a player disconnects from the VCS, but is still connected to the playing zone,\nthen the player is forbidden from moving a piece on the chess board, before\nreconnecting to the VCS.\nThe 13.3 must be included in tournament regulations, if a player disconnects from VCS,\nhe/she will not be allowed to move their pieces on playing platform until they rejoin the",
+      "10.9.9 expulsion from the competition.\nThe penalties are same as over the board chess.\n11. Disconnections\n11.1 It is the player’s responsibility to be connected to the playing zone. This includes\nproviding a stable internet connection and a working playing device.\n11.1.1 The player may maintain their connection via a mobile device, only\nwith the prior permission of the Arbiter.\n11.2 The player shall follow the instructions given by the arbiter concerning their\npresence in the playing zone."
+    ],
+    "source_ids": [
+      "legal/fide_online_chess_regulations.md::chunk-51",
+      "legal/fide_arbiters_manual_2025.md::chunk-1515",
+      "legal/fide_online_chess_regulations.md::chunk-56",
+      "legal/fide_arbiters_manual_2025.md::chunk-1523",
+      "legal/fide_arbiters_manual_2025.md::chunk-1513"
+    ],
+    "source_files": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.7317714691162109,
+    "latency_seconds": 2.411,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.955597,
+      "context_recall": 0.8,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_006",
+    "config": "hybrid_rrf",
+    "question": "According to the FIDE Online Chess Regulations, what happens to a player's clock and game when the player disconnects from the playing zone?",
+    "reference_answer": "The player's clock continues running. If the player reconnects before the remaining time expires, play continues with the time left and the arbiter may decide on further sanctions. If the player does not reconnect before the time expires, the player loses unless the competition regulations provide otherwise; the game is drawn where the specified no-checkmate exception applies.",
+    "reference_context": "During a game, if a player disconnects from the playing zone, the clock shall continue running. If the player can reconnect to the game before his/her remaining thinking time elapsed, he/she shall continue playing with the thinking time remaining on his/her clock. The arbiter shall decide whether further sanctions are appropriate. If the player cannot reconnect to the game before his/her remaining thinking time is over, then that player shall lose the game unless the competition regulations specify otherwise (including the amount of time that a disconnected player must reconnect within). However, the game is drawn in the situation described in Article 4.5.",
+    "expected_sources": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "online_chess",
+    "difficulty": "multi_fact",
+    "response": "According to the FIDE Online Chess Regulations, if a player disconnects from the playing zone during a game, the clock shall continue running. If the player is able to reconnect to the game before their remaining thinking time has elapsed, they shall continue playing with the thinking time remaining on their clock [Document 1].",
+    "contexts": [
+      "zone.\nThe  competition  regulations  shall  state  the  consequences  and  potential  sanctions  in  the  case  of  a\ndisconnection from the playing zone during a playing session.\nDuring a game, if a player disconnects from the playing zone, the clock shall continue running.\nIf  the  player  can  reconnect  to  the  game  before  his/her  remaining  thinking  time  elapsed,  he/she  shall\ncontinue playing with the thinking time remaining on his/her clock. The  arbiter shall  decide whether",
+      "depending on the type of event.\n11.3 The competition regulations shall state the consequences and potential sanctions\nin the case of a disconnection from the playing zone during a playing session.\n11.4 During a game, if a player disconnects from the playing zone, the clock shall\ncontinue running.\n11.4.1 If the player can reconnect to the game before their remaining thinking\ntime has elapsed, the game shall continue with the thinking time",
+      "Each player is required to connect to the VCS at a time specified by the arbiter and remain connected\nduring the entire session.\nIf a player disconnects from the VCS, but is still connected to the playing zone, then the player is\nforbidden from moving a piece on the chess board, until he/she reconnects to the VCS.\nThe  competition  regulations  may  specify  that  a  system  of  yellow  (warning)  and  red  (loss)  cards  is",
+      "but in tournaments with more than one round a day it is their responsibility to\nreconnect in good time for the next round.\n13.3 If a player disconnects from the VCS, but is still connected to the playing zone,\nthen the player is forbidden from moving a piece on the chess board, before\nreconnecting to the VCS.\nThe 13.3 must be included in tournament regulations, if a player disconnects from VCS,\nhe/she will not be allowed to move their pieces on playing platform until they rejoin the",
+      "to the playing zone.\n3.1.6 All moves and clock times after each move are automatically recorded\nby the playing zone and visible to both players.\nOnline chess allows players to record moves and have their clock\nautomatically pressed after they made their move on a virtual chess\nboard & eboard.\n3.1.7 If a player is unable to move the pieces, an assistant, who shall be\nacceptable to the arbiter, may be provided by the player to perform\nthis operation.\n3.2 When eBoards are used:"
+    ],
+    "source_ids": [
+      "legal/fide_online_chess_regulations.md::chunk-51",
+      "legal/fide_arbiters_manual_2025.md::chunk-1515",
+      "legal/fide_online_chess_regulations.md::chunk-56",
+      "legal/fide_arbiters_manual_2025.md::chunk-1523",
+      "legal/fide_arbiters_manual_2025.md::chunk-1474"
+    ],
+    "source_files": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 2.349,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.946941,
+      "context_recall": 0.8,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_007",
+    "config": "dense_only",
+    "question": "What is the default time in an online FIDE competition if the competition regulations do not specify one?",
+    "reference_answer": "The default time is zero.",
+    "reference_context": "The competition regulations shall specify a default time in advance. If the default time is not specified, then it is zero.",
+    "expected_sources": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "online_chess",
+    "difficulty": "single_hop",
+    "response": "If the competition regulations do not specify a default time, then it is zero [Document 1].",
+    "contexts": [
+      "competition regulations must specify how to deal with such irregularities.\nThe competition regulations shall specify a default time in advance. If the default time is not specified,\nthen it is zero. If the competition regulations specify that the default time is not zero and if neither player\nis present initially, White shall lose all the time that elapses until he/she arrives, unless the competition\nregulations specify or the arbiter decides otherwise.",
+      "such irregularities.\nFew playing zones permit this possibility but it is the duty of the arbiter to establish\nthis before play commences.\n8.5 The competition regulations shall specify a default time in advance. If the default\ntime is not specified, then it is zero. If the competition regulations specify that\nthe default time is not zero and if neither player is present initially, White shall\nlose all the time that elapses before the player’s arrival, unless the competition",
+      "such irregularities.\n16.11 The competition regulations shall specify a default time in advance. If the default\ntime is not specified, then it is zero. If the competition regulations specify that\nthe default time is not zero and if neither player is present initially, White shall\nlose all the time that elapses before their arrival, unless the competition\nregulations specify, or the arbiter decides otherwise.\n16.12 The playing zone must record the offer of a draw next to the player’s move when",
+      ". A tournament may announce a more lenient rule where a latecomer is forfeited only if a certain time elapses (one hour was the limit before the rule change in 2009), and some federations have announced that one hour will remain the default standard for all tournaments in their country (such as the USCF)",
+      "If the playing zone allows players to move pieces in contradiction with Article 3.3 (illegal moves), the\ncompetition regulations must specify how to deal with such irregularities.\nThe competition regulations shall specify a default time in advance. If the default time is not specified,\nthen it is zero. If the competition regulations specify that the default time is not zero and if neither\nplayer is present initially, White shall lose all the time that elapses until he/she arrives, unless the"
+    ],
+    "source_ids": [
+      "legal/fide_online_chess_regulations.md::chunk-73",
+      "legal/fide_arbiters_manual_2025.md::chunk-1492",
+      "legal/fide_arbiters_manual_2025.md::chunk-1540",
+      "news/article_10.md::chunk-22",
+      "legal/fide_online_chess_regulations.md::chunk-32"
+    ],
+    "source_files": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md",
+      "article_10.md",
+      "fide_online_chess_regulations.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.7104761600494385,
+    "latency_seconds": 1.555,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.832305,
+      "context_recall": 1.0,
+      "context_precision": 0.95
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_007",
+    "config": "hybrid_rrf",
+    "question": "What is the default time in an online FIDE competition if the competition regulations do not specify one?",
+    "reference_answer": "The default time is zero.",
+    "reference_context": "The competition regulations shall specify a default time in advance. If the default time is not specified, then it is zero.",
+    "expected_sources": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "online_chess",
+    "difficulty": "single_hop",
+    "response": "Nếu quy định của cuộc thi không chỉ định thời gian mặc định, thì thời gian mặc định sẽ là bằng không [Document 1].",
+    "contexts": [
+      "competition regulations must specify how to deal with such irregularities.\nThe competition regulations shall specify a default time in advance. If the default time is not specified,\nthen it is zero. If the competition regulations specify that the default time is not zero and if neither player\nis present initially, White shall lose all the time that elapses until he/she arrives, unless the competition\nregulations specify or the arbiter decides otherwise.",
+      "such irregularities.\nFew playing zones permit this possibility but it is the duty of the arbiter to establish\nthis before play commences.\n8.5 The competition regulations shall specify a default time in advance. If the default\ntime is not specified, then it is zero. If the competition regulations specify that\nthe default time is not zero and if neither player is present initially, White shall\nlose all the time that elapses before the player’s arrival, unless the competition",
+      "such irregularities.\n16.11 The competition regulations shall specify a default time in advance. If the default\ntime is not specified, then it is zero. If the competition regulations specify that\nthe default time is not zero and if neither player is present initially, White shall\nlose all the time that elapses before their arrival, unless the competition\nregulations specify, or the arbiter decides otherwise.\n16.12 The playing zone must record the offer of a draw next to the player’s move when",
+      "If the playing zone allows players to move pieces in contradiction with Article 3.3 (illegal moves), the\ncompetition regulations must specify how to deal with such irregularities.\nThe competition regulations shall specify a default time in advance. If the default time is not specified,\nthen it is zero. If the competition regulations specify that the default time is not zero and if neither\nplayer is present initially, White shall lose all the time that elapses until he/she arrives, unless the",
+      "player is white.\n6.7 Default time:\n6.7.1 The regulations of an event shall specify a default time in advance. If the\ndefault time is not specified, then it is zero. Any player who arrives at the\nchessboard after the default time shall lose the game unless the arbiter\ndecides otherwise.\n6.7.2 If the regulations of an event specify that the default time is not zero and if\nneither player is present initially, White shall lose all the time that elapses"
+    ],
+    "source_ids": [
+      "legal/fide_online_chess_regulations.md::chunk-73",
+      "legal/fide_arbiters_manual_2025.md::chunk-1492",
+      "legal/fide_arbiters_manual_2025.md::chunk-1540",
+      "legal/fide_online_chess_regulations.md::chunk-32",
+      "legal/fide_arbiters_manual_2025.md::chunk-191"
+    ],
+    "source_files": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 1.436,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.85149,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_008",
+    "config": "dense_only",
+    "question": "Which events require the maximum level of anti-cheating protection under the FIDE Anti-Cheating Protection Measures?",
+    "reference_answer": "Maximum protection is required for FIDE Level 1 events, round-robin events with an average rating of at least 2600 or 2400 for women's events, and events with prize funds exceeding EUR 100,000.",
+    "reference_context": "Events that require maximum levels of protection: FIDE Level 1 events (Official FIDE events as defined by the FIDE Events Commission or FIDE World Championship and Olympiad Commission); Round-robins with an average rating of 2600 or more (2400 for Women’s events); Events with prize funds in excess of EUR 100,000.",
+    "expected_sources": [
+      "fide_anti_cheating_protection_measures.md"
+    ],
+    "answerable": true,
+    "category": "anti_cheating",
+    "difficulty": "multi_fact",
+    "response": "Các sự kiện yêu cầu mức độ bảo vệ chống gian lận tối đa theo các biện pháp bảo vệ chống gian lận của FIDE bao gồm:\n\n1. Tất cả các sự kiện Thế giới FIDE.\n2. Tất cả các sự kiện lớn của Liên lục địa (Giải vô địch cá nhân Liên lục địa mở và nữ, Giải vô địch đội Liên lục địa mở và nữ, Giải vô địch trẻ Liên lục địa mở và nữ, Cúp câu lạc bộ Liên lục địa mở và nữ, Giải vô địch nhanh và blitz Liên lục địa mở và nữ).\n3. Các vòng tròn với xếp hạng trung bình từ 2650 trở lên (2450 cho các sự kiện nữ) [Document 3].",
+    "contexts": [
+      "# FIDE Anti-Cheating Protection Measures\n\n**Source:** https://handbook.fide.com/files/handbook/ACCProtectionMeasures.pdf\n\n**Publisher:** International Chess Federation (FIDE)\n\n**Document type:** legal\n\n---\n\nANTI-CHEATING PROTECTION MEASURES\n\nApproved at the Batumi 2018 Fide Congress1\n\nSection 1 – Levels of protection\n\nAll  FIDE-rated  events  need  to  adopt  Anti-cheating  protection  measures  for  fighting  cheating  at-\ntempts (AC Protection Measures), based on the following distinction:",
+      "apply in addition. Additionally, FIDE may monitor private online events that meet\nspecific criteria, such as those offering money prizes or involving top-level players.\n2.4 All cheating incidents occurring in tournaments that require maximum and increased\nlevels of protection (as defined in the Anti-Cheating Protection Measures) must be\nreported to FPL. However, FPL may decide to refer a cheating incident that occurred\nin such tournaments to a National Federation (NF).",
+      "Section 1 – Levels of Protection\nThe Levels of Protection are as follows:\na) Events Requiring Maximum Protection:\n● All FIDE World Events.\n● All major Continental Events (Continental Individual Championship Open and\nWomen, Continental Team Championship Open and Women, Continental Junior\nChampionship Open and Girls, Continental Club Cup Open and Women,\nContinental Rapid and Blitz Championship Open and Women).\n● Round-robins with an average rating of 2650 or more (2450 for Women’s events).",
+      "(A)  Events that require maximum levels of protection:\n\nFIDE Level 1 events (Official FIDE events as defined by the FIDE Events Commission\nor FIDE World Championship and Olympiad Commission);\nRound-robins with an average rating of 2600 or more (2400 for Women’s events);\nEvents with prize funds in excess of EUR 100,000.\n\n(B)   Events that require increased levels of protection:",
+      "- 1 -\n\n\fUpon request from a tournament organizer and based on good cause, the National Federation and/\nor Fide QC may grant a waiver from some of the requirements enumerated below to tournaments\nwith Standard or Increased levels of protection. The waiver request must be submitted in advance and\ndescribe adequate anti-cheating measures that are tailored to the tournament’s size and budget. The\norganizers are not limited on the number of waivers they can submit."
+    ],
+    "source_ids": [
+      "legal/fide_anti_cheating_protection_measures.md::chunk-0",
+      "legal/fide_arbiters_manual_2025.md::chunk-405",
+      "legal/fide_arbiters_manual_2025.md::chunk-449",
+      "legal/fide_anti_cheating_protection_measures.md::chunk-1",
+      "legal/fide_anti_cheating_protection_measures.md::chunk-7"
+    ],
+    "source_files": [
+      "fide_anti_cheating_protection_measures.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_anti_cheating_protection_measures.md",
+      "fide_anti_cheating_protection_measures.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.7349092364311218,
+    "latency_seconds": 3.406,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 0.666667,
+      "answer_relevance": 0.960231,
+      "context_recall": 1.0,
+      "context_precision": 0.916667
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_008",
+    "config": "hybrid_rrf",
+    "question": "Which events require the maximum level of anti-cheating protection under the FIDE Anti-Cheating Protection Measures?",
+    "reference_answer": "Maximum protection is required for FIDE Level 1 events, round-robin events with an average rating of at least 2600 or 2400 for women's events, and events with prize funds exceeding EUR 100,000.",
+    "reference_context": "Events that require maximum levels of protection: FIDE Level 1 events (Official FIDE events as defined by the FIDE Events Commission or FIDE World Championship and Olympiad Commission); Round-robins with an average rating of 2600 or more (2400 for Women’s events); Events with prize funds in excess of EUR 100,000.",
+    "expected_sources": [
+      "fide_anti_cheating_protection_measures.md"
+    ],
+    "answerable": true,
+    "category": "anti_cheating",
+    "difficulty": "multi_fact",
+    "response": "Các sự kiện yêu cầu mức độ bảo vệ chống gian lận tối đa theo các Biện pháp Bảo vệ Chống Gian lận của FIDE là các giải đấu được chỉ định cho mức độ bảo vệ tăng cường hoặc tối đa. Trong những giải đấu này, một trọng tài chống gian lận đặc biệt có thể được sử dụng, và việc sử dụng trọng tài này là bắt buộc trong các giải đấu yêu cầu mức độ bảo vệ tối đa [Document 5].",
+    "contexts": [
+      "# FIDE Anti-Cheating Protection Measures\n\n**Source:** https://handbook.fide.com/files/handbook/ACCProtectionMeasures.pdf\n\n**Publisher:** International Chess Federation (FIDE)\n\n**Document type:** legal\n\n---\n\nANTI-CHEATING PROTECTION MEASURES\n\nApproved at the Batumi 2018 Fide Congress1\n\nSection 1 – Levels of protection\n\nAll  FIDE-rated  events  need  to  adopt  Anti-cheating  protection  measures  for  fighting  cheating  at-\ntempts (AC Protection Measures), based on the following distinction:",
+      "apply in addition. Additionally, FIDE may monitor private online events that meet\nspecific criteria, such as those offering money prizes or involving top-level players.\n2.4 All cheating incidents occurring in tournaments that require maximum and increased\nlevels of protection (as defined in the Anti-Cheating Protection Measures) must be\nreported to FPL. However, FPL may decide to refer a cheating incident that occurred\nin such tournaments to a National Federation (NF).",
+      "For National Championships, National Teams Championships and National Junior/Youth Cham-\npionships organizers are required to adopt a level of protection one level above that required for an\nequivalent non-championship event.\n\nAnti-cheating measures will vary across categories in order to take account of the different eco-\nnomic impact of such measures. The list of measures is specified under “Prevention” below.",
+      "2.5 Cheating incidents occurring in tournaments that require standard levels of protection\n(as defined in the Anti-Cheating Protection Measures) are to be referred to NFs, except\nwhen the cheating incident affects the awarding of a FM/WFM title, and/or involves a\nperson, either as claimant or respondent, holding the FM/WFM, IM/WIM or GM/WGM\ntitle. Such cases must be reported to FPL as well. If such cases are not reported as",
+      "In Tournaments designated for increased or maximum levels of protection, a special Anti-Cheating\nArbiter may be employed. An Anti-Cheating arbiter is an arbiter who is entrusted with anti-cheating\ntasks (and who may have received special anti-cheating training) and must be equipped with at least\none hand held scanner. The imployment of the Anti-Cheating Arbiter is mandatory in tournaments\nthat require maximum level of protections."
+    ],
+    "source_ids": [
+      "legal/fide_anti_cheating_protection_measures.md::chunk-0",
+      "legal/fide_arbiters_manual_2025.md::chunk-405",
+      "legal/fide_anti_cheating_protection_measures.md::chunk-3",
+      "legal/fide_arbiters_manual_2025.md::chunk-406",
+      "legal/fide_anti_cheating_protection_measures.md::chunk-9"
+    ],
+    "source_files": [
+      "fide_anti_cheating_protection_measures.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_anti_cheating_protection_measures.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_anti_cheating_protection_measures.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 2.507,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 0.666667,
+      "answer_relevance": 0.877766,
+      "context_recall": 1.0,
+      "context_precision": 0.95
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_009",
+    "config": "dense_only",
+    "question": "What must a team captain do with the match protocol at the end of play under the FIDE General Regulations for Competitions?",
+    "reference_answer": "The team captain must sign the protocol that records the match results at the end of play.",
+    "reference_context": "The captain shall sign the protocol indicating the results in the match at the end of play.",
+    "expected_sources": [
+      "fide_general_competition_rules.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "competition_regulations",
+    "difficulty": "single_hop",
+    "response": "Theo quy định của FIDE, đội trưởng phải ký vào biên bản xác nhận kết quả của trận đấu vào cuối buổi thi đấu [Document 2].",
+    "contexts": [
+      "4. 13. 5. The first top 3 teams of each section are required to attend the final press conference after the event has ended and to provide\nan exclusive interview for the tournament and FIDE website, if requested by the FIDE Press Officer.\n4. 13. 6. The players and the captains shall strictly abide by all medical regulations approved by FIDE and/or the Organiser. The",
+      "3.1.5 Attending Technical Meetings on behalf of their players\n3.2 The following rules apply to the Captain during play:\n3.2.1 The Captain shall sign the protocol indicating the results in the match\nat the end of play.\n3.2.2 The Captain is allowed to leave or re-enter the playing venue only with\nthe permission of the arbiter.\n3.2.3 The Captain must not stand behind the opposing team during play.\n3.2.4 If the team Captain wishes to speak to one of his/her players, they shall",
+      "players and the captains shall be aware that the regulations are subject to change and at short notice. FIDE shall inform players about\nany changes as quickly as possible.\n4. 13. 7. If a player or a captain fails to fulfil his/her duties listed in Articles 4.13.3 – 4.13.6, he/she shall be penalised according to a\ndecision of FIDE Council. In cases of serious misconduct, the player may be disqualified from the event.",
+      "7.1 The team captain may delegate his/her functions to another person, provided\nhe/she informs the CA of this in writing in advance.\nIn the regulations of a Team Tournament, details about the Team Compositions should be\nincluded.\nNormally the following may be applied:\nA fixed board order (it might be according to the FIDE rating of the players; the highest rating\ngets no 1. Some events allow the captain full discretion, others do not permit a player to play",
+      "their players.\n2.3 The Head of Delegation is the only point of contact used by the Organisers once\nthe National Federation has submitted their entry in accordance with Article 1.\n2.4 Any information conveyed by the Organisers to the Head of Delegation shall\nautomatically be assumed to have been conveyed to the Captain and all of their\nplayers.\n3. The Role of the Captain (Team Events)\n3.1 The Captain is solely responsible for all administrative functions connected with"
+    ],
+    "source_ids": [
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-42",
+      "legal/fide_arbiters_manual_2025.md::chunk-1246",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-43",
+      "legal/fide_arbiters_manual_2025.md::chunk-1143",
+      "legal/fide_arbiters_manual_2025.md::chunk-1244"
+    ],
+    "source_files": [
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.6825672388076782,
+    "latency_seconds": 1.462,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.914228,
+      "context_recall": 1.0,
+      "context_precision": 0.5
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_009",
+    "config": "hybrid_rrf",
+    "question": "What must a team captain do with the match protocol at the end of play under the FIDE General Regulations for Competitions?",
+    "reference_answer": "The team captain must sign the protocol that records the match results at the end of play.",
+    "reference_context": "The captain shall sign the protocol indicating the results in the match at the end of play.",
+    "expected_sources": [
+      "fide_general_competition_rules.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "competition_regulations",
+    "difficulty": "single_hop",
+    "response": "Theo Quy định Chung của FIDE về Các cuộc thi, đội trưởng phải ký vào biên bản xác nhận kết quả trong trận đấu vào cuối buổi chơi [Document 4].",
+    "contexts": [
+      "3.1.5 Attending Technical Meetings on behalf of their players\n3.2 The following rules apply to the Captain during play:\n3.2.1 The Captain shall sign the protocol indicating the results in the match\nat the end of play.\n3.2.2 The Captain is allowed to leave or re-enter the playing venue only with\nthe permission of the arbiter.\n3.2.3 The Captain must not stand behind the opposing team during play.\n3.2.4 If the team Captain wishes to speak to one of his/her players, they shall",
+      "7.1 The team captain may delegate his/her functions to another person, provided\nhe/she informs the CA of this in writing in advance.\nIn the regulations of a Team Tournament, details about the Team Compositions should be\nincluded.\nNormally the following may be applied:\nA fixed board order (it might be according to the FIDE rating of the players; the highest rating\ngets no 1. Some events allow the captain full discretion, others do not permit a player to play",
+      "4. 13. 5. The first top 3 teams of each section are required to attend the final press conference after the event has ended and to provide\nan exclusive interview for the tournament and FIDE website, if requested by the FIDE Press Officer.\n4. 13. 6. The players and the captains shall strictly abide by all medical regulations approved by FIDE and/or the Organiser. The",
+      "In L1 tournaments, at the start of any round a participating team has to be present with more\nthan 50% players. If 50% or less of the players are present at the start of any round the\nplayers present are not allowed to start their games. For other levels this is not obligatory,\nbut recommended.\nThe captain shall sign the protocol indicating the results in the match at the end of play.\nA team captain is allowed to leave or re-enter the playing venue only with the permission of\nthe arbiter.",
+      "players and the captains shall be aware that the regulations are subject to change and at short notice. FIDE shall inform players about\nany changes as quickly as possible.\n4. 13. 7. If a player or a captain fails to fulfil his/her duties listed in Articles 4.13.3 – 4.13.6, he/she shall be penalised according to a\ndecision of FIDE Council. In cases of serious misconduct, the player may be disqualified from the event."
+    ],
+    "source_ids": [
+      "legal/fide_arbiters_manual_2025.md::chunk-1246",
+      "legal/fide_arbiters_manual_2025.md::chunk-1143",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-42",
+      "legal/fide_general_competition_rules.md::chunk-30",
+      "legal/fide_chess_olympiad_2026_regulations.md::chunk-43"
+    ],
+    "source_files": [
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_chess_olympiad_2026_regulations.md",
+      "fide_general_competition_rules.md",
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 1.483,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.89015,
+      "context_recall": 1.0,
+      "context_precision": 0.75
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_010",
+    "config": "dense_only",
+    "question": "When may a pawn make an en passant capture?",
+    "reference_answer": "When a pawn advances two squares on its first move and lands beside an opposing pawn on the same rank, that opposing pawn may capture it as though it had moved only one square. The capture is available only on the immediately following move.",
+    "reference_context": "When a pawn on its first move advances two squares onto the same rank as an opposing pawn on an adjacent file, this opposing pawn may, on that player's next move only, capture the advancing pawn as though it had only moved one square (provided the move is otherwise legal). The pawn's ability to move two squares on their first move was a relatively late addition to the game of chess. En Passant was introduced to prevent abuses of the new rule.",
+    "expected_sources": [
+      "article_02.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "single_hop",
+    "response": "Một quân tốt có thể thực hiện nước bắt en passant khi nó đứng trên cùng một hàng với quân tốt đối phương và ở một cột liền kề, trong khi quân tốt đối phương vừa di chuyển hai ô từ vị trí ban đầu của nó. Nước bắt này chỉ hợp lệ trong nước đi ngay sau khi quân tốt đối phương di chuyển hai ô và được gọi là \"bắt en passant\" [Document 1].",
+    "contexts": [
+      "3.7.3.1    A pawn occupying a square on the same rank as and on an adjacent file to an opponent’s pawn which has just advanced two squares in one move from its original square may capture this opponent’s pawn as though the latter had been moved only one square.\n3.7.3.2    This capture is only legal on the move following this advance and is called an ‘en passant’ capture.",
+      "==== En passant capture ====\nEn passant is French for \"in passing\"; you capture an enemy pawn as it is passing you.",
+      "3.7.3.1 A pawn occupying a square on the same rank as and on an adjacent file to\nan opponent’s pawn which has just advanced two squares in one move\nfrom its original square may capture this opponent’s pawn as though the\nlatter had been moved only one square.\n3.7.3.2 This capture is only legal on the move following this advance and is called\nan ‘en passant’ capture.\n3.7.3.3 When a player, having the move, plays a pawn to the rank furthest from",
+      "If a piece is moved onto a square occupied by an enemy piece, the latter piece is removed from play and the first piece replaces it. The removed piece is said to have been captured or taken.\nException: In en passant capture, a pawn moves to an unoccupied square but still captures another pawn \"in passing\"; see below.\nMost pieces move and capture opponent pieces in the same way.\nException: The pawn has separate rules for moving and capturing opponent pieces.",
+      "en passant\n\", là tiếng Pháp có nghĩa \"bắt tốt qua đường\". Nếu quân tốt xuất phát với việc di chuyển hai ô đầu tiên, và sau đó kết thúc tại vị trí đứng cạnh quân tốt đối phương (nhảy qua khỏi ô mà tốt đối phương có thể bắt nó), con tốt đối phương lúc này có quyền được bắt quân tốt đó."
+    ],
+    "source_ids": [
+      "news/article_01.md::chunk-16",
+      "news/article_02.md::chunk-40",
+      "legal/fide_arbiters_manual_2025.md::chunk-140",
+      "news/article_02.md::chunk-6",
+      "news/article_12.md::chunk-12"
+    ],
+    "source_files": [
+      "article_01.md",
+      "article_02.md",
+      "fide_arbiters_manual_2025.md",
+      "article_02.md",
+      "article_12.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.7287110090255737,
+    "latency_seconds": 1.991,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.747144,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_010",
+    "config": "hybrid_rrf",
+    "question": "When may a pawn make an en passant capture?",
+    "reference_answer": "When a pawn advances two squares on its first move and lands beside an opposing pawn on the same rank, that opposing pawn may capture it as though it had moved only one square. The capture is available only on the immediately following move.",
+    "reference_context": "When a pawn on its first move advances two squares onto the same rank as an opposing pawn on an adjacent file, this opposing pawn may, on that player's next move only, capture the advancing pawn as though it had only moved one square (provided the move is otherwise legal). The pawn's ability to move two squares on their first move was a relatively late addition to the game of chess. En Passant was introduced to prevent abuses of the new rule.",
+    "expected_sources": [
+      "article_02.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "single_hop",
+    "response": "A pawn may make an en passant capture immediately after an opponent's pawn has advanced two squares from its original square, landing on the same rank and an adjacent file. This capture is only legal on the move following the opponent's advance [Document 3].",
+    "contexts": [
+      "==== En passant capture ====\nEn passant is French for \"in passing\"; you capture an enemy pawn as it is passing you.",
+      "3.7.3.1    A pawn occupying a square on the same rank as and on an adjacent file to an opponent’s pawn which has just advanced two squares in one move from its original square may capture this opponent’s pawn as though the latter had been moved only one square.\n3.7.3.2    This capture is only legal on the move following this advance and is called an ‘en passant’ capture.",
+      "3.7.3.1 A pawn occupying a square on the same rank as and on an adjacent file to\nan opponent’s pawn which has just advanced two squares in one move\nfrom its original square may capture this opponent’s pawn as though the\nlatter had been moved only one square.\n3.7.3.2 This capture is only legal on the move following this advance and is called\nan ‘en passant’ capture.\n3.7.3.3 When a player, having the move, plays a pawn to the rank furthest from",
+      "If a piece is moved onto a square occupied by an enemy piece, the latter piece is removed from play and the first piece replaces it. The removed piece is said to have been captured or taken.\nException: In en passant capture, a pawn moves to an unoccupied square but still captures another pawn \"in passing\"; see below.\nMost pieces move and capture opponent pieces in the same way.\nException: The pawn has separate rules for moving and capturing opponent pieces.",
+      "When a pawn on its first move advances two squares onto the same rank as an opposing pawn on an adjacent file, this opposing pawn may, on that player's next move only, capture the advancing pawn as though it had only moved one square (provided the move is otherwise legal).  The pawn's ability to move two squares on their first move was a relatively late addition to the game of chess.  En Passant was introduced to prevent abuses of the new rule."
+    ],
+    "source_ids": [
+      "news/article_02.md::chunk-40",
+      "news/article_01.md::chunk-16",
+      "legal/fide_arbiters_manual_2025.md::chunk-140",
+      "news/article_02.md::chunk-6",
+      "news/article_02.md::chunk-41"
+    ],
+    "source_files": [
+      "article_02.md",
+      "article_01.md",
+      "fide_arbiters_manual_2025.md",
+      "article_02.md",
+      "article_02.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 1.848,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.995386,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_011",
+    "config": "dense_only",
+    "question": "Which conditions permanently remove the right to castle, and which conditions temporarily prevent castling under the FIDE Laws effective from 2023?",
+    "reference_answer": "The right to castle is permanently lost if the king has already moved, or for a rook that has already moved. Castling is temporarily prevented if the king's current square, crossing square, or destination square is attacked, or if any piece stands between the king and the rook.",
+    "reference_context": "3.8.2.1 The right to castle has been lost: 1) If the king has already moved, or 2) With a rook that has already moved. 3.8.2.2 Castling is prevented temporarily: 3) If the square on which the king stands, or the square which it must cross, or the square which it is to occupy, is attacked by one or more of the opponent's pieces, or 4) If there is any piece between the king and the rook with which castling is to be effected.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "multi_fact",
+    "response": "Theo Luật cờ Vua FIDE có hiệu lực từ ngày 01 tháng 01 năm 2023, có hai loại điều kiện liên quan đến quyền nhập thành (castling):\n\n1. **Điều kiện vĩnh viễn loại bỏ quyền nhập thành**: \n   - Nếu quân vua hoặc quân xe tham gia vào việc nhập thành đã di chuyển ít nhất một lần trong trận đấu, quyền nhập thành sẽ bị loại bỏ vĩnh viễn cho quân vua đó.\n\n2. **Điều kiện tạm thời ngăn cản việc nhập thành**: \n   - Nếu quân vua đang ở trong tình trạng bị chiếu (check).\n   - Nếu quân vua phải đi qua một ô mà đang bị tấn công bởi quân đối phương.\n   - Nếu quân vua sẽ kết thúc ở một ô bị tấn công bởi quân đối phương sau khi nhập thành.\n\nCác điều kiện này được quy định trong Luật cờ Vua FIDE [Document 4].",
+    "contexts": [
+      "Starting from 1997 the FIDE Rules Commission (RC) makes changes to the Laws of\nChess only every four years which come into force on 1st July of the year following\nthe decision. [Exception 2014-2017-2018] The current Laws of Chess is effective from\n1st January 2023.\n5",
+      "01. Rules for the FIDE Open World Rapid Championship & FIDE Open World Blitz Championship\n02. Rules for the FIDE Women’s World Rapid Championship & FIDE Women’s World Blitz Championship\n08. Regulations for the FIDE World Fischer Random Chess Championship and FIDE Freestyle Chess World Championship\nE. MISCELLANEOUS\n01. Laws of Chess\nFIDE Laws of Chess taking effect from 1 January 2023\nLaws of Chess: For competitions starting from 1 January 2018 till 31 December 2022",
+      "The English text is the authentic version of the Laws of Chess (which were adopted at the 93\nrd\nFIDE Congress at Chennai, India) coming into force on 1 January 2023.\n0.2     Preface",
+      "FIDE LAWS OF CHESS\nApproved by the FIDE General Assembly on 07/08/2022\nApplied from 01/01/2023\n0.1 Introduction\nFIDE Laws of Chess cover over-the-board play.\nThe Laws of Chess have two parts: 1. Basic Rules of Play and 2. Competitive Rules of Play.\nThe English text is the authentic version of the Laws of Chess (which were adopted at the\n93rd FIDE Congress at Chennai, India) coming into force on 1 January 2023.\n0.2 Preface",
+      "1. Luật chơi cơ bản;\n2. Luật thi đấu.\nVăn bản bằng tiếng Anh là bản gốc của Luật cờ Vua (đã được thông qua tại Hội nghị FIDE lần thứ 93, Chennai, Ấn Độ) có hiệu lực từ ngày 01 tháng 01 năm 2023.\nMỞ ĐẦU\nLuật cờ Vua không thể bao quát tất cả các tình huống có thể xảy ra cũng như không thể điều chỉnh tất cả vấn đề điều hành trong quá trình của ván đấu."
+    ],
+    "source_ids": [
+      "legal/fide_arbiters_manual_2025.md::chunk-109",
+      "news/article_01.md::chunk-214",
+      "news/article_01.md::chunk-3",
+      "legal/fide_arbiters_manual_2025.md::chunk-116",
+      "news/article_11.md::chunk-4"
+    ],
+    "source_files": [
+      "fide_arbiters_manual_2025.md",
+      "article_01.md",
+      "article_01.md",
+      "fide_arbiters_manual_2025.md",
+      "article_11.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.5782046318054199,
+    "latency_seconds": 3.01,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 0.0,
+      "answer_relevance": 0.818106,
+      "context_recall": 0.0,
+      "context_precision": 0.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_011",
+    "config": "hybrid_rrf",
+    "question": "Which conditions permanently remove the right to castle, and which conditions temporarily prevent castling under the FIDE Laws effective from 2023?",
+    "reference_answer": "The right to castle is permanently lost if the king has already moved, or for a rook that has already moved. Castling is temporarily prevented if the king's current square, crossing square, or destination square is attacked, or if any piece stands between the king and the rook.",
+    "reference_context": "3.8.2.1 The right to castle has been lost: 1) If the king has already moved, or 2) With a rook that has already moved. 3.8.2.2 Castling is prevented temporarily: 3) If the square on which the king stands, or the square which it must cross, or the square which it is to occupy, is attacked by one or more of the opponent's pieces, or 4) If there is any piece between the king and the rook with which castling is to be effected.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "answerable": true,
+    "category": "laws_of_chess",
+    "difficulty": "multi_fact",
+    "response": "Theo các quy định của FIDE Laws of Chess có hiệu lực từ ngày 1 tháng 1 năm 2023, quyền được rooks (castling) sẽ bị mất vĩnh viễn trong những điều kiện sau:\n\n1. Nếu vua đã di chuyển.\n2. Nếu một trong các quân rook đã di chuyển [Document 4].\n\nNgoài ra, việc rooks sẽ bị ngăn cản tạm thời trong các trường hợp sau:\n\n1. Nếu ô mà vua đứng, ô mà vua phải đi qua, hoặc ô mà vua sẽ chiếm đóng bị tấn công bởi một hoặc nhiều quân của đối thủ.\n2. Nếu có bất kỳ quân cờ nào nằm giữa vua và rook mà vua sẽ thực hiện rooks [Document 4].",
+    "contexts": [
+      "Starting from 1997 the FIDE Rules Commission (RC) makes changes to the Laws of\nChess only every four years which come into force on 1st July of the year following\nthe decision. [Exception 2014-2017-2018] The current Laws of Chess is effective from\n1st January 2023.\n5",
+      "national chess federation which is a member of FIDE, unless otherwise approved\nby FIDE Council. The Federation must not be temporarily or permanently\nexcluded from membership.\n9.2 It is the responsibility of the federation to report deaths of their players to FIDE.\n158",
+      "01. Rules for the FIDE Open World Rapid Championship & FIDE Open World Blitz Championship\n02. Rules for the FIDE Women’s World Rapid Championship & FIDE Women’s World Blitz Championship\n08. Regulations for the FIDE World Fischer Random Chess Championship and FIDE Freestyle Chess World Championship\nE. MISCELLANEOUS\n01. Laws of Chess\nFIDE Laws of Chess taking effect from 1 January 2023\nLaws of Chess: For competitions starting from 1 January 2018 till 31 December 2022",
+      "3.8.2.1 The right to castle has been lost:\n3.8.2.1.1 If the king has already moved, or\n3.8.2.1.2 With a rook that has already moved.\n3.8.2.2 Castling is prevented temporarily:\n3.8.2.2.1 if the square on which the king stands, or the square which it must cross,\nor the square which it is to occupy, is attacked by one or more of the\nopponent's pieces, or\n3.8.2.2.2 if there is any piece between the king and the rook with which castling\nis to be effected.\n3.9 The king in check:",
+      "The English text is the authentic version of the Laws of Chess (which were adopted at the 93\nrd\nFIDE Congress at Chennai, India) coming into force on 1 January 2023.\n0.2     Preface"
+    ],
+    "source_ids": [
+      "legal/fide_arbiters_manual_2025.md::chunk-109",
+      "legal/fide_arbiters_manual_2025.md::chunk-960",
+      "news/article_01.md::chunk-214",
+      "legal/fide_arbiters_manual_2025.md::chunk-145",
+      "news/article_01.md::chunk-3"
+    ],
+    "source_files": [
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md",
+      "article_01.md",
+      "fide_arbiters_manual_2025.md",
+      "article_01.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 2.914,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 0.833333,
+      "answer_relevance": 0.871281,
+      "context_recall": 1.0,
+      "context_precision": 0.25
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_012",
+    "config": "dense_only",
+    "question": "How are kingside and queenside castling written in algebraic chess notation?",
+    "reference_answer": "Kingside castling is written O-O, and queenside castling is written O-O-O.",
+    "reference_context": "Castling King-side is written O-O. Castling Queen-side is written O-O-O.",
+    "expected_sources": [
+      "article_08.md"
+    ],
+    "answerable": true,
+    "category": "chess_notation",
+    "difficulty": "single_hop",
+    "response": "Kingside castling is written as 0-0, while queenside castling is written as 0-0-0 in algebraic chess notation [Document 1].",
+    "contexts": [
+      "II.3.2.6\nClarification\nThus, after c-side castling (notated as 0-0-0 and known as queen-side castling in ortho-dox chess), the king is on the c-square (c1 for white and c8 for black) and the rook is on the d-square (d1 for white and d8 for black). After g-side castling (notated as 0-0 and known as king-side castling in orthodox chess), the king is on the g-square (g1 for white and g8 for black) and the rook is on the f-square (f1 for white and f8 for black).\nII.3.2.7\nNotes",
+      "II.3.2.6 Clarification:\nThus, after c-side castling (notated as 0-0-0 and known as queen-side castling\nin orthodox chess), the king is on the c-square (c1 for white and c8 for black)\nand the rook is on the d-square (d1 for white and d8 for black). After g-side\ncastling (notated as 0-0 and known as king-side castling in orthodox chess),\nthe king is on the g-square (g1 for white and g8 for black) and the rook is on\nthe f-square (f1 for white and f8 for black).\nII.3.2.7 Notes",
+      "castling\n3.8.2\nA move of the king towards a rook. See the article. In notation 0-0 kingside castling, 0-0-0 queenside castling.\ncellphone\nN/A\nSee mobile phone.\ncheck\n3.9\nWhere a king is attacked by one or more of the opponent’s pieces. In notation +.\ncheckmate\n1.2\nWhere the king is attacked and cannot parry the threat. In notation ++ or #.\nchessboard\n1.1\nThe 8x8 grid as in 2.1.\nchessclock\n6.1\nA clock with two time displays connected to each other.\nchess set\nN/A\nThe 32 pieces on the chessboard.",
+      "=== Queenside vs Kingside ===\nWhen calculating the value of a position, dividing the board in Queenside and Kingside, it will be seen that it matters that the king is considered to be worth 3.5 points. The calculation of forces on either side will determine the stronger side. This side usually can become the attacking one, all other things considered.",
+      "Castling is a move involving the king and either of the rooks. Castling performed with the king's rook is called kingside castling, performed with the queen's rook is called queenside castling. A castling is typically done to move the king to a protective 'castle' surrounded by three pawns and a rook."
+    ],
+    "source_ids": [
+      "news/article_01.md::chunk-153",
+      "legal/fide_arbiters_manual_2025.md::chunk-336",
+      "news/article_01.md::chunk-169",
+      "news/article_04.md::chunk-10",
+      "news/article_02.md::chunk-35"
+    ],
+    "source_files": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md",
+      "article_01.md",
+      "article_04.md",
+      "article_02.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.6608890891075134,
+    "latency_seconds": 1.455,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.963853,
+      "context_recall": 1.0,
+      "context_precision": 0.95
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_012",
+    "config": "hybrid_rrf",
+    "question": "How are kingside and queenside castling written in algebraic chess notation?",
+    "reference_answer": "Kingside castling is written O-O, and queenside castling is written O-O-O.",
+    "reference_context": "Castling King-side is written O-O. Castling Queen-side is written O-O-O.",
+    "expected_sources": [
+      "article_08.md"
+    ],
+    "answerable": true,
+    "category": "chess_notation",
+    "difficulty": "single_hop",
+    "response": "Kingside castling is written as 0-0, while queenside castling is written as 0-0-0 in algebraic chess notation [Document 1].",
+    "contexts": [
+      "castling\n3.8.2\nA move of the king towards a rook. See the article. In notation 0-0 kingside castling, 0-0-0 queenside castling.\ncellphone\nN/A\nSee mobile phone.\ncheck\n3.9\nWhere a king is attacked by one or more of the opponent’s pieces. In notation +.\ncheckmate\n1.2\nWhere the king is attacked and cannot parry the threat. In notation ++ or #.\nchessboard\n1.1\nThe 8x8 grid as in 2.1.\nchessclock\n6.1\nA clock with two time displays connected to each other.\nchess set\nN/A\nThe 32 pieces on the chessboard.",
+      "Castling is a move involving the king and either of the rooks. Castling performed with the king's rook is called kingside castling, performed with the queen's rook is called queenside castling. A castling is typically done to move the king to a protective 'castle' surrounded by three pawns and a rook.",
+      "II.3.2.6\nClarification\nThus, after c-side castling (notated as 0-0-0 and known as queen-side castling in ortho-dox chess), the king is on the c-square (c1 for white and c8 for black) and the rook is on the d-square (d1 for white and d8 for black). After g-side castling (notated as 0-0 and known as king-side castling in orthodox chess), the king is on the g-square (g1 for white and g8 for black) and the rook is on the f-square (f1 for white and f8 for black).\nII.3.2.7\nNotes",
+      "the square the king has just crossed.\nBefore white kingside castling After white kingside castling\nBefore black queenside castling After black queenside castling\nBefore white queenside castling After white queenside castling\nBefore black kingside castling After black kingside castling\n14",
+      "II.3.2.6 Clarification:\nThus, after c-side castling (notated as 0-0-0 and known as queen-side castling\nin orthodox chess), the king is on the c-square (c1 for white and c8 for black)\nand the rook is on the d-square (d1 for white and d8 for black). After g-side\ncastling (notated as 0-0 and known as king-side castling in orthodox chess),\nthe king is on the g-square (g1 for white and g8 for black) and the rook is on\nthe f-square (f1 for white and f8 for black).\nII.3.2.7 Notes"
+    ],
+    "source_ids": [
+      "news/article_01.md::chunk-169",
+      "news/article_02.md::chunk-35",
+      "news/article_01.md::chunk-153",
+      "legal/fide_arbiters_manual_2025.md::chunk-144",
+      "legal/fide_arbiters_manual_2025.md::chunk-336"
+    ],
+    "source_files": [
+      "article_01.md",
+      "article_02.md",
+      "article_01.md",
+      "fide_arbiters_manual_2025.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 1.613,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.963853,
+      "context_recall": 1.0,
+      "context_precision": 0.95
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_013",
+    "config": "dense_only",
+    "question": "What is checkmate?",
+    "reference_answer": "Checkmate occurs when the opponent's king is in check and there is no legal move that can remove the check.",
+    "reference_context": "Checkmate is when you are checking the opponent's king and there are no legal moves to get out of the check.",
+    "expected_sources": [
+      "article_09.md"
+    ],
+    "answerable": true,
+    "category": "chess_basics",
+    "difficulty": "single_hop",
+    "response": "Checkmate is a situation in chess where a player's king is in check and cannot escape from the check, meaning there are no legal moves available to get out of the check. The player who checkmates their opponent's king wins the game. It is important to note that the king is never actually captured; the game ends when it is impossible for the king to move out of check [Document 3].",
+    "contexts": [
+      "**Document type:** news\n\n---\n\n# Chess/Checkmates\n\n== Introduction ==\nCheckmates are an essential part of the game of Chess, being the objective of the game. Checkmate is when you are checking the opponent's king and there are no legal moves to get out of the check. Some mating patterns are named. There are 36 named mating patterns in Chess and a handful of well-known early opening checkmates.\n\n\n== Named mating patterns ==\nThere are 36 recognized named mating patterns in Chess.",
+      "== Glossary ==\nCapture - To move one's piece into the same square as one of one's opponent's pieces.  The opponent's piece is removed from the board.\nCheck - The king is 'in check' when it is being attacked by an enemy piece.\nCheckmate - The player whose turn it is can make no legal move to get his king out of check.\nStalemate - The player whose turn it is can make no legal move, but the king is not in check.\n\n← Arranging The Board  · Notating The Game →",
+      "==== Checkmate ====\nIf the king is placed in check and can not escape, it is said to have been checkmated (or \"mated\" for short). The first player to checkmate the opponent's king wins the game. Note that the king is never actually captured, since it is obliged to move out of check whenever possible (and the game ends when it is impossible). In the diagram below white has no options to escape the check from black's rook, he is therefore checkmated.",
+      "=== Triangle mate ===\nThe triangle mate is when the opponent's king is on the edge of the board and is checkmated by a queen, while a rook defends the queen and cuts off the remaining escape square. The checkmate looks like a triangle between the queen, rook and opponent's king, thus the name.",
+      "=== Fool's mate ===\nThis checkmate is the fastest checkmate possible in chess, and can happen in just two moves by black. Similar moves by white may take place, but it can happen, for example, as shown in the gif, where white plays g4, with black responding with e5, white then plays f3??, allowing black's queen to checkmate the king. \n\n← Tactics Exercises  · Strategy →"
+    ],
+    "source_ids": [
+      "news/article_09.md::chunk-1",
+      "news/article_02.md::chunk-57",
+      "news/article_02.md::chunk-27",
+      "news/article_09.md::chunk-7",
+      "news/article_09.md::chunk-16"
+    ],
+    "source_files": [
+      "article_09.md",
+      "article_02.md",
+      "article_02.md",
+      "article_09.md",
+      "article_09.md"
+    ],
+    "retrieval_methods": [
+      "dense",
+      "dense",
+      "dense",
+      "dense",
+      "dense"
+    ],
+    "best_dense_score": 0.6667635440826416,
+    "latency_seconds": 1.982,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.881307,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_013",
+    "config": "hybrid_rrf",
+    "question": "What is checkmate?",
+    "reference_answer": "Checkmate occurs when the opponent's king is in check and there is no legal move that can remove the check.",
+    "reference_context": "Checkmate is when you are checking the opponent's king and there are no legal moves to get out of the check.",
+    "expected_sources": [
+      "article_09.md"
+    ],
+    "answerable": true,
+    "category": "chess_basics",
+    "difficulty": "single_hop",
+    "response": "Checkmate is a situation in chess where a player's king is in check and there are no legal moves available to escape the check. This means the player whose turn it is cannot make any move that would remove their king from being attacked, resulting in the end of the game. Checkmate is the primary objective in chess, and there are various named mating patterns that players can utilize to achieve it [Document 4].",
+    "contexts": [
+      "=== Fool's mate ===\nThis checkmate is the fastest checkmate possible in chess, and can happen in just two moves by black. Similar moves by white may take place, but it can happen, for example, as shown in the gif, where white plays g4, with black responding with e5, white then plays f3??, allowing black's queen to checkmate the king. \n\n← Tactics Exercises  · Strategy →",
+      "Threatening checkmate - Sometimes, you can propose an exchange where you can force a checkmate if your opponent accepts the exchange. That is if your opponent captures your piece after you capture one of their pieces, you are then able to force a checkmate.\nPreventing checkmate - If you are in a situation where the only way out of a checkmate is to exchange pieces, you must make the exchange.",
+      "=== Scholar's mate ===\nThis checkmate is when the queen checkmates the king on e8, with the queen being on f7 whilst it being defended by the bishop on c4. This type of checkmate is usually played by beginner players.",
+      "**Document type:** news\n\n---\n\n# Chess/Checkmates\n\n== Introduction ==\nCheckmates are an essential part of the game of Chess, being the objective of the game. Checkmate is when you are checking the opponent's king and there are no legal moves to get out of the check. Some mating patterns are named. There are 36 named mating patterns in Chess and a handful of well-known early opening checkmates.\n\n\n== Named mating patterns ==\nThere are 36 recognized named mating patterns in Chess.",
+      "== Glossary ==\nCapture - To move one's piece into the same square as one of one's opponent's pieces.  The opponent's piece is removed from the board.\nCheck - The king is 'in check' when it is being attacked by an enemy piece.\nCheckmate - The player whose turn it is can make no legal move to get his king out of check.\nStalemate - The player whose turn it is can make no legal move, but the king is not in check.\n\n← Arranging The Board  · Notating The Game →"
+    ],
+    "source_ids": [
+      "news/article_09.md::chunk-16",
+      "news/article_05.md::chunk-8",
+      "news/article_09.md::chunk-15",
+      "news/article_09.md::chunk-1",
+      "news/article_02.md::chunk-57"
+    ],
+    "source_files": [
+      "article_09.md",
+      "article_05.md",
+      "article_09.md",
+      "article_09.md",
+      "article_02.md"
+    ],
+    "retrieval_methods": [
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid",
+      "hybrid"
+    ],
+    "best_dense_score": null,
+    "latency_seconds": 1.822,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.881307,
+      "context_recall": 1.0,
+      "context_precision": 0.325
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_014",
+    "config": "dense_only",
+    "question": "What is the capital city of Australia?",
+    "reference_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "reference_context": "NO_SUPPORT_IN_CORPUS",
+    "expected_sources": [],
+    "answerable": false,
+    "category": "out_of_domain",
+    "difficulty": "refusal",
+    "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "contexts": [],
+    "source_ids": [],
+    "source_files": [],
+    "retrieval_methods": [],
+    "best_dense_score": 0.37519991397857666,
+    "latency_seconds": 1.347,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.0,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_014",
+    "config": "hybrid_rrf",
+    "question": "What is the capital city of Australia?",
+    "reference_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "reference_context": "NO_SUPPORT_IN_CORPUS",
+    "expected_sources": [],
+    "answerable": false,
+    "category": "out_of_domain",
+    "difficulty": "refusal",
+    "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "contexts": [],
+    "source_ids": [],
+    "source_files": [],
+    "retrieval_methods": [],
+    "best_dense_score": null,
+    "latency_seconds": 1.314,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.0,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_015",
+    "config": "dense_only",
+    "question": "How can I reset the password for my Gmail account?",
+    "reference_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "reference_context": "NO_SUPPORT_IN_CORPUS",
+    "expected_sources": [],
+    "answerable": false,
+    "category": "out_of_domain",
+    "difficulty": "refusal",
+    "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "contexts": [],
+    "source_ids": [],
+    "source_files": [],
+    "retrieval_methods": [],
+    "best_dense_score": 0.4490628242492676,
+    "latency_seconds": 1.834,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.0,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
+  },
+  {
+    "id": "golden_015",
+    "config": "hybrid_rrf",
+    "question": "How can I reset the password for my Gmail account?",
+    "reference_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "reference_context": "NO_SUPPORT_IN_CORPUS",
+    "expected_sources": [],
+    "answerable": false,
+    "category": "out_of_domain",
+    "difficulty": "refusal",
+    "response": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "contexts": [],
+    "source_ids": [],
+    "source_files": [],
+    "retrieval_methods": [],
+    "best_dense_score": null,
+    "latency_seconds": 1.431,
+    "generation_error": null,
+    "metrics": {
+      "faithfulness": 1.0,
+      "answer_relevance": 0.0,
+      "context_recall": 1.0,
+      "context_precision": 1.0
+    },
+    "metric_errors": {}
   }
 ]
