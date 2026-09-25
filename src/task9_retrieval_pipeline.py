@@ -50,8 +50,15 @@ def retrieve(
         return []
 
     candidate_k = top_k * 2
-    dense = semantic_search(query, top_k=candidate_k)
-    sparse = lexical_search(query, top_k=candidate_k)
+    try:
+        dense = semantic_search(query, top_k=candidate_k)
+    except Exception:
+        dense = []
+
+    try:
+        sparse = lexical_search(query, top_k=candidate_k)
+    except Exception:
+        sparse = []
     hybrid = (
         rerank_rrf([dense, sparse], top_k=top_k)
         if use_reranking

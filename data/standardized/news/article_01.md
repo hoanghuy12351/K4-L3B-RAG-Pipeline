@@ -2,7 +2,7 @@
 
 **Source:** https://handbook.fide.com/chapter/E012023
 
-**Crawled:** 2026-09-22T03:53:02.956562+00:00
+**Crawled:** 2026-09-25T03:03:29.922379+00:00
 
 **Publisher:** handbook.fide.com
 

@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/Playing_The_Game
 
-**Crawled:** 2026-09-22T03:53:04.064460+00:00
+**Crawled:** 2026-09-25T03:03:31.713579+00:00
 
 **Publisher:** en.wikibooks.org
 

@@ -7,6 +7,7 @@ liệu và tên riêng. Output phải theo SearchResult và sort score giảm d�
 
 CORPUS: list[dict] = []
 import re
+from functools import lru_cache
 
 from .task4_chunking_indexing import get_collection
 
@@ -30,6 +31,28 @@ def build_bm25_index(corpus: list[dict]):
     return BM25Okapi(tokenized_corpus)
 
 
+@lru_cache(maxsize=1)
+def _load_corpus_and_index():
+    """Đọc Chroma và dựng BM25 một lần trong mỗi tiến trình."""
+    collection_data = get_collection().get(
+        include=["documents", "metadatas"],
+    )
+    corpus = [
+        {"id": item_id, "content": content, "metadata": metadata}
+        for item_id, content, metadata in zip(
+            collection_data["ids"],
+            collection_data["documents"],
+            collection_data["metadatas"],
+        )
+    ]
+    return corpus, build_bm25_index(corpus) if corpus else None
+
+
+def clear_bm25_cache() -> None:
+    """Gọi sau khi index thay đổi trong cùng tiến trình."""
+    _load_corpus_and_index.cache_clear()
+
+
 def lexical_search(query: str, top_k: int = 10) -> list[dict]:
     """Trả về BM25 SearchResult theo score giảm dần."""
     query = query.strip()
@@ -38,26 +61,9 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
         return []
 
     corpus = CORPUS
-
+    bm25 = None
     if not corpus:
-        collection_data = get_collection().get(
-            include=["documents", "metadatas"],
-        )
-
-        corpus = []
-
-        for item_id, content, metadata in zip(
-            collection_data["ids"],
-            collection_data["documents"],
-            collection_data["metadatas"],
-        ):
-            corpus.append(
-                {
-                    "id": item_id,
-                    "content": content,
-                    "metadata": metadata,
-                }
-            )
+        corpus, bm25 = _load_corpus_and_index()
 
     if not corpus:
         return []
@@ -80,7 +86,8 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
         for item in corpus
     ]
 
-    bm25 = build_bm25_index(corpus)
+    if bm25 is None:
+        bm25 = build_bm25_index(corpus)
     scores = bm25.get_scores(query_tokens)
 
     indices = sorted(

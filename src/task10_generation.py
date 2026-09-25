@@ -12,6 +12,7 @@ Nếu context không đủ hoặc provider lỗi, trả safe refusal; không b�
 """
 
 import os
+import re
 
 from dotenv import load_dotenv
 
@@ -35,6 +36,12 @@ Nếu thiếu evidence, hãy từ chối xác minh."""
 SAFE_REFUSAL = "Tôi không thể xác minh thông tin này từ nguồn hiện có."
 
 
+def _has_valid_citations(answer: str, source_count: int) -> bool:
+    """Đảm bảo câu trả lời có citation và mọi số đều trỏ tới sources."""
+    citations = [int(value) for value in re.findall(r"\[Document (\d+)\]", answer)]
+    return bool(citations) and all(1 <= value <= source_count for value in citations)
+
+
 def reorder_for_llm(chunks: list[dict]) -> list[dict]:
     """Đưa chunks quan trọng về đầu và cuối context."""
     if len(chunks) <= 2:
@@ -50,8 +57,9 @@ def format_context(chunks: list[dict]) -> str:
     for index, chunk in enumerate(chunks, 1):
         metadata = chunk["metadata"]
         source_url = metadata.get("url") or metadata["source"]
+        citation_index = chunk.get("_citation_index", index)
         parts.append(
-            f"[Document {index} | Title: {metadata['title']} | "
+            f"[Document {citation_index} | Title: {metadata['title']} | "
             f"Source: {metadata['source']} | URL: {source_url}]\n"
             f"{chunk['content']}"
         )
@@ -144,7 +152,15 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
         }
 
     reordered = reorder_for_llm(chunks)
-    context = format_context(reordered)
+    citation_by_id = {
+        chunk["id"]: index
+        for index, chunk in enumerate(chunks, 1)
+    }
+    context_chunks = [
+        {**chunk, "_citation_index": citation_by_id[chunk["id"]]}
+        for chunk in reordered
+    ]
+    context = format_context(context_chunks)
     user_message = f"Context:\n{context}\n\nQuestion: {query}"
 
     try:
@@ -156,7 +172,7 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
             "retrieval_source": "none",
         }
 
-    if not answer:
+    if not answer or not _has_valid_citations(answer, len(reordered)):
         return {
             "answer": SAFE_REFUSAL,
             "sources": [],

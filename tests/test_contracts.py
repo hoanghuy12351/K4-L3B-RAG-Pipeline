@@ -253,3 +253,97 @@ def test_generation_result_validator_accepts_safe_refusal():
             "retrieval_source": "none",
         }
     )
+
+
+def test_index_removes_stale_chunks(monkeypatch):
+    import src.task4_chunking_indexing as indexing
+
+    calls = {"upsert": None, "deleted": None}
+
+    class FakeCollection:
+        def upsert(self, **kwargs):
+            calls["upsert"] = kwargs
+
+        def get(self, **kwargs):
+            assert kwargs == {"include": []}
+            return {"ids": ["chunk-0", "old-chunk"]}
+
+        def delete(self, **kwargs):
+            calls["deleted"] = kwargs["ids"]
+
+    chunks = [
+        {
+            **result("chunk-0", 0.9),
+            "embedding": [0.1, 0.2],
+        }
+    ]
+    monkeypatch.setattr(indexing, "get_collection", lambda: FakeCollection())
+    indexing.index_to_vectorstore(chunks)
+
+    assert calls["upsert"]["ids"] == ["chunk-0"]
+    assert calls["deleted"] == ["old-chunk"]
+
+
+def test_generation_sources_follow_context_order(monkeypatch):
+    import src.task10_generation as generation
+
+    chunks = [result(f"chunk-{index}", 1 - index / 10, "hybrid") for index in range(5)]
+    monkeypatch.setattr(generation, "retrieve", lambda query, top_k: chunks)
+    monkeypatch.setattr(
+        generation,
+        "call_llm",
+        lambda system_prompt, user_message: "Câu trả lời [Document 2]",
+    )
+
+    output = generation.generate_with_citation("tuition", top_k=5)
+    assert [item["id"] for item in output["sources"]] == [
+        "chunk-0", "chunk-1", "chunk-2", "chunk-3", "chunk-4"
+    ]
+    context_chunks = generation.reorder_for_llm(chunks)
+    citation_by_id = {
+        chunk["id"]: index
+        for index, chunk in enumerate(chunks, 1)
+    }
+    labeled = [
+        {**chunk, "_citation_index": citation_by_id[chunk["id"]]}
+        for chunk in context_chunks
+    ]
+    context = generation.format_context(labeled)
+    assert "[Document 3 |" in context
+    validate_generation_result(output)
+
+
+def test_generation_rejects_invalid_citation(monkeypatch):
+    import src.task10_generation as generation
+
+    chunks = [result("chunk-0", 0.9, "hybrid")]
+    monkeypatch.setattr(generation, "retrieve", lambda query, top_k: chunks)
+    monkeypatch.setattr(
+        generation,
+        "call_llm",
+        lambda system_prompt, user_message: "Sai nguồn [Document 9]",
+    )
+
+    output = generation.generate_with_citation("tuition", top_k=1)
+    assert output == {
+        "answer": generation.SAFE_REFUSAL,
+        "sources": [],
+        "retrieval_source": "none",
+    }
+
+
+def test_retrieve_survives_primary_search_errors(monkeypatch):
+    import src.task9_retrieval_pipeline as pipeline
+
+    sparse = [result("chunk-1", 4.0, "bm25")]
+    hybrid = [result("chunk-1", 0.02, "hybrid")]
+
+    def unavailable(query, top_k):
+        raise RuntimeError("provider unavailable")
+
+    monkeypatch.setattr(pipeline, "semantic_search", unavailable)
+    monkeypatch.setattr(pipeline, "lexical_search", lambda query, top_k: sparse)
+    monkeypatch.setattr(pipeline, "rerank_rrf", lambda lists, top_k: hybrid)
+    monkeypatch.setattr(pipeline, "pageindex_search", lambda query, top_k: [])
+
+    assert pipeline.retrieve("tuition", top_k=2) == hybrid

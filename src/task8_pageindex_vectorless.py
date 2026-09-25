@@ -30,6 +30,8 @@ SOURCES_PATH = LEGAL_DIR / "sources.json"
 # Một PDF tiếng Việt là đủ để minh họa nhánh fallback mà không upload
 # toàn bộ corpus lớn lên dịch vụ ngoài.
 PAGEINDEX_FILES = ("fide_laws_of_chess_2018_vi.pdf",)
+PAGEINDEX_TIMEOUT_SECONDS = 120
+PAGEINDEX_POLL_INTERVAL_SECONDS = 2
 
 
 def _load_json(path: Path, default):
@@ -149,30 +151,43 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
     if not cache:
         return []
 
-    client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
+    try:
+        client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
+    except Exception:
+        return []
     results = []
 
     for filename, source in cache.items():
-        doc_id = source.get("doc_id")
-        if not doc_id or not client.is_retrieval_ready(doc_id):
-            continue
+        try:
+            doc_id = source.get("doc_id")
+            if not doc_id or not client.is_retrieval_ready(doc_id):
+                continue
 
-        submitted = client.submit_query(doc_id=doc_id, query=query, thinking=False)
-        retrieval_id = submitted.get("retrieval_id")
-        if not retrieval_id:
-            continue
+            submitted = client.submit_query(
+                doc_id=doc_id,
+                query=query,
+                thinking=False,
+            )
+            retrieval_id = submitted.get("retrieval_id")
+            if not retrieval_id:
+                continue
 
-        deadline = time.monotonic() + 120
-        response = {}
-        while time.monotonic() < deadline:
-            response = client.get_retrieval(retrieval_id)
-            status = response.get("status")
-            if status == "completed":
-                break
-            if status == "failed":
+            deadline = time.monotonic() + PAGEINDEX_TIMEOUT_SECONDS
+            response = {}
+            while time.monotonic() < deadline:
+                response = client.get_retrieval(retrieval_id)
+                status = response.get("status")
+                if status == "completed":
+                    break
+                if status == "failed":
+                    response = {}
+                    break
+                time.sleep(PAGEINDEX_POLL_INTERVAL_SECONDS)
+            else:
                 response = {}
-                break
-            time.sleep(2)
+        except Exception:
+            # Một tài liệu lỗi không được làm hỏng toàn bộ fallback.
+            continue
 
         nodes = _extract_nodes(response)
         for rank, node in enumerate(nodes, start=1):

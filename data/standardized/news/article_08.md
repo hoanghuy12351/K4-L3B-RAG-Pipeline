@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/Notating_The_Game
 
-**Crawled:** 2026-09-22T03:53:10.750857+00:00
+**Crawled:** 2026-09-25T03:03:38.594389+00:00
 
 **Publisher:** en.wikibooks.org
 

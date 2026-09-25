@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/Checkmates
 
-**Crawled:** 2026-09-22T03:53:11.879406+00:00
+**Crawled:** 2026-09-25T03:03:42.411838+00:00
 
 **Publisher:** en.wikibooks.org
 

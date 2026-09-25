@@ -46,6 +46,13 @@ DOCUMENT_SOURCES = {
             "Olympiad2026MainCompetition.pdf"
         ),
     },
+    "fide_laws_of_chess_2018_vi.pdf": {
+        "title": "Luật Cờ vua FIDE 2018 (Tiếng Việt)",
+        "url": (
+            "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/37/UserFiles/"
+            "TT17-a6e61f0f-13bd-4d40-a45b-0085a7a1cc5d.pdf"
+        ),
+    },
 }
 
 

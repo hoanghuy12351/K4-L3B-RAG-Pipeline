@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/Basic_Openings
 
-**Crawled:** 2026-09-22T03:53:05.403232+00:00
+**Crawled:** 2026-09-25T03:03:33.166727+00:00
 
 **Publisher:** en.wikibooks.org
 

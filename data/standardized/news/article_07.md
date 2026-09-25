@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/Arranging_The_Board
 
-**Crawled:** 2026-09-22T03:53:09.800907+00:00
+**Crawled:** 2026-09-25T03:03:37.844955+00:00
 
 **Publisher:** en.wikibooks.org
 
