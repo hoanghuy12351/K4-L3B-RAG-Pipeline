@@ -391,12 +391,18 @@ def render_evidence_card(
 
 def render_developer_view(message: dict) -> None:
     with st.expander("⚙ Developer View — raw retrieval trace"):
-        st.markdown("**Dense search (semantic) — điểm dùng cho confidence meter**")
-        for hit in message.get("dense_hits", [])[:5]:
-            st.text(f"{hit['score']:.3f}  {hit['metadata']['title'][:42]}")
+        dense_hits = message.get("dense_hits", [])
+        if dense_hits:
+            st.markdown("**Dense search (semantic)**")
+            for hit in dense_hits[:5]:
+                st.text(f"{hit['score']:.3f}  {hit['metadata']['title'][:42]}")
+        else:
+            st.caption(
+                "Bấm **🔬 Xem cosine score chính xác** phía trên để tải dense search "
+                "(không tự chạy để tránh chậm mỗi lượt chat)."
+            )
         st.caption(
-            "So sánh với BM25 và hybrid (RRF): xem tab 🆚 Semantic vs Hybrid — "
-            "không lặp lại truy vấn ở đây để tránh chậm mỗi lượt chat."
+            "So sánh với BM25 và hybrid (RRF): xem tab 🆚 Semantic vs Hybrid."
         )
         st.markdown("**Fused sources gửi vào LLM**")
         st.json(
@@ -416,10 +422,33 @@ def render_developer_view(message: dict) -> None:
         )
 
 
-def render_answer_extras(message: dict, dev_view: bool) -> None:
+def render_confidence_section(message: dict, msg_key: str, top_k: int) -> None:
+    retrieval_source = message.get("retrieval_source", "none")
+
+    if "best_dense_score" in message:
+        render_confidence_meter(message["best_dense_score"], SCORE_THRESHOLD, retrieval_source)
+        return
+
+    hint = (
+        "⚠️ Dùng fallback PageIndex — điểm dense ban đầu dưới threshold."
+        if retrieval_source == "pageindex"
+        else "Trả lời dựa trên hybrid retrieval (dense + BM25)."
+    )
+    st.caption(hint)
+    if st.button("🔬 Xem cosine score chính xác", key=f"confcheck-{msg_key}"):
+        query = message.get("query", "")
+        try:
+            dense_hits = semantic_search(query, top_k=top_k) if query else []
+        except Exception:
+            dense_hits = []
+        message["best_dense_score"] = dense_hits[0]["score"] if dense_hits else 0.0
+        message["dense_hits"] = dense_hits
+        render_confidence_meter(message["best_dense_score"], SCORE_THRESHOLD, retrieval_source)
+
+
+def render_answer_extras(message: dict, dev_view: bool, msg_key: str, top_k: int) -> None:
     sources = message.get("sources") or []
     retrieval_source = message.get("retrieval_source", "none")
-    best_dense_score = message.get("best_dense_score", 0.0)
 
     if retrieval_source == "none":
         st.markdown(
@@ -427,8 +456,8 @@ def render_answer_extras(message: dict, dev_view: bool) -> None:
             "để tránh bịa thông tin, đúng theo nguyên tắc grounded generation.</div>",
             unsafe_allow_html=True,
         )
-
-    render_confidence_meter(best_dense_score, SCORE_THRESHOLD, retrieval_source)
+    else:
+        render_confidence_section(message, msg_key, top_k)
 
     if sources:
         st.markdown('<div class="section-label">🔎 Evidence</div>', unsafe_allow_html=True)
@@ -700,11 +729,11 @@ with tab_chat:
     else:
         picked_question = None
 
-    for message in st.session_state.messages:
+    for index, message in enumerate(st.session_state.messages):
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
             if message["role"] == "assistant" and "sources" in message:
-                render_answer_extras(message, dev_view)
+                render_answer_extras(message, dev_view, msg_key=str(index), top_k=top_k)
 
     query = picked_question or chat_query
 
@@ -716,13 +745,7 @@ with tab_chat:
         with st.chat_message("assistant"):
             stepper_slot = st.empty()
             render_stepper(stepper_slot, "ask")
-
-            try:
-                dense_hits = semantic_search(query, top_k=top_k)
-            except Exception:
-                dense_hits = []
-            best_dense_score = dense_hits[0]["score"] if dense_hits else 0.0
-
+            time.sleep(0.1)
             render_stepper(stepper_slot, "retrieve")
             time.sleep(0.15)
             render_stepper(stepper_slot, "rerank")
@@ -742,10 +765,14 @@ with tab_chat:
                 "content": result["answer"],
                 "sources": result["sources"],
                 "retrieval_source": result["retrieval_source"],
-                "best_dense_score": best_dense_score,
-                "dense_hits": dense_hits,
+                "query": query,
             }
-            render_answer_extras(assistant_message, dev_view)
+            render_answer_extras(
+                assistant_message,
+                dev_view,
+                msg_key=str(len(st.session_state.messages)),
+                top_k=top_k,
+            )
             st.session_state.messages.append(assistant_message)
 
 with tab_compare:
