@@ -40,7 +40,7 @@ python -m src.task4_chunking_indexing
 pytest -q
 
 # 3. Chạy sản phẩm
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 ## Lộ trình 3 giờ

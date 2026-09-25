@@ -15,6 +15,7 @@ import os
 import time
 from pathlib import Path
 
+import requests
 from dotenv import load_dotenv
 from pageindex import PageIndexClient
 
@@ -30,7 +31,10 @@ SOURCES_PATH = LEGAL_DIR / "sources.json"
 # Một PDF tiếng Việt là đủ để minh họa nhánh fallback mà không upload
 # toàn bộ corpus lớn lên dịch vụ ngoài.
 PAGEINDEX_FILES = ("fide_laws_of_chess_2018_vi.pdf",)
-PAGEINDEX_TIMEOUT_SECONDS = 120
+PAGEINDEX_TIMEOUT_SECONDS = float(os.getenv("PAGEINDEX_TIMEOUT_SECONDS", "30"))
+PAGEINDEX_REQUEST_TIMEOUT_SECONDS = float(
+    os.getenv("PAGEINDEX_REQUEST_TIMEOUT_SECONDS", "10")
+)
 PAGEINDEX_POLL_INTERVAL_SECONDS = 2
 
 
@@ -151,31 +155,48 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
     if not cache:
         return []
 
-    try:
-        client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
-    except Exception:
-        return []
     results = []
+    base_url = PageIndexClient.BASE_URL
+    headers = {"api_key": PAGEINDEX_API_KEY}
 
     for filename, source in cache.items():
         try:
             doc_id = source.get("doc_id")
-            if not doc_id or not client.is_retrieval_ready(doc_id):
+            if not doc_id:
                 continue
 
-            submitted = client.submit_query(
-                doc_id=doc_id,
-                query=query,
-                thinking=False,
+            # SDK pageindex 0.2.8 không đặt timeout cho requests. Gọi REST
+            # trực tiếp để UI không thể treo vô thời hạn khi mất mạng.
+            tree_response = requests.get(
+                f"{base_url}/doc/{doc_id}/?type=tree&summary=False",
+                headers=headers,
+                timeout=PAGEINDEX_REQUEST_TIMEOUT_SECONDS,
             )
-            retrieval_id = submitted.get("retrieval_id")
+            tree_response.raise_for_status()
+            if not tree_response.json().get("retrieval_ready", False):
+                continue
+
+            submit_response = requests.post(
+                f"{base_url}/retrieval/",
+                headers=headers,
+                json={"doc_id": doc_id, "query": query, "thinking": False},
+                timeout=PAGEINDEX_REQUEST_TIMEOUT_SECONDS,
+            )
+            submit_response.raise_for_status()
+            retrieval_id = submit_response.json().get("retrieval_id")
             if not retrieval_id:
                 continue
 
             deadline = time.monotonic() + PAGEINDEX_TIMEOUT_SECONDS
             response = {}
             while time.monotonic() < deadline:
-                response = client.get_retrieval(retrieval_id)
+                retrieval_response = requests.get(
+                    f"{base_url}/retrieval/{retrieval_id}/",
+                    headers=headers,
+                    timeout=PAGEINDEX_REQUEST_TIMEOUT_SECONDS,
+                )
+                retrieval_response.raise_for_status()
+                response = retrieval_response.json()
                 status = response.get("status")
                 if status == "completed":
                     break

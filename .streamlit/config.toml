@@ -1,0 +1,7 @@
+[server]
+# Transformers exposes many optional vision modules. Streamlit's module watcher
+# tries to import them and emits noisy torchvision errors even though this app is text-only.
+fileWatcherType = "none"
+
+[runner]
+fastReruns = true

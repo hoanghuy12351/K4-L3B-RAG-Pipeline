@@ -24,12 +24,17 @@ load_dotenv()
 TOP_K = 5
 TOP_P = 0.9
 TEMPERATURE = 0.3
+LLM_TIMEOUT_SECONDS = float(os.getenv("LLM_TIMEOUT_SECONDS", "30"))
+LLM_MAX_ATTEMPTS = max(1, int(os.getenv("LLM_MAX_ATTEMPTS", "2")))
 
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")
 LLM_MODEL = os.getenv("LLM_MODEL", "")
 
 SYSTEM_PROMPT = """Trả lời chỉ từ context được cung cấp.
-Mỗi khẳng định phải có citation dạng [Document N].
+Trả lời cùng ngôn ngữ với người dùng.
+Nếu input chỉ là một cụm từ/chủ đề, hãy hiểu là yêu cầu giải thích tổng quan.
+Mỗi khẳng định phải có citation chính xác dạng [Document N], ví dụ [Document 1].
+Không dùng dạng [1], [Source 1] hoặc (Document 1).
 Không sử dụng kiến thức bên ngoài context.
 Nếu thiếu evidence, hãy từ chối xác minh."""
 
@@ -40,6 +45,24 @@ def _has_valid_citations(answer: str, source_count: int) -> bool:
     """Đảm bảo câu trả lời có citation và mọi số đều trỏ tới sources."""
     citations = [int(value) for value in re.findall(r"\[Document (\d+)\]", answer)]
     return bool(citations) and all(1 <= value <= source_count for value in citations)
+
+
+def _normalize_citations(answer: str, source_count: int) -> str:
+    """Chuẩn hóa các citation phổ biến của LLM về contract [Document N]."""
+
+    def replace(match: re.Match) -> str:
+        value = int(match.group(1))
+        return f"[Document {value}]" if 1 <= value <= source_count else match.group(0)
+
+    patterns = (
+        r"\[(?:Document|Doc|Source)\s*#?\s*(\d+)\]",
+        r"\((?:Document|Doc|Source)\s*#?\s*(\d+)\)",
+        r"\[(\d+)\]",
+    )
+    normalized = answer
+    for pattern in patterns:
+        normalized = re.sub(pattern, replace, normalized, flags=re.IGNORECASE)
+    return normalized
 
 
 def reorder_for_llm(chunks: list[dict]) -> list[dict]:
@@ -78,7 +101,11 @@ def call_llm(system_prompt: str, user_message: str) -> str:
         api_key = os.getenv("OPENAI_API_KEY", "")
         if not api_key:
             raise ValueError("Missing OPENAI_API_KEY")
-        client = OpenAI(api_key=api_key)
+        client = OpenAI(
+            api_key=api_key,
+            timeout=LLM_TIMEOUT_SECONDS,
+            max_retries=LLM_MAX_ATTEMPTS - 1,
+        )
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
@@ -97,7 +124,13 @@ def call_llm(system_prompt: str, user_message: str) -> str:
         api_key = os.getenv("GEMINI_API_KEY", "")
         if not api_key:
             raise ValueError("Missing GEMINI_API_KEY")
-        client = genai.Client(api_key=api_key)
+        client = genai.Client(
+            api_key=api_key,
+            http_options=types.HttpOptions(
+                timeout=int(LLM_TIMEOUT_SECONDS * 1000),
+                retry_options=types.HttpRetryOptions(attempts=LLM_MAX_ATTEMPTS),
+            ),
+        )
         response = client.models.generate_content(
             model=LLM_MODEL,
             contents=user_message,
@@ -115,7 +148,11 @@ def call_llm(system_prompt: str, user_message: str) -> str:
         api_key = os.getenv("ANTHROPIC_API_KEY", "")
         if not api_key:
             raise ValueError("Missing ANTHROPIC_API_KEY")
-        client = Anthropic(api_key=api_key)
+        client = Anthropic(
+            api_key=api_key,
+            timeout=LLM_TIMEOUT_SECONDS,
+            max_retries=LLM_MAX_ATTEMPTS - 1,
+        )
         response = client.messages.create(
             model=LLM_MODEL,
             system=system_prompt,
@@ -165,18 +202,28 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
 
     try:
         answer = call_llm(SYSTEM_PROMPT, user_message)
-    except Exception:
+    except Exception as error:
         return {
             "answer": SAFE_REFUSAL,
             "sources": [],
             "retrieval_source": "none",
+            "failure_reason": "provider_error",
+            "error_type": type(error).__name__,
         }
 
+    answer = _normalize_citations(answer, len(reordered))
     if not answer or not _has_valid_citations(answer, len(reordered)):
+        retrieval_method = chunks[0]["retrieval_method"]
+        retrieval_source = (
+            retrieval_method
+            if retrieval_method in {"hybrid", "pageindex"}
+            else "hybrid"
+        )
         return {
             "answer": SAFE_REFUSAL,
-            "sources": [],
-            "retrieval_source": "none",
+            "sources": chunks,
+            "retrieval_source": retrieval_source,
+            "failure_reason": "invalid_citation",
         }
 
     retrieval_method = chunks[0]["retrieval_method"]

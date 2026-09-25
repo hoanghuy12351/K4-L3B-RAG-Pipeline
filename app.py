@@ -420,6 +420,12 @@ def render_developer_view(message: dict) -> None:
             f"retrieval_source: `{message.get('retrieval_source')}` · "
             f"score_threshold: `{SCORE_THRESHOLD}`"
         )
+        if message.get("response_time_seconds") is not None:
+            st.caption(
+                f"response_time: `{message['response_time_seconds']:.2f}s`"
+            )
+        if message.get("error_type"):
+            st.caption(f"provider_error: `{message['error_type']}`")
 
 
 def render_confidence_section(message: dict, msg_key: str, top_k: int) -> None:
@@ -449,15 +455,28 @@ def render_confidence_section(message: dict, msg_key: str, top_k: int) -> None:
 def render_answer_extras(message: dict, dev_view: bool, msg_key: str, top_k: int) -> None:
     sources = message.get("sources") or []
     retrieval_source = message.get("retrieval_source", "none")
+    failure_reason = message.get("failure_reason")
 
     if retrieval_source == "none":
-        st.markdown(
-            '<div class="oos-banner">🚫 Ngoài phạm vi kiến thức — hệ thống từ chối suy đoán '
-            "để tránh bịa thông tin, đúng theo nguyên tắc grounded generation.</div>",
-            unsafe_allow_html=True,
-        )
+        if failure_reason == "provider_error":
+            st.warning(
+                "Dịch vụ sinh câu trả lời đang bận, hết quota hoặc mất kết nối. "
+                "Vui lòng thử lại sau."
+            )
+        else:
+            st.markdown(
+                '<div class="oos-banner">🚫 Ngoài phạm vi kiến thức — hệ thống từ chối suy đoán '
+                "để tránh bịa thông tin, đúng theo nguyên tắc grounded generation.</div>",
+                unsafe_allow_html=True,
+            )
     else:
         render_confidence_section(message, msg_key, top_k)
+
+    if failure_reason == "invalid_citation":
+        st.warning(
+            "Đã tìm thấy evidence nhưng LLM không trả citation đúng định dạng. "
+            "Các nguồn truy xuất được giữ lại bên dưới để kiểm tra."
+        )
 
     if sources:
         st.markdown('<div class="section-label">🔎 Evidence</div>', unsafe_allow_html=True)
@@ -752,7 +771,9 @@ with tab_chat:
             time.sleep(0.1)
             render_stepper(stepper_slot, "generate")
 
+            response_started = time.perf_counter()
             result = generate_with_citation(query, top_k=top_k)
+            response_time_seconds = time.perf_counter() - response_started
 
             render_stepper(stepper_slot, "done")
             time.sleep(0.15)
@@ -766,6 +787,9 @@ with tab_chat:
                 "sources": result["sources"],
                 "retrieval_source": result["retrieval_source"],
                 "query": query,
+                "response_time_seconds": response_time_seconds,
+                "failure_reason": result.get("failure_reason"),
+                "error_type": result.get("error_type"),
             }
             render_answer_extras(
                 assistant_message,

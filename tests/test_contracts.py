@@ -327,9 +327,52 @@ def test_generation_rejects_invalid_citation(monkeypatch):
     output = generation.generate_with_citation("tuition", top_k=1)
     assert output == {
         "answer": generation.SAFE_REFUSAL,
-        "sources": [],
-        "retrieval_source": "none",
+        "sources": chunks,
+        "retrieval_source": "hybrid",
+        "failure_reason": "invalid_citation",
     }
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        ("Evidence [1]", "Evidence [Document 1]"),
+        ("Evidence [Source 1]", "Evidence [Document 1]"),
+        ("Evidence (Document 1)", "Evidence [Document 1]"),
+    ],
+)
+def test_generation_normalizes_common_citation_formats(monkeypatch, raw, expected):
+    import src.task10_generation as generation
+
+    chunks = [result("chunk-0", 0.9, "hybrid")]
+    monkeypatch.setattr(generation, "retrieve", lambda query, top_k: chunks)
+    monkeypatch.setattr(
+        generation,
+        "call_llm",
+        lambda system_prompt, user_message: raw,
+    )
+
+    output = generation.generate_with_citation("tuition", top_k=1)
+    assert output["answer"] == expected
+    assert output["sources"] == chunks
+
+
+def test_generation_marks_provider_error_for_ui(monkeypatch):
+    import src.task10_generation as generation
+
+    chunks = [result("chunk-0", 0.9, "hybrid")]
+    monkeypatch.setattr(generation, "retrieve", lambda query, top_k: chunks)
+
+    def unavailable(system_prompt, user_message):
+        raise TimeoutError("provider timed out")
+
+    monkeypatch.setattr(generation, "call_llm", unavailable)
+    output = generation.generate_with_citation("tuition", top_k=1)
+
+    assert output["answer"] == generation.SAFE_REFUSAL
+    assert output["retrieval_source"] == "none"
+    assert output["failure_reason"] == "provider_error"
+    assert output["error_type"] == "TimeoutError"
 
 
 def test_retrieve_survives_primary_search_errors(monkeypatch):

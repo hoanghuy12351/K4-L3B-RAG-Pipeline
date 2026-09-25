@@ -5,8 +5,8 @@ RRF gộp nhiều bảng xếp hạng mà không cộng trực tiếp cosine sco
 score. Công thức: RRF(d) = sum(1 / (k + rank)), rank bắt đầu từ 1.
 
 Lưu ý: RRF score chỉ phản ánh thứ hạng, không dùng để quyết định fallback.
-
--> Dùng Jina hoặc self host hoặc bất cứ công cụ nào bạn quen
+Module này dùng RRF bằng Python thuần; Jina hoặc model self-host chỉ là lựa chọn
+reranker nâng cao, không bắt buộc cho contract cơ bản.
 """
 
 
@@ -51,4 +51,18 @@ def rerank_rrf(
 
 
 if __name__ == "__main__":
-    print("Implement rerank_rrf, then run contract tests.")
+    dense_results = [
+        {"id": "chunk-1", "content": "Dense result 1", "score": 0.92},
+        {"id": "chunk-2", "content": "Dense result 2", "score": 0.81},
+    ]
+    bm25_results = [
+        {"id": "chunk-2", "content": "BM25 result 1", "score": 8.4},
+        {"id": "chunk-3", "content": "BM25 result 2", "score": 6.1},
+    ]
+
+    for result in rerank_rrf([dense_results, bm25_results], top_k=3):
+        print(
+            result["id"],
+            f"rrf_score={result['score']:.6f}",
+            result["retrieval_method"],
+        )

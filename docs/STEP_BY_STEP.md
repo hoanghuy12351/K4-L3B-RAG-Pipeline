@@ -82,7 +82,7 @@ python -m src.task10_generation
 ## 9. Chatbot và evaluation
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 - UI hiển thị answer, source, retrieval method và score.
