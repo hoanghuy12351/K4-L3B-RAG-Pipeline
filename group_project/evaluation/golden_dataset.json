@@ -1,0 +1,230 @@
+[
+  {
+    "id": "golden_001",
+    "question": "Under the FIDE Laws of Chess effective from 2023, what penalties apply to a player's first and second completed illegal moves?",
+    "expected_answer": "For the first completed illegal move, the arbiter gives the opponent two extra minutes. For the second completed illegal move by the same player, that player loses the game, unless the opponent cannot checkmate by any possible series of legal moves, in which case the game is drawn.",
+    "expected_context": "7.5.5 After the action taken under Article 7.5.1, 7.5.2, 7.5.3 or 7.5.4 for the first completed illegal move by a player, the arbiter shall give two minutes extra time to his/her opponent; for the second completed illegal move by the same player the arbiter shall declare the game lost by this player. However, the game is drawn if the position is such that the opponent cannot checkmate the player’s king by any possible series of legal moves.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "evidence_locator": "Article 7.5.5",
+    "language": "en",
+    "category": "laws_of_chess",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_002",
+    "question": "What do the FIDE Laws of Chess effective from 2023 say about a player carrying an electronic device in the playing venue during a game?",
+    "expected_answer": "A player may not have an electronic device in the playing venue unless the arbiter has specifically approved it. Event regulations may allow a completely switched-off device to be stored in a bag placed as agreed with the arbiter. If a player is evidently carrying a forbidden device, the normal penalty is loss of the game and a win for the opponent, although event regulations may specify a less severe penalty.",
+    "expected_context": "11.3.2 During a game, a player is forbidden to have any electronic device not specifically approved by the arbiter in the playing venue. 11.3.2.1 However, the regulations of an event may allow such devices to be stored in a player’s bag, provided the device is completely switched off. This bag must be placed as agreed with the arbiter. Both players are forbidden to use this bag without permission of the arbiter. 11.3.2.2 If it is evident that a player has such a device on their person in the playing venue, the player shall lose the game. The opponent shall win. The regulations of an event may specify a different, less severe, penalty.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "evidence_locator": "Article 11.3.2",
+    "language": "en",
+    "category": "laws_of_chess",
+    "difficulty": "multi_chunk",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_003",
+    "question": "When is a chess game automatically drawn because of fivefold repetition or the 75-move rule under the FIDE Laws effective from 2023?",
+    "expected_answer": "The game is automatically drawn if the same position appears at least five times, or if each player has made at least 75 moves without a pawn move or capture. If the final move of the 75-move sequence is checkmate, checkmate takes precedence.",
+    "expected_context": "9.6 If one or both of the following occur(s) then the game is drawn: 9.6.1 the same position has appeared, as in 9.2.2 at least five times. 9.6.2 any series of at least 75 moves have been made by each player without the movement of any pawn and without any capture. If the last move resulted in checkmate, that shall take precedence.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "evidence_locator": "Articles 9.6.1-9.6.2",
+    "language": "en",
+    "category": "laws_of_chess",
+    "difficulty": "multi_fact",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_004",
+    "question": "How many players and reserves make up a team in each section of the 2026 FIDE Chess Olympiad?",
+    "expected_answer": "Each team consists of four players plus one reserve.",
+    "expected_context": "In both sections, the teams shall be made up of four players plus one reserve.",
+    "expected_sources": [
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "evidence_locator": "Article 4.2.1",
+    "language": "en",
+    "category": "olympiad_2026",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_005",
+    "question": "Under the 2026 FIDE Chess Olympiad regulations, may a team captain also be a player and appoint a deputy?",
+    "expected_answer": "Yes. The captain may also be one of the players and may appoint a deputy to perform the captain's functions, but the Chief Arbiter must be informed of the substitution in writing.",
+    "expected_context": "Each team shall have a captain, who may also be one of the players. The captain shall be permitted to appoint a deputy to exercise his/her functions, the Chief Arbiter shall be informed in writing of such a substitution.",
+    "expected_sources": [
+      "fide_chess_olympiad_2026_regulations.md"
+    ],
+    "evidence_locator": "Article 4.2.2",
+    "language": "en",
+    "category": "olympiad_2026",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_006",
+    "question": "According to the FIDE Online Chess Regulations, what happens to a player's clock and game when the player disconnects from the playing zone?",
+    "expected_answer": "The player's clock continues running. If the player reconnects before the remaining time expires, play continues with the time left and the arbiter may decide on further sanctions. If the player does not reconnect before the time expires, the player loses unless the competition regulations provide otherwise; the game is drawn where the specified no-checkmate exception applies.",
+    "expected_context": "During a game, if a player disconnects from the playing zone, the clock shall continue running. If the player can reconnect to the game before his/her remaining thinking time elapsed, he/she shall continue playing with the thinking time remaining on his/her clock. The arbiter shall decide whether further sanctions are appropriate. If the player cannot reconnect to the game before his/her remaining thinking time is over, then that player shall lose the game unless the competition regulations specify otherwise (including the amount of time that a disconnected player must reconnect within). However, the game is drawn in the situation described in Article 4.5.",
+    "expected_sources": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "evidence_locator": "Article 11",
+    "language": "en",
+    "category": "online_chess",
+    "difficulty": "multi_fact",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_007",
+    "question": "What is the default time in an online FIDE competition if the competition regulations do not specify one?",
+    "expected_answer": "The default time is zero.",
+    "expected_context": "The competition regulations shall specify a default time in advance. If the default time is not specified, then it is zero.",
+    "expected_sources": [
+      "fide_online_chess_regulations.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "evidence_locator": "Article 8.5",
+    "language": "en",
+    "category": "online_chess",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_008",
+    "question": "Which events require the maximum level of anti-cheating protection under the FIDE Anti-Cheating Protection Measures?",
+    "expected_answer": "Maximum protection is required for FIDE Level 1 events, round-robin events with an average rating of at least 2600 or 2400 for women's events, and events with prize funds exceeding EUR 100,000.",
+    "expected_context": "Events that require maximum levels of protection: FIDE Level 1 events (Official FIDE events as defined by the FIDE Events Commission or FIDE World Championship and Olympiad Commission); Round-robins with an average rating of 2600 or more (2400 for Women’s events); Events with prize funds in excess of EUR 100,000.",
+    "expected_sources": [
+      "fide_anti_cheating_protection_measures.md"
+    ],
+    "evidence_locator": "Section 1(A)",
+    "language": "en",
+    "category": "anti_cheating",
+    "difficulty": "multi_fact",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_009",
+    "question": "What must a team captain do with the match protocol at the end of play under the FIDE General Regulations for Competitions?",
+    "expected_answer": "The team captain must sign the protocol that records the match results at the end of play.",
+    "expected_context": "The captain shall sign the protocol indicating the results in the match at the end of play.",
+    "expected_sources": [
+      "fide_general_competition_rules.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "evidence_locator": "Team competitions and Team Captain's Role",
+    "language": "en",
+    "category": "competition_regulations",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_010",
+    "question": "When may a pawn make an en passant capture?",
+    "expected_answer": "When a pawn advances two squares on its first move and lands beside an opposing pawn on the same rank, that opposing pawn may capture it as though it had moved only one square. The capture is available only on the immediately following move.",
+    "expected_context": "When a pawn on its first move advances two squares onto the same rank as an opposing pawn on an adjacent file, this opposing pawn may, on that player's next move only, capture the advancing pawn as though it had only moved one square (provided the move is otherwise legal). The pawn's ability to move two squares on their first move was a relatively late addition to the game of chess. En Passant was introduced to prevent abuses of the new rule.",
+    "expected_sources": [
+      "article_02.md"
+    ],
+    "evidence_locator": "En passant capture",
+    "language": "en",
+    "category": "laws_of_chess",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_011",
+    "question": "Which conditions permanently remove the right to castle, and which conditions temporarily prevent castling under the FIDE Laws effective from 2023?",
+    "expected_answer": "The right to castle is permanently lost if the king has already moved, or for a rook that has already moved. Castling is temporarily prevented if the king's current square, crossing square, or destination square is attacked, or if any piece stands between the king and the rook.",
+    "expected_context": "3.8.2.1 The right to castle has been lost: 1) If the king has already moved, or 2) With a rook that has already moved. 3.8.2.2 Castling is prevented temporarily: 3) If the square on which the king stands, or the square which it must cross, or the square which it is to occupy, is attacked by one or more of the opponent's pieces, or 4) If there is any piece between the king and the rook with which castling is to be effected.",
+    "expected_sources": [
+      "article_01.md",
+      "fide_arbiters_manual_2025.md"
+    ],
+    "evidence_locator": "Articles 3.8.2.1-3.8.2.2",
+    "language": "en",
+    "category": "laws_of_chess",
+    "difficulty": "multi_fact",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_012",
+    "question": "How are kingside and queenside castling written in algebraic chess notation?",
+    "expected_answer": "Kingside castling is written O-O, and queenside castling is written O-O-O.",
+    "expected_context": "Castling King-side is written O-O. Castling Queen-side is written O-O-O.",
+    "expected_sources": [
+      "article_08.md"
+    ],
+    "evidence_locator": "Algebraic notation - special moves",
+    "language": "en",
+    "category": "chess_notation",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_013",
+    "question": "What is checkmate?",
+    "expected_answer": "Checkmate occurs when the opponent's king is in check and there is no legal move that can remove the check.",
+    "expected_context": "Checkmate is when you are checking the opponent's king and there are no legal moves to get out of the check.",
+    "expected_sources": [
+      "article_09.md"
+    ],
+    "evidence_locator": "Introduction",
+    "language": "en",
+    "category": "chess_basics",
+    "difficulty": "single_hop",
+    "answerable": true,
+    "evaluation_group": "grounded"
+  },
+  {
+    "id": "golden_014",
+    "question": "What is the capital city of Australia?",
+    "expected_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "expected_context": "NO_SUPPORT_IN_CORPUS",
+    "expected_sources": [],
+    "evidence_locator": null,
+    "language": "en",
+    "category": "out_of_domain",
+    "difficulty": "refusal",
+    "answerable": false,
+    "evaluation_group": "refusal"
+  },
+  {
+    "id": "golden_015",
+    "question": "How can I reset the password for my Gmail account?",
+    "expected_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "expected_context": "NO_SUPPORT_IN_CORPUS",
+    "expected_sources": [],
+    "evidence_locator": null,
+    "language": "en",
+    "category": "out_of_domain",
+    "difficulty": "refusal",
+    "answerable": false,
+    "evaluation_group": "refusal"
+  }
+]
