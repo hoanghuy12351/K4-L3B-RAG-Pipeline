@@ -46,6 +46,14 @@ COLLECTION_NAME = "rag_documents"  # tên collection trong ChromaDB(csdl lưu ve
 load_dotenv()
 
 
+@lru_cache(maxsize=2)
+def _get_embedding_model(model_name: str):
+    """Nạp model một lần cho mỗi tên model trong suốt vòng đời tiến trình."""
+    from sentence_transformers import SentenceTransformer
+
+    return SentenceTransformer(model_name)
+
+
 def load_documents() -> list[dict]:
     """Đọc Markdown và trả về danh sách Document."""
     documents = []
@@ -141,10 +149,7 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
     if provider != "sentence_transformers":
         raise ValueError(f"Unsupported embedding provider: {provider}")
 
-    from sentence_transformers import SentenceTransformer
-
-    model = SentenceTransformer(model_name)
-    # tạo obj model embedding
+    model = _get_embedding_model(model_name)
     vectors = model.encode(
         texts,
         batch_size=16,  # xử lí tối đa 16 text 1 lượt
@@ -193,25 +198,31 @@ def index_to_vectorstore(
     chunks: list[dict],
 ) -> None:  # lưu chunk, vecto, metadata vào csdl vector
     """Upsert chunks vào ChromaDB."""  # update+ insert
-    # TODO: Upsert ids, documents, embeddings và metadatas.
-    #
     collection = get_collection()
-    metadatas = []
-    for chunk in chunks:
-        metadata = chunk["metadata"]
-        metadatas.append(metadata)
-    collection.upsert(
-        ids=[chunk["id"] for chunk in chunks],
-        documents=[chunk["content"] for chunk in chunks],
-        embeddings=[chunk["embedding"] for chunk in chunks],
-        metadatas=metadatas,
-    )
-    # collection.upsert(
-    # #     ids=[chunk["id"] for chunk in chunks],
-    # #     documents=[chunk["content"] for chunk in chunks],
-    # #     embeddings=[chunk["embedding"] for chunk in chunks],
-    # #     metadatas=[chunk["metadata"] for chunk in chunks],
-    # # )
+    expected_ids = {chunk["id"] for chunk in chunks}
+
+    if chunks:
+        collection.upsert(
+            ids=[chunk["id"] for chunk in chunks],
+            documents=[chunk["content"] for chunk in chunks],
+            embeddings=[chunk["embedding"] for chunk in chunks],
+            metadatas=[chunk["metadata"] for chunk in chunks],
+        )
+
+    # Upsert không tự xóa chunk của tài liệu đã bị xóa hoặc chia lại.
+    stored_ids = set(collection.get(include=[]).get("ids", []))
+    stale_ids = sorted(stored_ids - expected_ids)
+    if stale_ids:
+        collection.delete(ids=stale_ids)
+        print(f"Removed {len(stale_ids)} stale chunks")
+
+    # Nếu index được cập nhật trong cùng tiến trình với UI, bỏ BM25 cache cũ.
+    try:
+        from .task6_lexical_search import clear_bm25_cache
+
+        clear_bm25_cache()
+    except ImportError:
+        pass
 
 
 def run_pipeline() -> None:

@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/Strategy
 
-**Crawled:** 2026-09-22T03:53:06.798707+00:00
+**Crawled:** 2026-09-25T03:03:34.244827+00:00
 
 **Publisher:** en.wikibooks.org
 

@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/The_Endgame
 
-**Crawled:** 2026-09-22T03:53:08.869311+00:00
+**Crawled:** 2026-09-25T03:03:35.814063+00:00
 
 **Publisher:** en.wikibooks.org
 

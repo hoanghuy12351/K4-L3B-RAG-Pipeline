@@ -2,7 +2,7 @@
 
 **Source:** https://en.wikibooks.org/wiki/Chess/Tournaments
 
-**Crawled:** 2026-09-22T03:53:13.176137+00:00
+**Crawled:** 2026-09-25T03:03:43.095089+00:00
 
 **Publisher:** en.wikibooks.org
 
