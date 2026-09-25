@@ -23,6 +23,7 @@ load_dotenv()
 
 ROOT_DIR = Path(__file__).parent
 LANDING_DIR = ROOT_DIR / "data" / "landing"
+GOLDEN_DATASET_PATH = ROOT_DIR / "group_project" / "evaluation" / "golden_dataset.json"
 
 STAGES = [
     ("ask", "💬", "Ask"),
@@ -151,6 +152,10 @@ section[data-testid="stSidebar"] { background: var(--panel); border-right: 1px s
 .compare-meta { color: var(--text-secondary); font-size: 0.68rem; margin-top: 0.15rem; }
 .chunk-strip { display: flex; gap: 3px; height: 30px; border-radius: 8px; overflow: hidden; margin: 0.6rem 0; }
 .chunk-block { display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; color: #0B0D10; min-width: 3px; }
+.golden-summary { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0.5rem 0 0.8rem; }
+.golden-chip { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.5rem 0.9rem; box-shadow: 0 1px 3px rgba(36,30,20,0.06); }
+.golden-chip .value { font-size: 1.2rem; font-weight: 800; color: var(--accent); }
+.golden-chip .label { font-size: 0.68rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; }
 </style>
 """
 
@@ -536,6 +541,105 @@ def render_chunking_tab() -> None:
             st.code(chunk["content"])
 
 
+@st.cache_data(show_spinner=False)
+def load_golden_dataset() -> list[dict]:
+    if not GOLDEN_DATASET_PATH.exists():
+        return []
+    return json.loads(GOLDEN_DATASET_PATH.read_text(encoding="utf-8"))
+
+
+def evaluate_golden_item(item: dict, top_k: int) -> dict:
+    result = generate_with_citation(item["question"], top_k=top_k)
+    actual_sources = sorted({s["metadata"]["source"] for s in result["sources"]})
+    expected_sources = set(item.get("expected_sources", []))
+    answerable = item.get("answerable", True)
+    if answerable:
+        passed = result["retrieval_source"] != "none" and bool(
+            expected_sources & set(actual_sources)
+        )
+    else:
+        passed = result["retrieval_source"] == "none"
+    return {
+        **item,
+        "actual_answer": result["answer"],
+        "actual_sources": actual_sources,
+        "retrieval_source": result["retrieval_source"],
+        "passed": passed,
+    }
+
+
+def render_golden_tab(default_top_k: int) -> None:
+    st.markdown(
+        '<div class="section-label">✅ Golden Set — 15 câu đánh giá</div>',
+        unsafe_allow_html=True,
+    )
+    golden_items = load_golden_dataset()
+    if not golden_items:
+        st.info("Chưa có group_project/evaluation/golden_dataset.json.")
+        return
+
+    st.caption(
+        f"{len(golden_items)} câu hỏi golden — chạy qua đúng "
+        "`generate_with_citation` thật, không phải dữ liệu giả lập. "
+        "Đạt/Trượt xét bằng: câu trả lời không bị từ chối và có ít nhất một "
+        "nguồn trùng với `expected_sources` (với câu ngoài phạm vi thì Đạt "
+        "nghĩa là hệ thống từ chối đúng)."
+    )
+
+    if st.button("▶️ Chạy toàn bộ qua pipeline", key="golden_run"):
+        progress = st.progress(0.0, text="Đang chạy...")
+        results = []
+        for i, item in enumerate(golden_items, start=1):
+            results.append(evaluate_golden_item(item, default_top_k))
+            progress.progress(
+                i / len(golden_items), text=f"{i}/{len(golden_items)} · {item['id']}"
+            )
+        progress.empty()
+        st.session_state["golden_results"] = results
+
+    results = st.session_state.get("golden_results")
+    if not results:
+        st.info("Bấm nút phía trên để chạy 15 câu golden qua pipeline thật.")
+        return
+
+    passed_count = sum(1 for r in results if r["passed"])
+    refusal_items = [r for r in results if not r.get("answerable", True)]
+    refusal_correct = sum(1 for r in refusal_items if r["passed"])
+    refusal_display = f"{refusal_correct}/{len(refusal_items)}" if refusal_items else "—"
+    st.markdown(
+        '<div class="golden-summary">'
+        f'<div class="golden-chip"><div class="value">{passed_count}/{len(results)}</div>'
+        '<div class="label">Đạt / Tổng</div></div>'
+        f'<div class="golden-chip"><div class="value">{refusal_display}</div>'
+        '<div class="label">Từ chối đúng (out-of-domain)</div></div>'
+        f'<div class="golden-chip"><div class="value">{default_top_k}</div>'
+        '<div class="label">Top-k đang dùng</div></div>'
+        "</div>",
+        unsafe_allow_html=True,
+    )
+
+    for r in results:
+        status_icon = "✅" if r["passed"] else "❌"
+        with st.expander(f"{status_icon} {r['id']} · {r['category']} · {r['question'][:70]}"):
+            st.markdown(f"**Câu hỏi:** {r['question']}")
+            col_a, col_b = st.columns(2)
+            with col_a:
+                st.markdown("**Expected answer**")
+                st.caption(r["expected_answer"])
+                st.caption(
+                    "Expected sources: "
+                    + (", ".join(r.get("expected_sources", [])) or "—")
+                )
+            with col_b:
+                st.markdown("**Actual answer (pipeline thật)**")
+                st.caption(r["actual_answer"])
+                st.caption("Actual sources: " + (", ".join(r["actual_sources"]) or "—"))
+            st.caption(
+                f"retrieval_source: `{r['retrieval_source']}` · "
+                f"difficulty: `{r['difficulty']}` · answerable: `{r['answerable']}`"
+            )
+
+
 st.set_page_config(page_title="FIDE Chess Law Assistant", page_icon="♟️", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
 
@@ -579,8 +683,8 @@ render_header()
 
 chat_query = st.chat_input("Hỏi về luật cờ vua FIDE...")
 
-tab_chat, tab_compare, tab_chunking = st.tabs(
-    ["💬 Chat", "🆚 Semantic vs Hybrid", "📐 Chunking Demo"]
+tab_chat, tab_compare, tab_chunking, tab_golden = st.tabs(
+    ["💬 Chat", "🆚 Semantic vs Hybrid", "📐 Chunking Demo", "✅ Golden Set"]
 )
 
 with tab_chat:
@@ -649,3 +753,6 @@ with tab_compare:
 
 with tab_chunking:
     render_chunking_tab()
+
+with tab_golden:
+    render_golden_tab(top_k)
