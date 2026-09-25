@@ -15,31 +15,88 @@ Cài browser trước khi chạy:
 
 import asyncio
 import json
+import re
+from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import unquote, urlparse
+
+import requests
+from bs4 import BeautifulSoup
 
 
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "news"
 
 ARTICLE_URLS = [
-    # TODO: Thêm ít nhất 5 public URL.
+    "https://handbook.fide.com/chapter/E012023",
+    "https://en.wikibooks.org/wiki/Chess/Playing_The_Game",
+    "https://en.wikibooks.org/wiki/Chess/Basic_Openings",
+    "https://en.wikibooks.org/wiki/Chess/Strategy",
+    "https://en.wikibooks.org/wiki/Chess/Tactics",
+    "https://en.wikibooks.org/wiki/Chess/The_Endgame",
+    "https://en.wikibooks.org/wiki/Chess/Arranging_The_Board",
+    "https://en.wikibooks.org/wiki/Chess/Notating_The_Game",
+    "https://en.wikibooks.org/wiki/Chess/Checkmates",
+    "https://en.wikibooks.org/wiki/Chess/Tournaments",
 ]
 
 
 async def crawl_article(url: str) -> dict:
-    # TODO: Implement crawling logic.
-    #
-    # from datetime import datetime
-    # from crawl4ai import AsyncWebCrawler
-    #
-    # async with AsyncWebCrawler() as crawler:
-    #     result = await crawler.arun(url=url)
-    #     return {
-    #         "url": url,
-    #         "title": result.metadata.get("title", "Unknown"),
-    #         "date_crawled": datetime.now().isoformat(),
-    #         "content_markdown": result.markdown,
-    #     }
-    raise NotImplementedError("Implement crawl_article")
+    """Thu thập nội dung công khai và trả về schema của Task 2."""
+    return await asyncio.to_thread(_crawl_article_sync, url)
+
+
+def _crawl_article_sync(url: str) -> dict:
+    headers = {"User-Agent": "ChessMentor-RAG/1.0 (educational dataset collector)"}
+
+    if urlparse(url).netloc == "en.wikibooks.org":
+        page_title = unquote(urlparse(url).path.removeprefix("/wiki/"))
+        api_url = "https://en.wikibooks.org/w/api.php"
+        response = requests.get(
+            api_url,
+            params={
+                "action": "query",
+                "prop": "extracts",
+                "explaintext": 1,
+                "redirects": 1,
+                "titles": page_title,
+                "format": "json",
+                "formatversion": 2,
+            },
+            headers=headers,
+            timeout=60,
+        )
+        response.raise_for_status()
+        page = response.json()["query"]["pages"][0]
+        if page.get("missing"):
+            raise ValueError(f"Không tìm thấy trang Wikibooks: {page_title}")
+        title = page["title"]
+        content = page.get("extract", "").strip()
+        license_name = "CC BY-SA 4.0"
+    else:
+        response = requests.get(url, headers=headers, timeout=60)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        for node in soup.select("script, style, nav, footer, header, aside"):
+            node.decompose()
+        root = soup.select_one("main, article, #content") or soup.body
+        if root is None:
+            raise ValueError(f"Không tìm thấy nội dung HTML: {url}")
+        title = (soup.title.get_text(" ", strip=True) if soup.title else url)
+        content = root.get_text("\n", strip=True)
+        content = re.sub(r"\n{3,}", "\n\n", content)
+        license_name = "Official public regulations"
+
+    if len(content) < 500:
+        raise ValueError(f"Nội dung quá ngắn hoặc crawl lỗi: {url}")
+
+    return {
+        "url": url,
+        "title": title,
+        "date_crawled": datetime.now(timezone.utc).isoformat(),
+        "content_markdown": f"# {title}\n\n{content}",
+        "publisher": urlparse(url).netloc,
+        "license": license_name,
+    }
 
 
 async def crawl_all() -> None:

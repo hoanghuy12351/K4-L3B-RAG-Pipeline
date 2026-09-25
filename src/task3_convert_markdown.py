@@ -13,7 +13,10 @@ Cài đặt:
 -> Hoặc dùng công cụ nào bạn quen khác Markitdown
 """
 
+import json
 from pathlib import Path
+
+from markitdown import MarkItDown
 
 
 LANDING_DIR = Path(__file__).parent.parent / "data" / "landing"
@@ -21,40 +24,67 @@ OUTPUT_DIR = Path(__file__).parent.parent / "data" / "standardized"
 
 
 def convert_legal_docs() -> None:
-    # TODO:Convert PDF/DOCX vào standardized/legal. 
-    #
-    # from markitdown import MarkItDown
-    # legal_dir = LANDING_DIR / "legal"
-    # output_dir = OUTPUT_DIR / "legal"
-    # output_dir.mkdir(parents=True, exist_ok=True)
-    # converter = MarkItDown()
-    # for path in legal_dir.iterdir():
-    #     if path.suffix.lower() in {".pdf", ".doc", ".docx"}:
-    #         result = converter.convert(str(path))
-    #         (output_dir / f"{path.stem}.md").write_text(
-    #             result.text_content, encoding="utf-8"
-    #         )
-    raise NotImplementedError("Implement convert_legal_docs")
+    """Convert PDF/DOCX và thêm metadata nguồn ở đầu Markdown."""
+    legal_dir = LANDING_DIR / "legal"
+    output_dir = OUTPUT_DIR / "legal"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    converter = MarkItDown()
+
+    manifest_path = legal_dir / "sources.json"
+    manifest = {}
+    if manifest_path.exists():
+        manifest = {
+            item["filename"]: item
+            for item in json.loads(manifest_path.read_text(encoding="utf-8"))
+        }
+
+    for path in sorted(legal_dir.iterdir()):
+        if path.suffix.lower() not in {".pdf", ".doc", ".docx"}:
+            continue
+        source = manifest.get(path.name, {})
+        title = source.get("title", path.stem.replace("_", " ").title())
+        url = source.get("url")
+        result = converter.convert(str(path))
+        content = result.text_content.strip()
+        if not content:
+            raise ValueError(f"Không trích xuất được nội dung: {path}")
+        header = (
+            f"# {title}\n\n"
+            f"**Source:** {url or path.name}\n\n"
+            "**Publisher:** International Chess Federation (FIDE)\n\n"
+            "**Document type:** legal\n\n---\n\n"
+        )
+        output = output_dir / f"{path.stem}.md"
+        output.write_text(header + content, encoding="utf-8")
+        print(f"Saved: {output}")
 
 
 def convert_news_articles() -> None:
-    # TODO: Convert JSON vào standardized/news.
-    #
-    # import json
-    # news_dir = LANDING_DIR / "news"
-    # output_dir = OUTPUT_DIR / "news"
-    # output_dir.mkdir(parents=True, exist_ok=True)
-    # for path in news_dir.glob("*.json"):
-    #     data = json.loads(path.read_text(encoding="utf-8"))
-    #     header = (
-    #         f"# {data['title']}\n\n"
-    #         f"**Source:** {data['url']}\n\n"
-    #         f"**Crawled:** {data['date_crawled']}\n\n---\n\n"
-    #     )
-    #     (output_dir / f"{path.stem}.md").write_text(
-    #         header + data["content_markdown"], encoding="utf-8"
-    #     )
-    raise NotImplementedError("Implement convert_news_articles")
+    """Convert article JSON và giữ metadata kiểm chứng nguồn."""
+    news_dir = LANDING_DIR / "news"
+    output_dir = OUTPUT_DIR / "news"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    required = {"url", "title", "date_crawled", "content_markdown"}
+
+    for path in sorted(news_dir.glob("*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        missing = required - data.keys()
+        if missing:
+            raise ValueError(f"{path.name} thiếu metadata: {sorted(missing)}")
+        content = data["content_markdown"].strip()
+        if not content:
+            raise ValueError(f"Nội dung rỗng: {path}")
+        header = (
+            f"# {data['title']}\n\n"
+            f"**Source:** {data['url']}\n\n"
+            f"**Crawled:** {data['date_crawled']}\n\n"
+            f"**Publisher:** {data.get('publisher', 'Unknown')}\n\n"
+            f"**License:** {data.get('license', 'Unknown')}\n\n"
+            "**Document type:** news\n\n---\n\n"
+        )
+        output = output_dir / f"{path.stem}.md"
+        output.write_text(header + content, encoding="utf-8")
+        print(f"Saved: {output}")
 
 
 def convert_all() -> None:

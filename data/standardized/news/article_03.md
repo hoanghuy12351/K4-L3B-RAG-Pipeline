@@ -1,0 +1,223 @@
+# Chess/Basic Openings
+
+**Source:** https://en.wikibooks.org/wiki/Chess/Basic_Openings
+
+**Crawled:** 2026-09-22T03:53:05.403232+00:00
+
+**Publisher:** en.wikibooks.org
+
+**License:** CC BY-SA 4.0
+
+**Document type:** news
+
+---
+
+# Chess/Basic Openings
+
+The following is an overview of the aims of an opening and some standard openings that you can try in your games. All of them are playable and should lead to reasonable games with best play.
+
+
+== Aims of an opening ==
+Before looking at some of the more common openings played today it is important to consider what you are trying to achieve in the opening of a chess game. 
+In some cases, one player will sacrifice a pawn, or in some cases even more, to accomplish the goals listed below. Such an opening is called a gambit.
+Development
+You should attempt to move your pieces away from their starting positions to squares in which they can participate more fully in the game. Obviously a Knight at c3 is more effective both defensively and aggressively than a knight on b1. Avoid moving pieces more than once in the opening as this allows your opponent time to develop another piece while you are wasting time. Also avoid moving your queen in the opening, it can too easily be chased around the board by other pieces which aids your opponent's development while wasting moves for you.
+Control the Centre
+The squares in the centre of the board are critical for two reasons. The first is that pieces in the centre are able to move to more squares than pieces on the edges. (Note a knight on a3 can move to only 4 squares, whereas a knight on c3 can move to 8.) Secondly, if you control the centre it is easier to move pieces from Kingside to Queenside quickly. 
+One of the great truths in chess is that attacks along one wing are destined to fail if the centre is not sufficiently controlled. This is because the defender with a strong centre will generally be able to muster enough defence on that side and at the same time mount a counterattack in the centre and/or on the other wing. So if you plan on mounting an attack make sure you control the centre.
+Traditionally it was thought that the ideal situation is one where you have a pawn majority in the centre, especially with pawns on d4 and e4 (for white). However it has been shown that an equally valid strategy is to control the centre with pieces and make minimal pawn moves. The thinking is that central pawn moves often lead to permanent positions and can block attacks. "Fianchettoing" a bishop by moving it to b2 or g2 after b3 or g3 allows the bishop to keep a watchful eye on the centre without fixing a pawn in the centre.
+Castle
+A King in the centre of the board is open to attack. It is generally a good idea to castle your king so as to be able to defend it more easily. Some players will sacrifice material in order to prevent the enemy king from castling and to attack it ferociously due to its vulnerability. Castling also has the added benefit of bringing the rooks together on the first rank so that they are able to combine in defence and attack. Once your pieces are developed, king is safely castled, and your rooks are combined, the opening is over.
+Protect the King
+It is not always necessary although highly advisable to protect the king through castling. That being said, there are other ways to go about protecting the king than castling although they are less efficient and will often result in pins.
+
+
+== King's Pawn Openings (open and semi-open games) ==
+
+
+=== Ruy Lopez (aka Spanish Opening) ===
+1.e4 e5 2.Nf3 Nc6 3.Bb5 the main line continues 3...a6 4.Ba4 Nf6 5.0-0
+The move 3...a6 works because if white plays 4.Bxc6 dxc6 5.Nxe5, Black can regain the pawn with 5...Qd4 forking the e4 pawn and the knight.
+
+
+=== Italian Game ===
+1.e4 e5 2.Nf3 Nc6 3.Bc4
+
+There are two key replies: 3...Bc5, known as the Giuoco Piano (Italian for Quiet Game), and 3...Nf6 headed to a much more involved opening called the Two Knights Defence. 
+School children in local clubs often drift into weaker variants of the Giuoco Piano, mostly out of insufficient knowledge. A few scholastic trainers have even suggested avoiding the opening, as there are fewer crisp strategic concepts compared to many other openings.
+
+
+=== Russian Game (aka Petrov Defence) ===
+1.e4 e5 2.Nf3 Nf6
+
+The Petrov Defence may look like a counter-attack, and very early on this was supposed to be the idea. However, it soon became apparent that the symmetrical nature of the opening produced defensive positions. If White takes the pawn, Black should avoid taking it back because of 4. Qe2 Nd6?? 5.Nc6+ which wins the black queen. The main line goes 3. Nxe5 d6 4. Nf3 Nxe4. It is considered quite solid, and is a key defensive opening against the dangerous first move 1. e4. There are a few gambits which White can try to shift the style of the opening. The Cochrane gambit is perhaps the most dangerous. It involves a Knight sacrifice on f7. Currently not considered objectively sound, its use is psychological: White dares the opponent to spend twenty moves defending against an attack, and this pressure may cause the Black player to finally fall victim to a tactical shot.
+
+
+=== Philidor Defence ===
+1.e4 e5 2.Nf3 d6
+
+If Black wants to defend the threatened pawn with a pawn, this is the way to do it (playing 2...f6? is plain bad, as 3. Nxe5 fxe5 4. Qh5+ is winning for White). It gives Black a solid but somewhat cramped position. The f8 bishop is hemmed in and will be relegated to a defensive role. The Black knight retains the option of going to d7 leaving the c-pawn mobile, but it is not without reason that 2...Nc6 is much more common than 2...d6.
+
+
+=== Danish Gambit ===
+1.e4 e5 2.d4 exd4 3.c3 dxc3 4.Bc4 cxb2 5.Bxb2
+
+This gambit gives White quick development and control of the center at the cost of two pawns initially. However, current opinion reports that to properly fend off the attacking waves, at least one and sometimes both pawns must be returned. This involves the liberating pawn push ...d5 by Black. Even so, inventive attacking players can still use the resulting open lines to play a complex game. 
+
+
+=== Sicilian Defence ===
+1.e4 c5
+
+Play can continue like this:
+2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 (2...d6 and 2...e6 are also common, and usually also met by 3.d4)
+This is called the Open Sicilian because the centre is open.
+Other variations include 2.Nc3(Closed Sicilian) and 2.f4(Grand Prix Attack).
+The Sicilian is the most common and best-scoring response to 1.e4, as it balances the white advantage with flank play. It discourages White from occupying the centre with 2.d4. After 2...cxd4 White must either take the pawn back with the queen (and move it again after 3.Qxd4 Nc6) or sacrifice the pawn, usually with 3.c3.
+One problem with the Sicilian is that there is a vast amount of theory written on it, and in a sharp opening like this, you can wind up in trouble if you don't know its theory. Therefore, you may want to try a simple Anti-Sicilian, such as 2.c3, when you encounter it as white.
+
+
+=== French Defence ===
+1.e4 e6 2.d4 d5
+
+White has three essential continuations: 
+3.Nc3 "Winawer Variation"
+3.Nd2 "Tarrasch Variation"
+3.e5 "Advance Variation". 
+A fourth alternative, the "Exchange Variation" is 3. exd5, but this actually frees Black's game from all of the traditional cramping problems of the French Defence. It is mainly used by White players who forgo all attempts at a theoretical battle, hoping to play on "general principles".
+The French Defence is considered one of the strongest black responses to the White opening move 1.e4. Among world class grandmasters, it currently trails the Sicilian 1. e4 c5 and the symmetrical 1.e4 e5 in popularity.
+
+
+=== Pirc Defence ===
+1.e4 d6, usually followed by 2.d4 Nf6 3.Nc3 g6
+
+This opening bears considerable similarities to another one called the King's Indian, which begins 1.(e4 d6) d4 Nf6 2. c4 g6 3. Nc3 Bg7. However, subtle but long range strategic differences exist between the two. In the Pirc, White's c-file pawn is still at home, and not committed to the c4 square. This means that overall, White has better control of the d4 square. The pawn move c2-c4 has been replaced by a developing piece move N-c3, and this "faster" development tends to encourage White towards central or kingside attacks compared with the queenside play classically associated with the King's Indian defence.
+
+
+=== Modern Defence ===
+1.e4 g6, usually followed by 2.d4 Bg7
+
+This move order is often used to "back into" a Pirc defence, while avoiding specific move order issues. However, an entirely different range of strategy is possible based upon ...c6 and ...d5.
+
+
+=== Alekhine's Defence ===
+1.e4 Nf6, usually followed by 2.e5 Nd5 3.d4 d6
+
+This looks like a rather alarming opening for Black to play. Black lets White chase the knight around the board and use that time to build up the pawn centre. Black's plan is to show that White has expanded too quickly, and will find the pawn centre vulnerable. The disadvantage to this opening is that if White succeeds in maintaining it, White will have a serious and suffocating advantage in space.
+
+
+=== Scandinavian Defence ===
+1.e4 d5, usually followed by  2.exd5 Qxd5 3.Nc3 Qa5
+
+Playing d7-d5 is the main idea behind most of the semi-open games for black. Here it is played immediately for the price of an extra move with the queen after 3.Nc3.
+Long disparaged as the epitome of weak play "because moving the queen early wastes time", it was resurrected in the 1990s with a pawn move c7-c6, allowing the queen to retreat from a5 to c7 when necessary. Now it is considered an attempt to reduce White's central pressure, and is popular among club players because White suddenly has to demonstrate some sophistication.
+
+1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bg4 6.h3 - possible continuation...
+
+This is a general continuation of the Scandinavian Defense. White developing its pieces towards the center by 4.d4 and 5.Nf3 placing the Knight on the natural f3 square. Meantime black develops also in a simple way 4...Nf6 and 5...Bg4 creating a pin for the white Knight. There is another pin for c3 Knight - created by the d4 pawn push. Now white has to eliminate the pins - in order to make the Knights free to move. White can do it by 6.h3 move or 6.Be2 - simple relieve for the Bishop pin. After 6.h3 black Bishop can retreat by 6...Bh5 - maintaining the pin or can capture the white Knight 6... Bxf3.
+
+1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bg4 6.Be2 ?! - thematic continuation...not the best one...
+
+Most of the club players - or "players in the parks" or casual internet players without any deep opening knowledge are taking this 6.Be2?! move as a smooth continuation to relieve from the Bishop pin. 
+The normal development of the pieces continues 6...Nc6 7.0-0 0-0-0 8.Be3 ... 
+
+
+== Queen's Pawn Openings (closed and semi-closed games) ==
+
+
+=== Queen's Gambit ===
+1.d4 d5 2. c4
+
+2...e6 3.Nc3 Nf6 4.Bg5 Be7 leads to Queen's Gambit Declined [1] variations. A special characteristic among the declined games has the Tarrasch-Defence 3... c5, mostly followed by 4.Nf3 Nc6 5.cxd5 exd5. 
+
+2...c6 (usually followed by 3.Nf3 Nf6 4.Nc3 dxc4) leads to the "Slav Defence".
+
+This is one of the opening "families" with interchangeable moves. It is quite possible to play both ...e6 and ...c6 (known as the Semi-Slav), and there are large numbers of interchangeable points called transpositions.
+2...dxc4 is the "Queen's Gambit Accepted".
+
+Black has gained a pawn but Black cannot keep it. If White wants it back White can play e2-e3 at some point, threatening the pawn with the bishop and if Black tries to defend it with ...b5 Black will find the queenside severely weakened (and the pawn should fall anyway). Nonetheless, this is playable for Black as well, instead of trying to keep the pawn, it is best to develop quickly and strike back at the White centre.
+
+
+=== King's Indian Defence ===
+1.d4 Nf6 2. c4 g6 
+
+3.Nc3 Bg7 4. e4 d6
+
+Popularised after World War II, the King's Indian Defence involves opposite sides strategies in a race between Black's mating attack vs. White's methodical attempts to unravel Black's Queenside. 
+At World Class level, there is some concern that Black's concept is very committal, leading Former Champion Garry Kasparov to discontinue his use of the opening shortly before he retired from the game. At any level below that, it is still very popular due to the deep developmental work by Fischer and Kasparov.
+
+
+=== Grünfeld Defence ===
+1.d4 Nf6 2.c4 g6
+
+3.Nc3 d5
+
+Looks a bit like a cross between the Queen's Gambit and the King's Indian Defence, but this opening is played differently from both of them. Black gives White an early opportunity to grab control of the centre with 4.cxd5 Nxd5 5.e4. Black will need to launch a counterattack against that centre, perhaps with ...c5 to stop White from getting the upper hand. If Black succeeds, the White centre may indeed be very vulnerable, if Black fails, the centre will be very dominating.
+
+
+=== Nimzo-Indian Defence ===
+1.d4 Nf6 2.c4 e6
+
+3.Nc3 Bb4
+
+After 3.Nc3, White threatens to take control over the centre by playing 4.e4. The Nimzo-Indian, named after the hypermodern player Aron Nimzowitch, is one of the two main ways of preventing this (the other way is the direct 3...d5 which leads to the Queen's Gambit Declined). Black puts a bishop where it pins the White knight, and often intends to trade it off, surrendering the bishop pair but inflicting White with doubled pawns if needed to recapture with the b-pawn. White can avoid these doubled pawns by playing the queen to c2, but this costs time. On the other hand, Black has not staked out a big claim of the centre yet, and White can get a real space advantage if Black is careless.
+
+
+=== Queen's Indian Defence ===
+1.d4 Nf6 2.c4 e6
+
+3.Nf3 b6
+
+Strategically, this opening is similar to the Nimzo-Indian. White has played 3.Nf3 rather than 3.Nc3 so he is not threatening to grab the center with 4.e4 just yet. Playing the Nimzo-like 3...Bb4+ anyway is possible (and called the Bogo-Indian) and tends to lead to rather quiet play. More usual is 3...b6 which opens up for the bishop to go to b7 where it will continue the clamp-down on the e4-square, or to a6 where it will put pressure on White's pawn on c4.
+
+
+=== Modern Benoni ===
+1.d4 Nf6 2.c4 c5
+
+3.d5 e6
+
+
+=== Benko Gambit ===
+1.d4 Nf6 2.c4 c5
+
+3.d5 b5
+
+
+== Other openings ==
+
+
+=== English Opening ===
+1.c4
+
+Black's most common responses are:
+1...e5, a reversed Sicilian Defence
+
+1...c5
+
+1...Nf6
+
+1...e6 (preparing 2...d5)
+
+and 1...c6 (preparing 2...d5)
+
+
+=== Réti Opening ===
+1.Nf3 d5 2.c4
+
+
+=== Benko Opening ===
+
+This opening threatens to fianchetto the bishop on f1 to g2, threatening a rook capture, or h3, threatening a bishop exchange, either of which would also threaten a Black pawn center. However, this opening is rather passive and is relatively easy to parry.
+
+
+=== King's Indian Attack ===
+1.Nf3 d5 2.g3
+
+
+=== Barnes Opening ===
+This can end almost as quickly as it begins, with an extremely fast checkmate by Black (called fool's mate.)
+
+The Barnes Opening goes like this: 1.f3 e5.
+
+It can be continued as the Fool's Mate: 2.g4?? Qh4#. Fortunately for White, the fool's mate is extremely rare, even among novices, because the Barnes Opening is passive and has no advantage over 1.f4, and because it is very easy for even a novice to see that the continuation of the Barnes Opening gives Black an immediate mate opportunity.
+
+← Strategy  · Sample chess game →

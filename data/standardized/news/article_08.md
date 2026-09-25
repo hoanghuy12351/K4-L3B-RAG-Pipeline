@@ -1,0 +1,129 @@
+# Chess/Notating The Game
+
+**Source:** https://en.wikibooks.org/wiki/Chess/Notating_The_Game
+
+**Crawled:** 2026-09-22T03:53:10.750857+00:00
+
+**Publisher:** en.wikibooks.org
+
+**License:** CC BY-SA 4.0
+
+**Document type:** news
+
+---
+
+# Chess/Notating The Game
+
+Notating chess games is important to any chess student, since it allows them to review their strategy and that of their opponent, to read of classic chess encounters, and follow how the game developed. Further, chess puzzles are often set in magazines, newspapers and online, and their solutions are notated; for an example, see The Times Chess
+.
+
+
+== Algebraic notation ==
+A very common nomenclature for chess games is algebraic notation. There are several older systems of notation, but these are less common. 
+In algebraic notation, we use 
+
+R for a Rook;
+N for a Knight;
+B for a Bishop;
+K for a King;
+Q for a Queen;
+no letter for a Pawn.
+Sometimes a pictorial language-independent notation is used, in which a picture of a horse might represent a Knight, and so on.
+Each square on a chess board is given by a coordinate, much like a map or a planar graph. The ranks (rows) are indexed with Arabic numerals 1 through 8, and the files (columns) are indexed with Latin letters “a” through “h.” A square’s coordinate is denoted as its file index followed by its rank index. For example, in the board below, black’s King is on the square d5.
+If black moves his King to, say, d6, the move is notated as Kd6, i.e. the King has moved to square d6.
+
+ 
+Moves in which a piece is captured, a King put in check, or checkmate have special notations. 
+
+If a piece is captured, a cross (x) is inserted just before the destination square.  Thus, if the capture is done by a Pawn, the cross is preceded by the column the Pawn occupied prior to the capture.
+If the King is put in check, the move's notation is followed by a plus sign (+).
+If the King is put in checkmate, the move's notation is followed by a hash or double plus signs ('#",++,) or the word "mate" or "checkmate."
+
+
+=== Annotation shorthand ===
+Annotation shorthand is not a notation system. Rather, it is a system of symbols for the player or annotator to add his descriptions or comments. A player or annotator notating a game might wish to highlight an excellent move, question a bad one, or indicate which player he thinks has the advantage. 
+
+If a move is followed by an exclamation mark (!), the player/annotator is surprised by the move's quality.
+If a move is followed by a question mark (?), the player/annotator suspects the move may have been poor.
+If a move is followed by an exclamation mark and then a question mark (!?), the move interests the player/annotator, though it may be sub-optimal.
+If a move is followed by a question mark and then an exclamation mark (?!), the player/annotator fears that the move may be conclusive.
+Repeating a symbol (e.g. !! or ??) adds emphasis. 
+Results are written as white's score followed by black's score. For example, 1–0 indicates that white won, and 0–1 indicates that black won. In the case of a draw, the result is ½–½.
+There are some additional symbols for the player/annotator to note his thoughts on the game in general, rather than on any particular move.
+
+An equals sign (=) indicates positional equality between the players.
+A plus-minus sign (+/–) indicates that white is considered to have the advantage.
+A plus-equals sign (+/=) indicates that white is considered to have a slight advantage.
+A minus-equals sign (-/=) indicates that black is considered to have a slight advantage.
+A minus-plus sign (–/+) indicates that black is considered to have the advantage.
+
+
+== Ambiguity ==
+Sometimes algebraic notation can be ambiguous—that is, two pieces of the same designation can move to one square. For example, a player might be able to move either of his Rooks to the same square. In these cases, it is essential to specify which piece was moved.
+The precise move is specified by designating the file (column) that the piece moved from, before the move's final co-ordinate. For example, Nd2 indicates that a Knight moved to d2, but Nbd2 indicates that the Knight that was in column b moved to d2. If a piece's file is not enough to precisely specify the move, then its rank is used instead.  If neither is enough on its own, both are used.
+
+
+=== Special moves ===
+Some special moves are tricky to write in algebraic notation, and must have their own notation. 
+
+Castling King-side is written O-O.
+Castling Queen-side is written O-O-O.
+En Passant (or En Passe") (French for "In passing") capture is written as if the captured pawn only moved one square. The notation may be followed with e.p. or ep to clarify that the capture was done En Passant.
+If a Pawn is promoted, the Pawn's initial move is written, followed by an equal sign and then the shorthand for the new piece; for instance, e8=Q. Any additional nomenclature or annotation is written after the shorthand for the new piece (such as c8=Q+ if a Pawn promoted to a Queen on c8 places the opposing King in check.)
+
+
+== Sample game in algebraic notation ==
+If you have familiarized yourself with algebraic notation, consider this short sequence of moves. Try to follow the game by looking at the moves in algebraic notation, and the boards. 
+The game has begun, and is nearing the end. White is to move.
+
+ 
+
+White decides to move his Bishop from  d3 to c4, to check black's King. This is white's thirtieth move. So in algebraic notation, we write
+
+30. Bc4+
+Since only one Bishop could move to c4,  the Bishop's initial position was not specified. The + indicates the check. 
+
+ 
+White's Bishop is now, unfortunately, in the Queen's line of fire. Black decides to capture it. So for black's 30th move we write
+
+30... Qxc4
+The x signifies that a piece has been captured. When black's move is written separately from white's, an ellipsis (...) is placed between the number and the move. The ellipsis indicates that white's move has been omitted. 
+The board now looks like this:
+
+ 
+White is in trouble now, and decides to flee to f2. His move is
+
+31. Kf2
+If black checks white's King, by moving his Queen to c2, his move is
+
+31... Qc2+
+
+
+== Descriptive Notation ==
+An older form of notation you will run into quite frequently is Descriptive Notation.  It is useful to know because older books use it.  
+In this form, instead of the files being a, b, c etc., they are Queen rook (QR), Queen Knight (QN), Queen Bishop (QB), Queen (Q), King (K), King Bishop (KB), King Knight (KN) and King Rook (KR).
+The ranks are labelled from your point of view so that the square e4 (in algebraic) is White's K4 and Black's K5.
+To record the moving of a piece, you write the piece, then a dash, ("-") which means "moves", or "moves to" and to where it moves.  1. P-K4 means move a Pawn to the 4th rank in the King's file.  N-QB3 means you move your Knight to the third rank in the Queen's Bishop file.  For a capture, you specify the piece taking, and the piece to be taken.  QRPxN means Pawn in the Queen Rook file takes Knight.  Excessive notation is left out so that if there is only one way a Pawn could legally take a Knight, the move is recorded as PxN.  Note that if a piece is specified to be on the King's or Queen's side of the board, that is the side it is on now, NOT the side it started out on. In rare occasions the move will still be ambiguous when, for example, both Knights can make a particular capture and both of them are on the same side. It would then be necessary to insert a "/" which means "on". For example: N/3XP (for the rank) or N/BXP (for the file).
+In order to compare the two systems, we could look at the same game in both algebraic and descriptive notation in full (1, 3, 5) and abbreviated (2, 4, 6) notation. 
+
+1.^ Note here that since only one Bishop can move to QN5, it is unnecessary to specify which Bishop moved to that square.
+2.^ Check is indicated by "ch", or "+", and "++" for the uncommon but not entirely rare double check, and "+mate" or "+++" for checkmate.
+
+
+== Coordinate Notation ==
+A different type of notation uses only the squares that the pieces were on to denote movements; the dash "-" is inserted to denote "moves to". For example, to denote the earlier 7 moves, the following notes are shown:
+
+e2-e4 e7-e6
+d2-d4 d7-d5
+b1-c3 f8-b4
+f1-b5+ c8-d7
+b5xd7+ d8xd7
+g1-e2 d5xe4
+0-0 0-0
+
+
+== ICCF numerical notation ==
+
+A move is denoted by the file (1 to 8) and rank (1 to 8) of its starting square followed by its destination square (from 11 at the White Queen’s Rook square to 88 at the Black King’s Rook square). "1. e4" is denoted as "1. 5254" in ICCF notation. Unlike other notations, ICCF notation does not make apparent when castling, check, checkmate, and capture took place (castling King side is 5171 for white and 5878 for black). Pawn promotion necessitates a fifth number specifying the new piece (1=Queen, 2=Rook, 3=Bishop, 4=Knight). This notation is considered to be international in that there is no dependency on piece names or specific alphabets. However, this notation still depends on Arabic numerals.
+
+← Playing The Game  · Tactics →

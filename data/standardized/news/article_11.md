@@ -1,0 +1,542 @@
+# Luật cờ Vua FIDE 2023
+
+**Source:** https://vietnamchess.edu.vn/index.php/experience-news/lawofchess/lawofchess2023
+
+**Crawled:** 2026-09-24T19:05:39.939426+00:00
+
+**Publisher:** Liên đoàn Cờ Việt Nam
+
+**License:** Public web content; educational demo with source attribution
+
+**Document type:** news
+
+---
+
+# Luật cờ Vua FIDE 2023
+
+×
+Luật thi đấu
+Luật cờ Vua FIDE 2023
+Banner được lưu thành công.
+01 Tháng mười một 2024
+Luật cờ Vua được ban hành theo quyết định số 71/LĐCVN ngày 6 tháng 10 năm 2023 của Chủ tịch Liên đoàn Cờ Việt Nam.
+Luật FIDE năm 2023 gồm:
+- 2 phần Luật chơi cơ bản và Luật thi đấu gồm 12 điều;
+- 4 phụ lục kèm theo 2 phần Luật trên;
+- 3 phần hướng dẫn.
+Luật gốc của FIDE bằng tiếng Anh xem tại:
+https://handbook.fide.com/chapter/E012023
+MỤC LỤC
+(để xem nhanh, có thể click vào các link bên dưới)
+GIỚI THIỆU
+MỞ ĐẦU
+LUẬT CHƠI CƠ BẢN
+Điều 1. Nguyên tắc và mục tiêu của ván cờ
+Điều 2. Vị trí ban đầu của các quân trên bàn cờ
+Điều 3. Cách di chuyển quân
+Điều 4. Thực hiện nước đi
+Điều 5. Hoàn thành ván cờ
+LUẬT THI ĐẤU
+Điều 6. Đồng hồ cờ
+Điều 7. Những tình huống bất thường
+Điều 8. Ghi chép nước đi
+Điều 9. Ván cờ hoà
+Điều 10. Điểm số
+Điều 11. Hành vi của đấu thủ
+Điều 12. Vai trò của các Trọng tài
+PHỤ LỤC
+Phụ lục A. Thi đấu cờ nhanh
+Phụ lục B. Thi đấu cờ chớp nhoáng
+Phụ lục C. Hệ thống ký hiệu đại số
+Phụ lục D. Những quy định thi đấu với người mù và người khiếm thị
+HƯỚNG DẪN
+Hướng dẫn I. Các ván cờ tạm hoãn
+Hướng dẫn II. Luật cờ Vua 960
+Hướng dẫn III. Ván đấu không cộng thêm giờ và thi đấu nhanh cuối ván
+CHÚ DẪN
+LUẬT CỜ VUA FIDE 2023
+GIỚI THIỆU
+Luật cờ Vua FIDE bao gồm các quy định thi đấu trên bàn cờ Vua.
+Luật cờ Vua có hai phần:
+1. Luật chơi cơ bản;
+2. Luật thi đấu.
+Văn bản bằng tiếng Anh là bản gốc của Luật cờ Vua (đã được thông qua tại Hội nghị FIDE lần thứ 93, Chennai, Ấn Độ) có hiệu lực từ ngày 01 tháng 01 năm 2023.
+MỞ ĐẦU
+Luật cờ Vua không thể bao quát tất cả các tình huống có thể xảy ra cũng như không thể điều chỉnh tất cả vấn đề điều hành trong quá trình của ván đấu.
+Nếu có các tình huống không được quy định chính xác ở một điều Luật, thì có thể nghiên cứu những tình huống tương tự được quy định trong Luật để đưa ra một quyết định đúng đắn.
+Các điều Luật giả định rằng Trọng tài có đủ năng lực cần thiết, khả năng phán quyết đúng đắn và khách quan tuyệt đối.
+Một điều luật quá chi tiết có thể làm mất đi sự chủ động phán quyết của Trọng tài và từ đó cũng hạn chế khả năng tìm kiếm một giải pháp dựa trên sự công bằng, tính hợp lý và các yếu tố chuyên biệt. FIDE mong rằng tất cả các kỳ thủ và các Liên đoàn chấp nhận quan điểm này.
+Điều kiện cần thiết để một ván đấu được tính chỉ số đánh giá (rating) của FIDE là ván cờ đó phải được thi đấu theo Luật cờ Vua FIDE.
+Đối với các ván đấu không được tính chỉ số đánh giá của FIDE thì cũng nên thi đấu theo Luật cờ Vua FIDE.
+Các Liên đoàn thành viên có thể đề nghị FIDE đưa ra một phán quyết về những vấn đề có liên quan đến Luật cờ Vua.
+LUẬT CHƠI CƠ BẢN
+Điều 1. Nguyên tắc và mục tiêu của ván cờ
+1.1. Ván cờ Vua được giao đấu giữa hai thủ bằng cách di chuyển các quân cờ của mình trên một chiếc bàn hình vuông gọi là “bàn cờ”.
+1.2. Đấu thủ cầm quân cờ có màu sáng (bên Trắng) thực hiện nước đi trước, đấu thủ cầm quân cờ có màu tối (bên Đen) thực hiện nước đi tiếp theo, từ đó hai bên luân phiên nhau thực hiện nước đi.
+1.3. Một đấu thủ được xem là “đến lượt đi” khi đối phương đã “hoàn thành” nước đi của mình.
+1.4. Mục tiêu của mỗi đấu thủ là đưa quân Vua của đối phương vào tình trạng “bị chiếu”, mà ở đó đối phương không còn nước đi hợp lệ nào.
+1.4.1. Đấu thủ đạt được mục tiêu này gọi là đã “chiếu bí” đối phương và thắng ván cờ.
+Việc bỏ quân Vua của mình trong tình trạng bị chiếu, hoặc đẩy quân Vua của mình vào thế bị chiếu, cũng như việc “bắt” quân Vua của đối phương đều không được phép.
+1.4.2. Đấu thủ có quân Vua bị chiếu bí là người thua ván cờ.
+1.5. Nếu có vị trí cờ mà cả hai đấu thủ đều không thể chiếu bí quân Vua của đối phương thì ván cờ đó có kết quả hòa (xem Điều 5.2.2).
+Điều 2. Vị trí ban đầu của các quân trên bàn cờ
+2.1. Bàn cờ được tạo bởi một khung 8x8 bao gồm 64 ô vuông bằng nhau xen kẽ các màu sáng (ô trắng) và màu tối (ô đen). Bàn cờ được đặt giữa hai đấu thủ sao cho ô góc bên phải ở phía gần với các đấu thủ có màu trắng.
+2.2. Khi bắt đầu ván cờ, bên Trắng có 16 quân cờ màu sáng (quân trắng), bên Đen có 16 quân cờ màu tối (quân đen). Các quân cờ bao gồm:
+Một quân Vua trắng có ký hiệu là V
+Một quân Hậu trắng có ký hiệu là H
+Hai quân Xe trắng có ký hiệu là X
+Hai quân Tượng trắng có ký hiệu là T
+Hai quân Mã trắng có ký hiệu là M
+Tám quân Tốt trắng không có ký hiệu
+Một quân Vua đen có ký hiệu là V
+Một quân Hậu đen có ký hiệu là H
+Hai quân Xe đen có ký hiệu là X
+Hai quân Tượng đen có ký hiệu là T
+Hai quân Mã đen có ký hiệu là M
+Tám quân Tốt đen không có ký hiệu
+Các quân cờ theo mẫu Staunton:
+2.3. Vị trí ban đầu của các quân trên bàn cờ như sau:
+2.4. Tám dãy ô theo chiều dọc của bàn cờ được gọi là các “cột dọc”. Tám dãy ô theo chiều ngang của bàn cờ được gọi là các “hàng ngang”. Đường thẳng nối các góc của các ô cùng màu vào nhau, chạy từ một cạnh của bàn cờ tới cạnh liền kề được gọi là “đường chéo”.
+Điều 3. Cách di chuyển quân
+3.1. Không được phép di chuyển một quân đến ô cờ đã có một quân cùng màu khác đang đứng.
+3.1.1. Khi một quân cờ di chuyển đến ô có quân của đối phương đang đứng thì quân của đối phương sẽ bị bắt và bị bỏ ra khỏi bàn cờ đồng thời trong cùng một nước đi.
+3.1.2. Một quân cờ được xem là đang tấn công quân của đối phương nếu quân đó có thể bị bắt tại ô cờ đó theo các Điều từ 3.2 đến 3.8.
+3.1.3. Một quân được xem là đang tấn công một ô, kể cả khi quân này bị hạn chế di chuyển đến ô đó (bị ghim), vì khi di chuyển sẽ khiến cho quân Vua cùng màu với nó rơi vào tình trạng bị chiếu.
+3.2. Quân Tượng có thể di chuyển tới bất cứ ô cờ nào trên cùng đường chéo mà nó đang đứng.
+3.3. Quân Xe có thể di chuyển đến bất cứ ô cờ nào trên cùng cột dọc hoặc hàng ngang mà nó đang đứng.
+3.4. Quân Hậu có thể di chuyển tới bất cứ ô cờ nào trên cùng cột dọc, hàng ngang hoặc đường chéo mà nó đang đứng.
+3.5. Khi thực hiện những nước đi này, quân Tượng, quân Xe hoặc quân Hậu không được nhảy qua các quân khác đang chắn giữa đường.
+3.6. Quân Mã có thể nhảy tới ô gần nhất với ô mà nó đang đứng nhưng không nằm trên cùng hàng ngang, cột dọc hay đường chéo.
+3.7. Quân Tốt:
+3.7.1. Quân Tốt có thể di chuyển tiến lên một ô cờ ngay phía trước nó trên cùng một cột, với điều kiện ô này còn trống, hoặc
+3.7.2. Ở nước đi đầu tiên của nó, quân Tốt có thể di chuyển như điều 3.7.1 hoặc tiến lên hai ô liền nhau trên cùng cột dọc với điều kiện cả hai ô cờ đó đều còn trống, hoặc
+3.7.3. Quân Tốt có thể bắt quân bằng cách di chuyển tới một ô chéo ngay phía trước nó ở cột liền kề có một quân của đối phương đang đứng.
+3.7.3.1. Một quân Tốt đứng tại ô cùng hàng với quân Tốt của đối phương vừa đi lên hai ô từ vị trí ban đầu, thì có thể bắt quân Tốt của đối phương giống như khi quân Tốt đó chỉ mới đi một ô.
+3.7.3.2. Việc bắt quân này chỉ hợp lệ khi thực hiện ngay sau khi nước đi đó của đối phương và được gọi là “bắt Tốt qua đường”.
+3.7.3.3. Khi một đấu thủ đang đến lượt đi, di chuyển quân Tốt tiến đến hàng ngang xa nhất tính từ vị trí ban đầu, thì ngay tại nước đi này phải đổi quân Tốt đó thành một quân cờ khác cùng màu như quân Hậu hoặc quân Xe, quân Tượng, quân Mã và đặt tại ô mới đến.Vị trí đặt quân cờ mới này được gọi là ô “phong cấp”.
+3.7.3.4. Việc đấu thủ lựa chọn quân cờ nào để phong cấp không bị giới hạn bởi các quân đã bị bắt trước đó.
+3.7.3.5. Việc đổi quân Tốt thành một quân cờ khác được gọi là phong cấp và quân mới đưa vào có hiệu lực ngay lập tức.
+3.8. Có hai cách thực hiện nước đi của quân Vua:
+3.8.1. Di chuyển đến một ô liền kề;
+3.8.2. “Nhập thành”. Đây là một nước đi của quân Vua và một trong hai quân Xe cùng màu trên hàng ngang đầu tiên của đấu thủ, được tính như là một nước đơn lẻ của quân Vua và thực hiện như sau: quân Vua di chuyển hai ô cờ từ vị trí ban đầu sang phía quân Xe, sau đó chuyển quân Xe đến ô cờ mà quân Vua vừa băng qua.
+Trước khi bên Trắng nhập thành bên cánh Vua
+Trước khi bên Đen nhập thành bên cánh Hậu
+Sau khi bên Trắng nhập thành bên cánh Vua
+Sau khi bên Đen nhập thành bên cánh Hậu
+Trước khi bên Trắng nhập thành bên cánh Hậu
+Trước khi bên Đen nhập thành bên cánh Vua
+Sau khi bên Trắng nhập thành bên cánh Hậu
+Sau khi bên Đen nhập thành bên cánh Vua
+3.8.2.1. Quyền được nhập thành bị mất:
+1) Nếu quân Vua đã từng di chuyển, hoặc
+2) Với quân Xe nào đã từng di chuyển.
+3.8.2.2 Tạm thời chưa được nhập thành:
+3) Nếu ở ô cờ mà quân Vua đang đứng, hoặc ô cờ mà quân Vua phải băng qua, hoặc ô cờ mà quân Vua sẽ đến, đang bị khống chế bởi một hay nhiều quân của đối phương, hoặc
+4) Nếu có bất kỳ quân cờ nào khác đang đứng ở khoảng giữa quân Vua và quân Xe định nhập thành.
+3.9. Quân Vua bị chiếu:
+3.9.1. Quân Vua bị chiếu nếu như nó bị một hay nhiều quân của đối phương tấn công, kể cả khi những quân đó bị hạn chế di chuyển đến ô có quân Vua đang đứng, bởi vì nếu di chuyển sẽ khiến cho quân Vua cùng màu với nó rơi vào tình trạng bị chiếu.
+3.9.2. Không có quân cờ nào được di chuyển nếu đẩy quân Vua cùng màu rơi vào tình trạng bị chiếu hoặc bỏ mặc quân Vua trong tình trạng bị chiếu.
+3.10. Các nước đi hợp lệ và nước đi bất hợp lệ; Vị trí cờ bất hợp lệ:
+3.10.1. Một nước đi hợp lệ khi nước đi đó đáp ứng được tất cả những quy định của các Điều từ 3.1 đến 3.9.
+3.10.2. Một nước đi bất hợp lệ khi nước đi đó không đáp ứng được những quy định của các Điều từ 3.1 đến 3.9.
+3.10.3. Một vị trí cờ bất hợp lệ khi vị trí đó không được thực hiện bằng các nước đi hợp lệ.
+Điều 4. Thực hiện nước đi
+4.1. Mỗi nước đi chỉ được thực hiện bằng một tay.
+4.2. Sửa quân hoặc chạm quân:
+4.2.1. Chỉ có đấu thủ đang đến lượt đi mới được quyền sửa lại vị trí đứng của một hay nhiều quân trên bàn cờ, với điều kiện phải thông báo trước ý định của mình (ví dụ như bằng cách nói “J’adoube” hoặc “I adjust”, tiếng Việt có nghĩa là “Tôi sửa quân”).
+4.2.2. Bất kỳ sự tiếp xúc vật lý nào đến quân cờ đều bị xem là chạm quân có chủ ý, trừ khi được xác định rõ ràng là do vô ý.
+4.3. Ngoài trường hợp đã nêu trong Điều 4.2.1, nếu đấu thủ đang đến lượt đi chạm quân trên bàn cờ với ý định đi quân hoặc bắt quân thì:
+4.3.1. Chạm một hay nhiều quân của mình, đấu thủ phải đi quân đã chạm đầu tiên mà có thể di chuyển được.
+4.3.2. Chạm một hay nhiều quân của đối phương, đấu thủ phải bắt quân đã chạm đầu tiên mà có thể bắt được.
+4.3.3. Chạm một hoặc nhiều quân của mỗi bên, đấu thủ phải bắt quân đã chạm đầu tiên của đối phương bằng quân đã chạm đầu tiên của mình, nếu nước đi này bất hợp lệ thì phải đi quân hoặc bắt quân đã chạm đầu tiên mà nó có thể di chuyển được hay bắt được. Nếu không thể xác định được quân của bên nào bị chạm đầu tiên, thì quân của đấu thủ đó xem như đã bị chạm trước quân của đối phương.
+4.4. Khi một đấu thủ đang đến lượt đi:
+4.4.1. Chạm vào quân Vua và một quân Xe của mình thì phải nhập thành về phía quân Xe đó nếu nước đi này hợp lệ.
+4.4.2. Cố tình chạm vào quân Xe trước quân Vua thì không được phép nhập thành về phía quân Xe đó ở nước đi này, tình huống này áp dụng theo Điều 4.3.1.
+4.4.3. Dự định nhập thành; Chạm vào quân Vua trước rồi đến quân Xe, nhưng nhập thành với quân Xe đó không hợp lệ, thì đấu thủ phải thực hiện một nước đi hợp lệ khác với quân Vua (gồm cả việc nhập thành với quân Xe còn lại). Nếu quân Vua không có nước đi hợp lệ, thì đấu thủ được quyền thực hiện bất kỳ nước đi hợp lệ nào.
+4.4.4. Phong cấp cho quân Tốt; Việc chọn lựa quân cờ nào để phong cấp sẽ kết thúc ngay khi đã chạm quân cờ đó vào ô phong cấp.
+4.5. Nếu quân bị chạm theo Điều 4.3 và 4.4 không thể di chuyển hoặc bắt quân, thì đấu thủ được thực hiện bất kỳ nước đi hợp lệ nào.
+4.6. Có thể tiến hành phong cấp theo nhiều cách khác nhau:
+4.6.1. Quân Tốt không cần phải đặt vào ô phong cấp.
+4.6.2. Có thể bỏ quân Tốt ra và đặt quân cờ mới vào ô phong cấp theo bất kỳ trình tự nào.
+4.6.3. Nếu có một quân của đối phương đang đứng tại vị trí mà quân Tốt được quyền phong cấp thì quân đó sẽ bị bắt.
+4.7. Ở một nước đi hợp lệ hoặc một phần của nước đi hợp lệ, khi đã thả một quân cờ xuống một ô, thì trong nước đi này nó không còn được di chuyển đến ô khác.
+Nước đi này được xem là đã hoàn thành trong trường hợp:
+4.7.1. Bắt quân; Khi đấu thủ nhấc quân bị bắt ra khỏi bàn cờ, đặt quân của mình vào vị trí mới và rời tay khỏi quân cờ bị bắt.
+4.7.2. Nhập thành; Khi đấu thủ rời tay ra khỏi quân Xe vừa đặt tại ô cờ mà quân Vua đã đi qua. Khi đấu thủ rời tay khỏi quân Vua, nước đi vẫn chưa được hoàn thành, nếu nước đi này hợp lệ thì đấu thủ sẽ không được quyền thực hiện bất cứ nước đi nào khác ngoài việc nhập thành về phía đó. Nếu việc nhập thành về phía đó bất hợp lệ thì đấu thủ phải thực hiện một nước đi hợp lệ khác với quân Vua (bao gồm cả việc nhập thành với quân Xe còn lại). Nếu quân Vua không còn nước đi hợp lệ nào thì đấu thủ được quyền thực hiện bất kỳ nước đi hợp lệ nào.
+4.7.3. Phong cấp; Khi đấu thủ rời tay ra khỏi quân cờ vừa mới đặt vào ô phong cấp và quân Tốt đã được đưa ra khỏi bàn cờ.
+4.8. Một đấu thủ sẽ mất quyền khiếu nại các vi phạm của đối phương theo các Điều từ 4.1 đến 4.7 một khi đấu thủ đó đã chạm vào một quân cờ với ý định đi quân hoặc bắt quân.
+4.9. Nếu một đấu thủ không có khả năng di chuyển các quân cờ thì có thể mời một người trợ giúp được Trọng tài chấp thuận để thực hiện các thao tác này.
+Điều 5. Hoàn thành ván cờ
+5.1.1. Đấu thủ nào chiếu bí quân Vua của đối phương sẽ giành chiến thắng. Ván đấu kết thúc ngay lập tức với điều kiện là nước chiếu bí đó phải hợp lệ theo Điều 3 và các Điều từ 4.2 đến 4.7.
+5.1.2. Đấu thủ tuyên bố đầu hàng sẽ thua ván cờ (ván đấu kết thúc ngay lập tức); Trừ khi đối phương không thể chiếu bí quân Vua bằng bất kỳ loạt nước đi hợp lệ nào từ vị trí cờ tại thời điểm đó, kết quả của ván cờ trong trường hợp này là hòa.
+5.2.1. Ván cờ hòa khi đấu thủ đến lượt đi không còn nước đi hợp lệ nào và quân Vua của đấu thủ đó đang không bị chiếu. Ván cờ được gọi là kết thúc ở thế “hết nước đi” (còn được gọi là “Pat”). Ván đấu kết thúc ngay lập tức với điều kiện nước đi dẫn tới thế hết nước đi này hợp lệ theo Điều 3 và các Điều từ 4.2 đến 4.7.
+5.2.2. Ván cờ hòa khi xuất hiện vị trí cờ mà ở đó không đấu thủ nào có thể chiếu bí quân Vua của đối phương bằng các nước đi hợp lệ. Ván cờ xem như kết thúc trong thế bị tắc nghẽn. Ván đấu kết thúc ngay lập tức với điều kiện là nước đi dẫn tới vị trí cờ đó hợp lệ theo Điều 3 và các Điều từ 4.2 đến 4.7.
+5.2.3. Ván cờ hòa theo sự thỏa thuận của hai đấu thủ trong thời gian diễn ra ván đấu, với điều kiện cả hai đấu thủ đều phải thực hiện ít nhất một nước đi. Ván đấu kết thúc ngay lập tức.
+LUẬT THI ĐẤU
+Điều 6. Đồng hồ cờ
+6.1. “Đồng hồ cờ” là loại đồng hồ đôi hiển thị thời gian của hai bên, được liên kết với nhau sao cho tại một thời điểm chỉ có thời gian của một bên chạy được.
+Thuật ngữ “Đồng hồ” trong Luật cờ Vua có nghĩa là nói về thời gian của một trong hai bên. Mỗi bên có một “lá cờ”.
+“Rụng cờ” có nghĩa là thời gian được sử dụng của một đấu thủ đã hết.
+6.2. Sử dụng đồng hồ:
+6.2.1. Trong quá trình thi đấu, mỗi đấu thủ phải cho tạm dừng đồng hồ của mình sau khi thực hiện xong nước đi và cho đồng hồ của đối phương chạy (tức là phải bấm vào bên đồng hồ của mình). Đây được gọi là “hoàn thành” nước đi. Một nước đi cũng được hoàn thành nếu:
+6.2.1.1. Nước đi kết thúc ván đấu (xem các Điều 5.1.1, 5.2.1, 5.2.2, 9.6.1 và 9.6.2), hoặc
+6.2.1.2. Đấu thủ đã thực hiện nước đi kế tiếp trong khi vẫn chưa hoàn thành nước đi trước đó.
+6.2.2. Mỗi đấu thủ đều được phép tạm dừng đồng hồ của mình ngay sau khi thực hiện nước đi, kể cả sau khi đối phương đã thực hiện nước đi kế tiếp. Khoảng thời gian từ khi thực hiện nước đi trên bàn cờ cho đến lúc bấm đồng hồ được coi là một phần thời gian được sử dụng của đấu thủ đó.
+6.2.3. Đấu thủ đi quân cờ bằng tay nào thì phải bấm đồng hồ bằng tay đó. Không được phép để sẵn ngón tay hoặc đặt hờ bàn tay trên đồng hồ.
+6.2.4. Các đấu thủ phải sử dụng đồng hồ đúng cách. Không đập mạnh tay, không được cầm lên, không bấm đồng hồ trước khi thực hiện nước đi hoặc làm đổ đồng hồ. Sử dụng đồng hồ sai cách sẽ bị phạt theo Điều 12.9.
+6.2.5. Đấu thủ chỉ được phép chỉnh sửa quân cờ trong khi đồng hồ của mình đang chạy.
+6.2.6. Nếu một đấu thủ không có khả năng sử dụng đồng hồ thì có thể mời một người trợ giúp được Trọng tài chấp thuận để thực hiện các thao tác này. Đồng hồ của đấu thủ đó sẽ được Trọng tài điều chỉnh cho hợp lý. Việc điều chỉnh này sẽ không áp dụng đối với đồng hồ của một đấu thủ khuyết tật.
+6.3. Thời gian được sử dụng:
+6.3.1. Khi sử dụng đồng hồ, mỗi đấu thủ phải hoàn thành một số lượng nước đi tối thiểu hoặc tất cả các nước đi trong một khoảng thời gian cho phép bao gồm cả lượng thời gian được cộng thêm cho mỗi nước đi. Tất cả những điều này phải được quy định trước.
+6.3.2. Thời gian còn lại chưa sử dụng hết của đấu thủ ở một giai đoạn sẽ được tích lũy vào thời gian của đấu thủ đó ở giai đoạn tiếp theo nếu có quy định.
+Ở thể thức “kéo giờ” (time-delay mode), cả hai đấu thủ đều được cấp một lượng “thời gian chính”. Mỗi đấu thủ cũng sẽ có thêm một lượng “thời gian phụ cố định” cho mỗi nước đi. Thời gian chính sẽ bắt đầu giảm dần nếu thời gian phụ đã hết. Nếu đấu thủ bấm đồng hồ của mình trước khi hết thời gian phụ thì thời gian chính sẽ vẫn còn nguyên, không phụ thuộc vào lượng thời gian phụ đã sử dụng.
+6.4. Phải kiểm tra kỹ theo quy định của Điều 6.3.1 ngay sau khi có một bên rụng cờ.
+6.5. Trọng tài sẽ quyết định vị trí đặt đồng hồ cờ trước khi bắt đầu ván đấu.
+6.6. Đồng hồ của bên Trắng được cho chạy ở thời điểm bắt đầu ván đấu.
+6.7. Thời gian đến trễ:
+6.7.1. Điều lệ của mỗi giải đấu sẽ quy định cụ thể về một thời gian được đến trễ. Nếu không quy định cụ thể thì thời gian đến trễ được mặc định là số không (0). Bất cứ đấu thủ nào đến sau thời gian này đều bị xử thua, trừ khi Trọng tài có quyết định khác.
+6.7.2. Nếu Điều lệ của một giải đấu quy định thời gian được đến trễ khác 0 và nếu cả hai đấu thủ đều không có mặt từ đầu ván đấu, thì bên Trắng sẽ bị mất toàn bộ thời gian đã trôi qua cho đến khi có mặt, trừ khi có quy định cụ thể hoặc có quyết định khác của Trọng tài.
+6.8. Việc rụng cờ được xác định khi Trọng tài nhìn thấy hoặc khi một trong hai đấu thủ đưa ra một khiếu nại đúng về điều này.
+6.9. Ngoại trừ việc áp dụng quy định của một trong các Điều 5.1.1, 5.1.2, 5.2.1, 5.2.2, 5.2.3, nếu một đấu thủ không hoàn thành số lượng nước đi nhất định trong khoảng thời gian dược sử dụng thì sẽ thua ván đấu. Tuy nhiên, ván đấu sẽ hòa nếu có vị trí cờ mà đối phương không có khả năng chiếu bí quân Vua của đấu thủ này bằng bất kỳ loạt nước đi hợp lệ nào.
+6.10. Điều chỉnh đồng hồ:
+6.10.1. Mọi chỉ số trên đồng hồ đều xác nhận thời gian đã sử dụng trừ trường hợp nó có dấu hiệu bị hỏng. Trọng tài sẽ phải thay đồng hồ bị hỏng và sử dụng khả năng phán quyết tốt nhất của mình để thiết lập các chỉ số trên chiếc đồng hồ mới được thay thế.
+6.10.2. Trong thời gian diễn ra ván đấu, nếu phát hiện ra một hoặc cả hai bên đồng hồ đã bị cài đặt sai, cả hai đấu thủ hoặc Trọng tài phải bấm dừng đồng hồ ngay lập tức. Trọng tài sẽ cài đặt lại đồng hồ cho đúng, điều chỉnh thời gian và đếm số lượng nước đi nếu cần. Trọng tài sẽ sử dụng khả năng phán quyết tốt nhất của mình để thiết lập lại các chỉ số trên đồng hồ.
+6.11.1. Nếu cần tạm ngưng ván đấu, Trọng tài sẽ phải bấm tạm dừng đồng hồ.
+6.11.2. Một đấu thủ chỉ được bấm tạm dừng đồng hồ khi cần sự trợ giúp của Trọng tài, ví dụ như khi thực hiện việc phong cấp mà không có sẵn quân cờ để thay thế.
+6.11.3. Trọng tài sẽ quyết định khi nào ván đấu bắt đầu trở lại.
+6.11.4. Khi một đấu thủ bấm tạm dừng đồng hồ để tìm sự trợ giúp thì Trọng tài sẽ xác định hành động đó có hợp lệ hay không. Nếu không có lý do chính đáng để tạm dừng đồng hồ thì đấu thủ đó sẽ bị phạt theo Điều 12.9.
+6.12.1. Các màn chiếu, màn hình hoặc các bàn cờ minh họa lại vị trí cờ hiện hành, các nước đi, số lượng nước đi đã được thực hiện hay đã hoàn thành và cả loại đồng hồ dùng để hiển thị số lượng nước đi đều được phép đặt trong nhà thi đấu.
+6.12.2. Đấu thủ không được khiếu nại khi chỉ căn cứ vào những thông tin hiển thị từ những thiết bị này.
+Điều 7. Những tình huống bất thường
+7.1. Nếu xảy ra một tình huống bất thường thì các quân cờ phải trả về vị trí trước đó và Trọng tài sẽ sử dụng quyền phán quyết tốt nhất của mình để xác định việc điều chỉnh thời gian trên đồng hồ. Điều này bao gồm cả quyền không thay đổi thời gian của đồng hồ. Nếu cần, Trọng tài cũng sẽ điều chỉnh bộ đếm nước đi của đồng hồ.
+7.2.1. Trong quá trình diễn ra ván đấu, nếu phát hiện vị trí ban đầu của các quân cờ bị sai thì ván đấu sẽ bị hủy bỏ và các bên sẽ thi đấu ván cờ mới.
+7.2.2. Trong quá trình diễn ra ván đấu, nếu phát hiện bàn cờ bị đặt sai so với quy định ở Điều 2.1 thì ván đấu vẫn được tiếp tục nhưng phải chuyển vị trí cờ hiện tại sang một bàn cờ được đặt đúng.
+7.3. Trường hợp các đấu thủ ngồi nhầm màu quân ngay từ đầu, nếu cả hai đấu thủ chỉ mới đi ít hơn 10 nước thì ván đấu sẽ bị hủy bỏ và thi đấu lại ván mới với màu quân đúng. Nếu đã thực hiện 10 nước đi hoặc nhiều hơn thì ván đấu vẫn tiếp tục.
+7.4. Quân cờ bị lệch vị trí:
+7.4.1. Nếu một đấu thủ làm lệch vị trí của một hay nhiều quân cờ thì phải sửa lại cho đúng trong thời gian của chính mình.
+7.4.2. Nếu cần thiết, đấu thủ hoặc đối phương sẽ tạm dừng đồng hồ và yêu cầu sự trợ giúp của Trọng tài.
+7.4.3. Trọng tài có thể áp dụng hình phạt với đấu thủ đã làm sai lệch vị trí các quân cờ.
+7.5. Nước đi bất hợp lệ:
+7.5.1. Một nước đi bất hợp lệ được hoàn thành sau khi đấu thủ đã bấm vào đồng hồ của mình. Nếu trong quá trình thi đấu phát hiện một nước đi bất hợp lệ đã được hoàn thành thì phải khôi phục lại vị trí cờ ngay trước nước đi bất hợp lệ đó. Nếu không thể khôi phục được, thì ván đấu sẽ tiếp tục từ vị trí gần nhất có thể xác định được trước khi nước đi bất hợp lệ xảy ra. Áp dụng Điều 4.3 và 4.7 để tìm nước thay thế cho nước đi bất hợp lệ. Ván đấu sẽ được tiếp tục từ vị trí đã được khôi phục này.
+7.5.2. Nếu đấu thủ di chuyển quân Tốt đến hàng ngang xa nhất và bấm đồng hồ, nhưng không thay quân Tốt bằng một quân cờ mới, thì nước đi này bị xem là bất hợp lệ. Quân Tốt sẽ phải được thay bằng một quân Hậu cùng màu.
+7.5.3. Nếu đấu thủ bấm vào đồng hồ mà không thực hiện nước đi, sẽ bị tính lỗi và phạt như một nước đi bất hợp lệ.
+7.5.4. Nếu một đấu thủ sử dụng hai tay để thực hiện một nước đi (ví dụ như khi nhập thành, bắt quân hoặc phong cấp) và bấm đồng hồ, sẽ bị tính lỗi và bị phạt như một nước đi bất hợp lệ.
+7.5.5. Nếu lần đầu tiên đấu thủ hoàn thành nước đi bất hợp lệ như theo Điều 7.5.1, 7.5.2, 7.5.3 hoặc 7.5.4, thì Trọng tài sẽ cộng thêm 02 phút vào thời gian của đối phương; Nếu lần thứ hai hoàn thành nước đi bất hợp lệ thì Trọng tài sẽ xử đấu thủ đó thua ván cờ. Tuy nhiên, ván đấu được xử hòa nếu có vị trí cờ mà đối phương không thể chiếu bí quân Vua của đấu thủ đó bằng bất kỳ loạt nước đi hợp lệ nào.
+7.6. Nếu trong quá trình thi đấu phát hiện bất cứ quân cờ nào đứng sai vị trí của nó thì phải khôi phục lại vị trí cờ ngay trước khi có sự sai lệch đó. Nếu không thể khôi phục, thì ván đấu sẽ tiếp tục với vị trí cờ gần nhất có thể xác định được trước khi có sự sai lệch. Ván đấu sẽ được tiếp tục từ vị trí được khôi phục này.
+Điều 8. Ghi chép nước đi
+8.1. Cách ghi lại các nước đi:
+8.1.1. Trong quá trình thi đấu, mỗi đấu thủ được yêu cầu ghi lại các nước đi của mình và của đối phương đúng cách, từng nước một, càng rõ ràng và dễ đọc càng tốt, theo một trong các cách sau:
+8.1.1.1. Bằng cách ghi hệ thống ký hiệu đại số (Phụ lục C) vào tờ “biên bản thi đấu” được quy định dành cho giải.
+8.1.1.2. Bằng cách nhập nước đi vào “biên bản điện tử” được chứng nhận bởi FIDE và được quy định dành cho giải (từ đây gọi chung là “biên bản”).
+8.1.2. Đấu thủ không được phép ghi trước nước đi, trừ khi đề nghị xử hòa theo Điều 9.2 hoặc 9.3 hoặc thực hiện ván cờ hoãn đấu theo Hướng dẫn I.1.1.
+8.1.3. Nếu muốn, đấu thủ có thể đáp lại ngay nước đi của đối phương trước khi ghi biên bản, nhưng phải ghi lại nước đi trước đó của mình trước khi thực hiện nước đi tiếp theo.
+8.1.4. Biên bản chỉ được sử dụng để ghi lại các nước đi, thời gian trên đồng hồ, các đề nghị hòa, các vấn đề khiếu nại và những dữ liệu khác có liên quan.
+8.1.5. Cả hai đấu thủ phải ghi lại đề nghị hòa trong biên bản với ký hiệu dấu bằng (=).
+8.1.6. Nếu một đấu thủ không thể tự ghi biên bản thì có thể mời một người trợ giúp được Trọng tài chấp thuận để giúp ghi lại nước đi. Đồng hồ của đấu thủ đó sẽ được Trọng tài điều chỉnh cho hợp lý. Việc điều chỉnh này không áp dụng đối với đồng hồ của một đấu thủ khuyết tật.
+8.2. Biên bản phải để cho Trọng tài quan sát được trong suốt ván đấu.
+8.3. Các biên bản thuộc quyền sở hữu của người tổ chức giải đấu. Biên bản điện tử bị lỗi sẽ phải được Trọng tài thay thế.
+8.4. Nếu một đấu thủ chỉ còn ít hơn 05 phút trên đồng hồ của mình trong khoảng thời gian được sử dụng và không có cộng thêm từ 30 giây trở lên cho mỗi nước đi, thì đấu thủ đó không bắt buộc phải tuân thủ các yêu cầu của Điều 8.1.1 trong thời gian còn lại của giai đoạn này.
+8.5. Biên bản không hoàn chỉnh:
+8.5.1. Nếu cả hai đấu thủ đều không ghi biên bản theo Điều 8.4 thì Trọng tài hoặc một người trợ lý sẽ cố gắng có mặt để ghi lại nước đi. Trong trường hợp này, ngay sau khi một bên rụng cờ thì Trọng tài phải dừng đồng hồ. Sau đó, cả hai đấu thủ phải sử dụng bản ghi chép của Trọng tài hoặc biên bản của đối phương để ghi bổ sung vào biên bản của mình.
+8.5.2. Nếu chỉ có một đấu thủ không ghi biên bản theo Điều 8.4, thì ngay sau khi một trong hai bên rụng cờ, đấu thủ này phải cập nhật biên bản một cách đầy đủ trước khi thực hiện nước đi. Đấu thủ có thể mượn biên bản của đối phương nhưng phải trả lại trước khi thực hiện nước đi tiếp theo.
+8.5.3. Nếu không có biên bản nào được ghi lại một cách đầy đủ, các đấu thủ phải khôi phục lại ván cờ trên một bàn cờ thứ hai dưới sự giám sát của Trọng tài hoặc người trợ lý. Trước khi thực hiện việc khôi phục biên bản, Trọng tài hoặc người trợ lý sẽ ghi lại vị trí cờ hiện tại, thời gian của mỗi bên, đồng hồ bên nào đang chạy và số nước đi đã hoàn thành, nếu có các thông tin này.
+8.6. Nếu thông tin trên các biên bản không thể chỉ rõ được một đấu thủ có vượt quá thời gian được sử dụng hay không, thì nước đi tiếp theo sẽ được xem như là nước đi đầu tiên của giai đoạn kế tiếp, trừ khi có thể chứng minh rằng số nước đi đã thực hiện hoặc đã hoàn thành có nhiều hơn quy định.
+8.7. Khi kết thúc ván đấu, hai đấu thủ phải ký vào cả hai biên bản thi đấu có ghi rõ kết quả của ván đấu hoặc xác nhận kết quả trên biên bản điện tử. Ngay cả khi ghi sai, thì kết quả này vẫn được xem là chính xác, trừ khi Trọng tài có quyết định khác.
+Điều 9. Ván cờ hoà
+9.1. Đề nghị hòa và Điều lệ giải:
+9.1.1. Điều lệ của một giải đấu có thể quy định rằng các đấu thủ không được phép đề nghị hoặc thỏa thuận hòa với số lượng nước đi ít hơn quy định hoặc trong bất kỳ trường hợp nào mà không có sự cho phép của Trọng tài.
+9.1.2. Tuy nhiên, nếu điều lệ giải cho phép thỏa thuận hòa thì những điều dưới đây sẽ được áp dụng:
+9.1.2.1. Một đấu thủ muốn đề nghị hòa thì phải đề nghị sau khi thực hiện nước đi trên bàn cờ và trước khi bấm đồng hồ. Một đề nghị hòa tại bất cứ thời điểm nào khác của ván đấu vẫn có giá trị nhưng phải xem xét theo Điều 11.5. Không có bất cứ điều kiện nào được kèm theo lời đề nghị. Trong cả hai trường hợp trên, lời đề nghị không thể rút lại và vẫn còn hiệu lực cho đến khi đối phương chấp nhận, hoặc nói từ chối, hoặc từ chối bằng cách chạm vào một quân với ý định đi quân hoặc bắt quân, hoặc ván cờ được kết thúc theo một số cách khác.
+9.1.2.2. Mỗi đấu thủ sẽ phải ghi lại đề nghị hòa trong biên bản của mình với ký hiệu dấu bằng (=).
+9.1.2.3. Việc đề nghị xử hòa theo Điều 9.2 hoặc 9.3. được xem như một đề nghị hòa.
+9.2. Ván cờ hòa khi một đấu thủ đang đến lượt đi đưa ra khiếu nại đúng về một vị trí cờ giống nhau được lặp lại (bất biến) ít nhất 03 lần (không nhất thiết phải lặp lại các nước đi):
+9.2.1. Vị trí bất biến sắp xuất hiện, nếu đấu thủ cho biết trước nước đi của mình, điều này sẽ không được thay đổi, bằng cách ghi nước đi vào biên bản thi đấu hoặc nhập trên biên bản điện tử và thông báo cho Trọng tài biết ý định thực hiện nước đi đó, hoặc
+9.2.2. Vị trí bất biến vừa xuất hiện và đấu thủ đề nghị xử hòa đang đến lượt đi.
+9.2.3. Các vị trí được xem là bất biến khi và chỉ khi cùng một đấu thủ đi quân, các quân cờ cùng loại, cùng màu đều đứng ở vị trí cũ và khả năng di chuyển tất cả các quân của hai đấu thủ đều không thay đổi; Theo đó các vị trí cờ dưới đây sẽ không được xem là bất biến nếu:
+9.2.3.1. Tại vị trí đầu tiên, có một quân Tốt có thể bị bắt qua đường.
+9.2.3.2. Một quân Vua có quyền nhập thành với một quân Xe chưa từng di chuyển, nhưng đã mất quyền đó sau khi di chuyển. Quyền nhập thành chỉ bị mất khi quân Vua và hoặc quân Xe đã từng di chuyển.
+9.3. Ván đấu được xử hòa khi một đấu thủ đang đến lượt đi đưa ra lời khiếu nại đúng, nếu:
+9.3.1. Đấu thủ cho biết trước nước đi của mình, điều này sẽ không được thay đổi, bằng cách ghi nước đi vào biên bản thi đấu hoặc nhập trên biên bản điện tử, và thông báo cho Trọng tài biết việc thực hiện nước đi đó sẽ cho ra kết quả rằng trong 50 nước đi sau cùng đã thực hiện của mỗi bên không có nước di chuyển nào của quân Tốt và không có nước bắt quân nào, hoặc
+9.3.2. Không có nước di chuyển quân Tốt và không có nước bắt quân nào trong 50 nước đi sau cùng của mỗi bên đã hoàn thành.
+9.4. Nếu đấu thủ chạm vào một quân theo Điều 4.3 thì sẽ mất quyền đề nghị xử hòa theo Điều 9.2 hoặc 9.3 tại nước đi đó.
+9.5. Đề nghị xử hòa:
+9.5.1. Nếu một đấu thủ đề nghị xử hòa theo Điều 9.2 hoặc 9.3 thì đấu thủ đó hoặc Trọng tài sẽ bấm tạm dừng đồng hồ, đấu thủ không được phép rút lại lời đề nghị của mình.
+9.5.2. Nếu xét thấy đề nghị đúng, ván cờ được xử hòa ngay lập tức.
+9.5.3. Nếu xét thấy đề nghị không đúng, Trọng tài sẽ cộng thêm 02 phút vào thời gian còn lại của đối phương, sau đó ván đấu được tiếp tục. Nếu đề nghị đó dựa trên một nước đi dự kiến, nước đi đó phải được thực hiện căn cứ theo các Điều 3 và 4.
+9.6. Ván đấu sẽ được xử hòa nếu xảy ra một hoặc cả hai điều dưới đây:
+9.6.1. Vị trí bất biến như trong điều 9.2.2 đã xuất hiện ít nhất 05 lần.
+9.6.2. Mỗi đấu thủ đã hoàn thành một loạt tối thiểu 75 nước đi mà ở đó không có nước đi của quân Tốt và không có nước bắt quân nào. Nếu nước đi cuối cùng dẫn đến thế chiếu bí thì nước đi đó sẽ được ưu tiên.
+Điều 10. Điểm số
+10.1. Trừ khi điều lệ của một giải đấu có quy định khác, đấu thủ thắng ván đấu hoặc thắng do đối phương vắng mặt sẽ có một điểm (1), đấu thủ thua ván đấu hoặc vắng mặt sẽ có không điểm (0), đấu thủ hòa ván đấu sẽ có nửa điểm (½),
+10.2. Tổng số điểm của bất kỳ ván cờ nào không thể vượt quá số điểm tối đa thông thường được đưa ra cho ván đấu đó. Điểm cho một cá nhân phải là điểm số thông thường cho một ván đấu, ví dụ như một điểm số ¾ - ¼ là không được phép.
+Điều 11. Hành vi của đấu thủ
+11.1. Các đấu thủ không được có bất cứ hành động nào gây bất ổn cho ván đấu.
+11.2. Địa điểm thi đấu và khu vực thi đấu:
+11.2.1. “Địa điểm thi đấu” được định nghĩa bao gồm “khu vực thi đấu”, nhà vệ sinh, khu giải lao, khu hút thuốc và những khu vực khác theo sự chỉ định của Trọng tài.
+11.2.2. Khu vực thi đấu được định nghĩa là nơi các ván đấu của một cuộc thi diễn ra.
+11.2.3. Chỉ khi được sự đồng ý của Trọng tài mới có thể:
+11.2.3.1. Một đấu thủ rời khỏi địa điểm thi đấu.
+11.2.3.2. Đấu thủ đang đến lượt đi được rời khỏi khu vực thi đấu.
+11.2.3.3. Một người không phải là đấu thủ hoặc Trọng tài được đi vào khu vực thi đấu.
+11.2.4. Điều lệ của một giải có thể quy định rõ rằng đối phương của đấu thủ đang đến lượt đi phải xin phép Trọng tài khi muốn rời khỏi khu vực thi đấu.
+11.3. Sổ ghi chép và thiết bị điện tử:
+11.3.1. Trong quá trình thi đấu, các đấu thủ bị cấm sử dụng các sổ ghi chép, các nguồn thông tin hoặc hướng dẫn hoặc phân tích bất kỳ ván nào trên một bàn cờ khác.
+11.3.2. Trong quá trình thi đấu, đấu thủ không được phép có bất kỳ thiết bị điện tử nào tại địa điểm thi đấu mà không có sự cho phép của Trọng tài.
+11.3.2.1. Tuy nhiên, điều lệ của một giải đấu có thể cho phép các thiết bị đó được lưu trữ trong túi riêng của đấu thủ, miễn là thiết bị đã được tắt hoàn toàn. Túi này phải được đặt ở nơi có sự đồng ý của Trọng tài. Cả hai đấu thủ đều bị cấm sử dụng túi này khi không được Trọng tài cho phép.
+11.3.2.2. Nếu phát hiện một đấu thủ có thiết bị như vậy trên người tại địa điểm thi đấu, đấu thủ đó sẽ bị xử thua, đối phương sẽ giành chiến thắng. Điều lệ của mỗi giải đấu có thể đưa ra một hình thức xử phạt khác ít nghiêm ngặt hơn.
+11.3.3. Trọng tài có thể yêu cầu đấu thủ cho phép kiểm tra riêng quần áo, túi xách, các vật dụng khác hoặc cơ thể. Trọng tài hoặc người được Trọng tài ủy quyền sẽ kiểm tra đối thủ và phải có cùng giới tính với đấu thủ. Nếu đấu thủ từ chối hợp tác thì Trọng tài sẽ có biện pháp xử lý phù hợp căn cứ theo Điều 12.9.
+11.3.4. Chỉ được phép hút thuốc lá, bao gồm cả thuốc lá điện tử, tại khu vực dành riêng do Trọng tài chỉ định.
+11.4. Các đấu thủ đã hoàn thành ván đấu sẽ được xem như là khán giả.
+11.5. Nghiêm cấm hành động gây mất tập trung hoặc gây mất bình tĩnh cho đối phương bằng bất cứ hình thức nào. Việc này bao gồm cả các khiếu nại hoặc đề nghị hòa vô lý hoặc gây tiếng ồn vào khu vực thi đấu.
+11.6. Việc vi phạm bất cứ khoản nào trong các Điều từ 11.1 đến 11.5 sẽ bị phạt theo Điều 12.9.
+11.7. Ðấu thủ liên tục không tuân thủ Luật cờ Vua sẽ bị xử thua ván cờ, Trọng tài sẽ quyết định điểm số cho đối phương.
+11.8. Nếu cả hai đấu thủ đều phạm vào Điều 11.7 thì cả hai sẽ bị xử thua.
+11.9. Đấu thủ có quyền yêu cầu Trọng tài giải thích về những điểm cụ thể trong Luật cờ Vua.
+11.10. Trừ khi điều lệ của một giải đấu có quy định khác, một đấu thủ có thể khiếu nại bất kỳ quyết định nào của Trọng tài, ngay cả khi đấu thủ đã ký vào biên bản thi đấu (xem Điều 8.7).
+11.11. Cả hai đấu thủ đều phải hỗ trợ Trọng tài trong các tình huống phải xây dựng lại ván đấu, bao gồm cả đề nghị xử hòa.
+11.12. Việc kiểm tra khi có khiếu nại vị trí cờ bất biến 03 lần hoặc 50 nước đi là nhiệm vụ của các đấu thủ, được thực hiện dưới sự giám sát của Trọng tài.
+Điều 12. Vai trò của các Trọng tài (xem phần Mở đầu)
+12.1. Trọng tài cần đảm bảo rằng Luật cờ Vua phải được tuân thủ.
+12.2. Trọng tài có trách nhiệm:
+12.2.1. Đảm bảo cuộc thi công bằng;
+12.2.2. Hành động vì lợi ích tốt nhất của giải đấu;
+12.2.3. Đảm bảo duy trì một môi trường thi đấu tốt;
+12.2.4. Đảm bảo rằng các đấu thủ không bị làm phiền;
+12.2.5. Giám sát diễn biến của giải đấu;
+12.2.6. Thực hiện các giải pháp hỗ trợ đặc biệt đối với các đấu thủ khuyết tật và những người cần được chăm sóc y tế;
+12.2.7. Tuân thủ các quy định hoặc hướng dẫn thi đấu công bằng.
+12.3. Trọng tài phải luôn quan sát các ván đấu, nhất là khi các đấu thủ còn ít thời gian, thực thi các quyết định và áp dụng hình phạt thích hợp cho các đấu thủ.
+12.4. Trọng tài có thể chỉ định các trợ lý quan sát các ván đấu, ví dụ khi một vài đấu thủ còn ít thời gian.
+12.5. Trọng tài có thể cộng thêm thời gian cho một trong hai hoặc cả hai đấu thủ trong trường hợp có sự gây rối từ bên ngoài.
+12.6. Trọng tài không phải can thiệp vào ván đấu ngoại trừ các trường hợp đã được ghi rõ trong Luật cờ Vua. Trọng tài không được thông báo số lượng nước đi đã hoàn thành, trừ khi áp dụng Điều 8.5 khi có ít nhất một bên rụng cờ. Trọng tài không được nhắc đấu thủ rằng đối phương đã hoàn thành nước đi hoặc khi đấu thủ chưa bấm đồng hồ.
+12.7. Bất cứ ai nếu nhận thấy có sự bất thường thì chỉ được thông báo điều đó với Trọng tài. Các đấu thủ không được bàn luận hoặc can thiệp vào ván cờ của người khác. Khán giả không được phép can thiệp vào ván cờ. Trọng tài có quyền trục xuất những người vi phạm ra khỏi địa điểm thi đấu.
+12.8. Không được phép sử dụng điện thoại di động hay bất kỳ thiết bị thông tin liên lạc nào tại địa điểm thi đấu hoặc các khu vực lân cận đã được quy định, trừ khi được sự cho phép của Trọng tài.
+12.9. Trọng tài có thể áp dụng các hình phạt sau:
+12.9.1. Cảnh cáo;
+12.9.2. Cộng thêm giờ vào thời gian còn lại của đối phương;
+12.9.3. Trừ bớt thời gian còn lại của đấu thủ vi phạm luật;
+12.9.4. Cộng điểm tối đa của ván đấu cho đối phương;
+12.9.5. Trừ điểm đạt được trong ván đấu của bên vi phạm;
+12.9.6. Tuyên bố đấu thủ vi phạm bị thua ván cờ (trọng tài quyết định điểm số cho đối phương);
+12.9.7. Cảnh báo trước về một hình phạt;
+12.9.8. Truất quyền thi đấu từ một đến nhiều ván;
+12.9.9. Trục xuất khỏi giải đấu.
+PHỤ LỤC
+Phụ lục A. Thi đấu cờ nhanh
+A.1. “Cờ nhanh”' là một thể loại thi đấu mà ở đây các đấu thủ phải hoàn thành ván cờ trong một thời gian cố định từ hơn 10 phút đến dưới 60 phút cho mỗi bên; hoặc tổng thời gian được sử dụng có cộng thêm giờ của mỗi đấu thủ trong 60 lượt đi là từ hơn 10 phút đến dưới 60 phút.
+A.2. Các đấu thủ không cần phải ghi biên bản, nhưng không mất quyền đối với các khiếu nại thông thường dựa trên biên bản thi đấu. Bất cứ lúc nào đấu thủ cũng có thể yêu cầu trọng tài cung cấp biên bản để ghi các nước đi.
+A.3. Các xử phạt được đề cập như trong Điều 7 và 9 của Luật thi đấu sẽ là 01 phút thay vì 02 phút.
+A.4. Các điều Luật thi đấu sẽ được áp dụng nếu:
+A.4.1. Mỗi Trọng tài giám sát tối đa 03 ván đấu và
+A.4.2. Mỗi ván đấu đều được Trọng tài hoặc người trợ lý ghi lại và bằng các phương tiện điện tử nếu có.
+A.4.3. Trong lượt đi của mình, đấu thủ có thể yêu cầu trọng tài hoặc người trợ lý cho xem biên bản bất cứ lúc nào. Yêu cầu này có thể thực hiện tối đa là 05 lần trong một ván đấu, nếu nhiều hơn sẽ bị xem như là hành động làm phân tâm đối phương.
+A.5. Nếu không như trên, thì giải đấu sẽ được quy định như sau:
+A.5.1. Từ vị trí ban đầu, khi mỗi đấu thủ đã hoàn thành 10 nước đi thì:
+A.5.1.1. Không thể thay đổi lại thiết lập đồng hồ, trừ khi có ảnh hưởng bất lợi đến lịch thi đấu của giải.
+A.5.1.2. Không còn được khiếu nại về vị trí của các quân hoặc hướng đặt bàn cờ sai. Nếu quân Vua đặt không chính xác thì không được nhập thành. Nếu một quân Xe đặt không chính xác thì không được nhập thành với quân Xe đó.
+A.5.2. Nếu trọng tài quan sát thấy có tình huống xảy ra theo Điều 7.5.1, 7.5.2, 7.5.3 hoặc 7.5.4, thì sẽ thực hiện theo Điều 7.5.5 nếu đối phương chưa thực hiện nước tiếp theo. Nếu Trọng tài không can thiệp, đối phương có quyền khiếu nại, miễn là chưa thực hiện nước tiếp theo của mình. Nếu đối phương không khiếu nại và Trọng tài không can thiệp, nước đi bất hợp lệ sẽ được bỏ qua và ván đấu tiếp tục. Một khi đối phương đã thực hiện nước đi tiếp theo của mình, nước đi bất hợp lệ không thể sửa lại được trừ khi có sự đồng ý của các đấu thủ mà không cần có sự can thiệp của Trọng tài.
+A.5.3. Để đề nghị xử thắng bằng thời gian, người đề nghị có thể bấm dừng đồng hồ và thông báo với Trọng tài. Tuy nhiên, ván đấu được xử hòa nếu có vị trí cờ mà đấu thủ đó không thể chiếu bí quân Vua của đối phương của bằng bất kỳ loạt nước đi hợp lệ nào.
+A.5.4. Nếu Trọng tài nhận thấy cả hai quân Vua đều trong tình trạng bị chiếu, hoặc có một quân Tốt nằm trên hàng ngang xa nhất tính từ vị trí ban đầu của nó, thì Trọng tài sẽ phải chờ cho đến khi nước đi tiếp theo được hoàn thành. Sau đó, Trọng tài sẽ tuyên bố ván cờ hòa nếu vị trí bất hợp lệ vẫn còn trên bàn cờ.
+A.5.5. Trọng tài sẽ thông báo rụng cờ nếu quan sát thấy.
+A.6. Điều lệ của một giải sẽ phải quy định cụ thể về việc áp dụng điều A.4 hoặc điều A.5 cho toàn bộ giải đấu.
+Phụ lục B. Thi đấu cờ chớp nhoáng
+B.1. “Cờ chớp nhoáng”' là một thể loại thi đấu mà ở đây các đấu thủ phải hoàn thành ván cờ trong một thời gian cố định từ 10 phút trở xuống cho mỗi bên; hoặc tổng thời gian được sử dụng có cộng thêm giờ của mỗi đấu thủ trong 60 lượt đi là từ 10 phút trở xuống.
+B.2. Các điều Luật thi đấu sẽ được áp dụng nếu:
+B.2.1. Mỗi trọng tài giám sát 01 ván đấu và
+B.2.2. Mỗi ván đấu đều được Trọng tài hoặc người trợ lý ghi lại và bằng các phương tiện điện tử nếu có.
+B.2.3. Trong lượt đi của mình, đấu thủ có thể yêu cầu trọng tài hoặc người trợ lý cho xem biên bản bất cứ lúc nào. Yêu cầu này có thể thực hiện tối đa là 05 lần trong một ván đấu, nếu nhiều hơn sẽ bị xem như là hành động làm phân tâm đối phương.
+B.3. Nếu không như trên, thì giải đấu sẽ được quy định theo điều A.2, A.3 và A.5 của phần Luật thi đấu cờ nhanh.
+B.4. Điều lệ của một giải sẽ phải quy định cụ thể về việc áp dụng điều B.2 hoặc điều B.3 cho toàn bộ giải đấu.
+Phụ lục C. Hệ thống ký hiệu đại số
+FIDE chỉ công nhận một hệ thống ghi nước đi cho các giải và trận đấu của riêng mình, đó là hệ thống ký hiệu đại số. FIDE cũng khuyến nghị áp dụng hệ thống này trên các tài liệu và tạp chí cờ Vua. Các biên bản ghi theo hệ thống khác không được sử dụng khi đấu thủ dùng cho mục đích làm chứng cứ trong các trường hợp thông thường. Khi phát hiện một đấu thủ sử dụng hệ thống ký hiệu khác hệ thống ký hiệu đại số thì Trọng tài phải nhắc nhở đấu thủ về yêu cầu này.
+Mô tả hệ thống ký hiệu đại số
+C.1. Trong mô tả này, từ “quân” nghĩa là các quân cờ khác, không phải quân Tốt.
+C.2. Mỗi quân được ký hiệu bằng một chữ viết tắt, với tiếng Anh là chữ cái đầu tiên in hoa trong tên gọi của nó. Ví dụ: K=King, Q=Queen, R=Rook, B=Bishop, N=Knight (chữ N được dùng cho Knight để phân biệt với King).
+C.3. Đối với chữ viết tắt đầu tiên trong tên gọi của các quân, được quyền sử dụng ngôn ngữ quốc gia của đấu thủ. Ví dụ trong tiếng Việt ta dùng: V = Vua, H = Hậu, X = Xe, T = Tượng, M = Mã. Khuyến khích việc sử dụng các hình tượng quân cờ áp dụng trong các bản in.
+C.4. Quân Tốt được quy định không ghi ký hiệu chữ cái đầu tiên trong tên gọi của nó, Ví dụ: không được ghi Pe5, Pd4, pa5, mà phải ghi e5, d4, a5.
+C.5. Tám cột dọc (từ trái sang phải đối với bên Trắng và từ phải sang trái đối với bên Đen) được ký hiệu bằng các chữ thường theo thứ tự a, b, c, d, e, f, g và h.
+C.6. Tám hàng ngang (từ dưới lên trên đối với bên Trắng và từ trên xuống dưới đối với bên Đen) được đánh số theo thứ tự 1, 2, 3, 4, 5, 6, 7 và 8. Như vậy, ở vị trí ban đầu các quân và quân của bên Trắng được bày trên các hàng ngang thứ nhất và quân Tốt ở hàng thứ hai, các quân và quân Tốt của bên Đen được bày trên các hàng ngang thứ tám và thứ bảy.
+C.7. Áp dụng theo quy định trên, mỗi ô trong số 64 ô cờ được ký hiệu bằng sự kết hợp giữa một chữ cái và một chữ số.
+C.8. Mỗi nước đi của một quân được ký hiệu bởi chữ viết tắt trong tên gọi của quân và ô cờ mà quân đó di chuyển đến (ô đến), không có dấu nối giữa ký hiệu và ô cờ. Ví dụ: Te5, Tf3, Xd1.
+Trong trường hợp của quân Tốt, chỉ cần ghi ký hiệu ô đến. Ví dụ: e5, d4, a5.
+Hình thức dài hơn có ghi ô xuất phát cũng được chấp nhận. Ví dụ: Tb2e5, Mg1f3, Xa1d1, e7e5, d2d4, a6a5.
+C.9. Khi thực hiện nước bắt quân, có thể chèn thêm chữ x vào giữa:
+C.9.1. Chữ viết tắt trong tên gọi của quân và
+C.9.2. Ô cờ mà quân đó di chuyển đến. Ví dụ: Txe5, Mxf3, Xxd1, xem thêm mục C.10.
+C.9.3. Khi quân Tốt thực hiện nước bắt quân, thì ghi ký hiệu cột dọc mà quân Tốt đang đứng, chèn thêm chữ x, rồi ghi ký hiệu ô đến. Ví dụ: dxe5, gxf3, axb5. Trong trường hợp “bắt Tốt qua đường” có thể ghi nối thêm chữ “e.p.”. Ví dụ: exd6 e.p.
+C.10. Nếu hai quân có thể di chuyển đến cùng một ô, thì nước đi của các quân đó được ký hiệu như sau:
+C.10.1. Nếu cả hai quân nằm trên cùng một hàng ngang, thì ghi:
+C.10.1.1. Chữ viết tắt tên của quân,
+C.10.1.2. Tên cột đang đứng và
+C.10.1.3. Ô đến.
+C.10.2. Nếu cả hai quân nằm trên cùng một cột, thì ghi
+C.10.2.1. Chữ viết tắt tên của quân,
+C.10.2.2. Hàng ngang của ô đang đứng, và
+C.10.2.3. Ô đến.
+C.10.3. Nếu các quân nằm trên các hàng ngang và cột dọc khác nhau thì ưu tiên theo cách ghi ở mục 1. Ví dụ:
+C.10.3.1. Có hai quân Mã nằm ở ô g1 và e1, một trong hai quân đều di chuyển được đến ô f3, tùy trường hợp có thể ghi là Mgf3 hoặc là Mef3.
+C.10.3.2. Có hai quân Mã nằm ở ô g1 và g5, một trong hai quân đều di chuyển được đến ô f3, tùy trường hợp có thể ghi là M5f3 hoặc là M1f3.
+C.10.3.3. Có hai quân Mã nằm ở ô h2 và d4, Một trong hai quân đều di chuyển được đến ô f3, tùy trường hợp có thể ghi là Mhf3 hoặc là Mdf3.
+C.10.3.4. Nếu xảy ra nước bắt quân ở ô f3, vẫn áp dụng cách ghi của các ví dụ trên nhưng có thể chèn một chữ x vào: tùy trường hợp có thể ghi là 1) Mgxf3 hoặc Mexf3, 2) M5xf3 hoặc M1xf3, 3) Mhxf3 hoặc Mdxf3.
+C.11. Trong trường hợp phong cấp, nước di chuyển thực tế của quân Tốt sẽ ghi thêm tên viết tắt của quân mới gắn thêm ở phía sau. Ví dụ: d8H, exf8M, b1T, g1X.
+C.12. Đề nghị hòa được ghi ký hiệu dấu bằng (=).
+C.13. Ký hiệu viết tắt khác:
+0-0 là nhập thành bên cánh Vua với quân Xe ở h1 hoặc h8.
+0-0-0 là nhập thành bên cánh Hậu với quân Xe ở a1 hoặc a8.
+Không bắt buộc ghi bốn ký hiệu sau:
+x là bắt quân
++ là chiếu
+++ hoặc # là chiếu bí
+e. p. là bắt Tốt qua đường.
+Bản ghi ván cờ mẫu:
+1. e4 e5 2. Mf3 Mf6 3. d4 exd4 4. e5 Me4 5. Hxd4 d5 6. exd6 e.p. Mxd6 7. Tg5 Mc6 8. He3+ Te7 9. Mbd2 0-0 10. 0-0-0 Xe8 11. Vb1 (=)
+Hoặc: 1. e4 e5 2. Mf3 Mf6 3. d4 ed4 4. e5 Me4 5. Hd4 d5 6. ed6 Md6 7. Tg5 Mc6 8. He3 Te7 9 Mbd2 0-0 10. 0-0-0 Xe8 11. Vb1 (=)
+Hoặc: e2e4 e7e5 2. Mg1f3 Mg8f6 3. d2d4 e5xd4 4. e4e5 Mf6e4 5. Hd1xd4 d7d5 6. e5xd6 e. p. Me4xd6 7. Tc1g5 Mb8c6 8. Hd4d3 Tf8e7 9. Mb1d2 0-0 10. 0-0-0 Xf8e8 11. Vb1 (=)
+Phụ lục D. Những quy định thi đấu với người mù và người khiếm thị
+D.1. Sau khi tham khảo ý kiến của Trọng tài, Ban Tổ chức có quyền điều chỉnh điều lệ thi đấu nhằm phù hợp với từng điều kiện cụ thể. Đối với giải đấu giữa người khiếm thị (người mù) và người sáng mắt, các đấu thủ có thể yêu cầu sử dụng hai bàn cờ, người sáng mắt sử dụng bàn cờ thông thường, người khiếm thị sử dụng bàn cờ chuyên biệt. Bàn cờ này phải đáp ứng các yêu cầu sau:
+D.1.1. Kích thước tối thiểu 20 cm x 20 cm,
+D.1.2. Các ô đen hơi nổi lên trên,
+D.1.3. Mỗi ô có một lỗ cắm để giữ vững quân cờ.
+D.1.4. Các yêu cầu đối với quân cờ là:
+D.1.4.1. Tất cả phải có chân cắm vừa khít với các lỗ cắm trên bàn cờ,
+D.1.4.2. Quân cờ thiết kế theo mẫu Staunton, riêng quân đen có dấu hiệu riêng để phân biệt.
+D.2. Các quy định dưới đây sẽ được áp dụng khi thi đấu:
+D.2.1. Các nước đi phải được xướng lên thật rõ ràng, đối phương sẽ nói lại và thực hiện nước đi đó trên bàn cờ của mình. Khi phong cấp quân Tốt, đấu thủ phải nói lên quân cờ được chọn. Để việc thông báo đó được rõ ràng nhất, có thể sử dụng một số tên gợi ý dưới đây thay vì sử dụng các chữ cái thông thường:
+A - Anna, B - Bella, C - Cesar, D - David, E - Eva, F - Felix, G - Gustav, H – Hector
+Trừ khi trọng tài có quyết định khác, các hàng ngang tính từ bên Trắng qua bên Đen sẽ được gọi theo các chữ số của người Đức
+1 – eins [ai-ns], 2 – zwei [ʦ-vai], 3 – drei [d-ʀai], 4 – vier [fi:a], 5 – fuenf [fʏnf], 6 – sechs [zɛks], 7 – sieben [ziːbən], 8 – acht [axt].
+Nhập thành dài sẽ thông báo là “Lange Rochade” và nhập thành ngắn là “Kurze Rochade” (tiếng Đức). Các quân cờ sẽ mang tên: Koenig (Vua), Dame (Hậu), Turm (Xe), Laeufer (Tượng), Springer (Mã), Bauer (Tốt).
+(Ghi chú: Quy định này áp dụng ở các giải quốc tế, tuy nhiên Ban Tổ chức giải ở các nước thường hay sử dụng tiếng Anh. Riêng ở các giải trong nước thì ta sử dụng cách gọi thông thường của người Việt như: Mã f5, Vua h6 v. v… ND).
+D.2.2. Đối với phía bên bàn cờ của đấu thủ khiếm thị, việc “chạm quân” sẽ được tính khi quân đó được rút ra khỏi lỗ cắm.
+D.2.3. Một nước đi được coi là đã “hoàn thành” khi:
+D.2.3.1. Với trường hợp bắt quân, đấu thủ đến lượt đi đã gỡ quân bị bắt ra khỏi bàn cờ;
+D.2.3.2. Một quân đã được cắm chắc vào một lỗ khác;
+D.2.3.3. Nước đi đã được xướng lên.
+D.2.4. Chỉ sau đó đồng hồ của đối phương mới được cho chạy.
+D.2.5. Về các điểm D.2.2 và D.2.3, các quy định thông thường vẫn được áp dụng cho người sáng mắt.
+D.2.6. Đồng hồ dành cho người khiếm thị:
+D.2.6.1. Có thể sử dụng đồng hồ chuyên biệt dành cho người khiếm thị. Đồng hồ này cần có khả năng thông báo về thời gian và số nước đi cho người khiếm thị.
+D.2.6.2. Ngoài ra có thể xem xét sử dụng đồng hồ cơ học với các chức năng như sau:
+1) Mặt đồng hồ có kim được gia cố chắc chắn, mỗi 5 phút được đánh dấu bởi một chấm nổi và mỗi 15 phút được đánh dấu bởi hai chấm nổi.
+2) Một lá cờ cho phép bàn tay của đấu thủ có thể dễ dàng cảm nhận được từng phút trong 5 phút cuối cùng của thời gian thi đấu.
+D.2.7. Đấu thủ khiếm thị phải ghi kết quả của ván đấu bằng chữ nổi hoặc chữ viết thường, hoặc đọc nước đi vào một thiết bị ghi âm.
+D.2.8. Nếu lỡ nhầm trong việc xướng nước đi thì lập tức phải lập lại cho đúng trước khi cho đồng hồ của đối phương chạy.
+D.2.9. Nếu trong quá trình ván đấu xuất hiện hai vị trí cờ khác nhau trên hai bàn cờ, thì chúng phải được điều chỉnh với sự trợ giúp của Trọng tài và tham chiếu từ biên bản của hai đấu thủ.
+Nếu cả hai biên bản đều ghi chính xác và khớp với nhau nhưng một bên có vị trí cờ bị sai thì phải điều chỉnh lại sao cho tương ứng với các biên bản ván đấu.
+Nếu phát hiện các biên bản ván đấu có sự khác nhau, thì sẽ xếp trả lại các nước đi về thời điểm hai biên bản giống nhau và Trọng tài sẽ điều chỉnh lại đồng hồ cho phù hợp.
+D.2.10. Đấu thủ khiếm thị có quyền sử dụng một người hỗ trợ để thực hiện các nhiệm vụ sau:
+D.2.10.1. Thực hiện nước đi của đấu thủ trên bàn cờ của đối phương;
+D.2.10.2. Xướng lên nước đi của cả hai đấu thủ;
+D.2.10.3. Ghi biên bản và bấm đồng hồ giúp đấu thủ khiếm thị và bắt đầu cho đồng hồ đối phương chạy;
+D.2.10.4. Thông báo cho đấu thủ khiếm thị, chỉ khi được yêu cầu, về số lượng nước đi đã hoàn thành, lượng thời gian hai đấu thủ đã sử dụng;
+D.2.10.5. Khiếu nại trong trường hợp đã hết thời gian thi đấu và thông báo cho Trọng tài nếu đấu thủ sáng mắt phạm luật chạm quân;
+D.2.10.6. Thực hiện các thủ tục cần thiết khi có ván cờ hoãn đấu.
+D.2.11. Nếu đấu thủ khiếm thị không cần người hỗ trợ thì đấu thủ sáng mắt có thể đề nghị một người thực hiện các nhiệm vụ đã đề cập ở điểm D.2.10.1 và D.2.10.2. Trường hợp thi đấu giữa người khiếm thị và người khiếm thính thì buộc phải có người trợ giúp.
+HƯỚNG DẪN
+Giới thiệu
+Các hướng dẫn sau đây được đưa ra để hỗ trợ cho việc tổ chức các giải đấu khi cần thiết. Mặc dù chúng không nằm trong Luật cờ Vua của FIDE, nhưng thực sự khuyến nghị rằng nên sử dụng trong tất cả các sự kiện nếu có thể.
+Hướng dẫn I. Các ván cờ tạm hoãn
+I.1. Thủ tục hoãn đấu:
+I.1.1. Nếu thời gian quy định cho buổi đấu đã hết mà ván cờ vẫn chưa kết thúc, thì Trọng tài sẽ yêu cầu đấu thủ đang đến lượt đi sẽ phải "niêm phong" nước đi đó lại. Đấu thủ phải ghi thật rõ ràng nước đi của mình vào biên bản, rồi cho biên bản của mình và của đối phương vào một phong bì, niêm phong lại, sau khi đó mới cho dừng đồng hồ. Cho đến khi còn chưa bấm dừng đồng hồ, đấu thủ vẫn có quyền thay đổi nước đi đã niêm phong của mình. Nếu sau khi Trọng tài đã đề nghị “niêm phong”, mà đấu thủ vẫn cứ đi quân trên bàn cờ, đấu thủ đó phải ghi lại đúng nước đi này vào biên bản thi đấu như là nước đi đã được niêm phong của mình.
+I.1.2. Một đấu thủ đang đến lượt đi muốn đề nghị hoãn ván cờ trước khi kết thúc buổi thi đấu, thì đấu thủ đó sẽ bị trừ lượng thời gian tính từ lúc đề nghị cho đến cuối buổi đấu và thời gian còn lại sẽ được ghi vào biên bản.
+I.2. Những thông tin sau đây được ghi trên mặt phong bì:
+I.2.1. Tên các đấu thủ;
+I.2.2. Vị trí cờ ngay trước nước đi đã được niêm phong;
+I.2.3. Lượng thời gian mỗi đấu thủ đã sử dụng;
+I.2.4. Tên của đấu thủ có nước đi đã được niêm phong;
+I.2.5. Số thứ tự của nước đi đã được niêm phong;
+I.2.6. Đề nghị hòa, nếu như đề nghị này được đưa ra trước khi hoãn đấu;
+I.2.7. Ngày, giờ và địa điểm thi đấu trở lại.
+I.3. Trọng tài sẽ kiểm tra tính chính xác của các thông tin được ghi trên phong bì và chịu trách nhiệm bảo quản an toàn.
+I.4. Nếu đấu thủ đề nghị hòa sau khi đối phương đã niêm phong nước đi của mình thì lời đề nghị đó có hiệu lực cho đến khi đối phương chấp nhận hoặc từ chối theo điều 9.1.
+I.5. Trước khi tiếp tục lại ván đấu, phải xếp lại vị trí cờ ngay trước nước đi đã được niêm phong và thời gian mà mỗi đấu thủ đã sử dụng khi ván đấu bị hoãn cũng sẽ được cài đặt lại trên đồng hồ.
+I.6. Nếu các đấu thủ đồng ý hòa trước khi bắt đầu lại ván hoãn đấu, hoặc nếu một trong hai đấu thủ thông báo với Trọng tài rằng anh ta xin thua thì ván đấu sẽ kết thúc.
+I.7. Phong bì chỉ được mở ra khi đấu thủ phải đáp lại nước đi đã được niêm phong có mặt.
+I.8. Ngoại trừ các trường hợp đã nêu tại các Điều 5, 6.9, 9.6 và 9.7, đấu thủ sẽ bị xử thua ván cờ nếu nước đi đã được niêm phong:
+I.8.1. Ghi không rõ ràng, hoặc
+I.8.2. Ghi vô nghĩa, không thể thực hiện, hoặc
+I.8.3. Bất hợp lệ.
+I.9. Tại thời điểm công bố tiếp tục thi đấu trở lại:
+I.9.1. Đấu thủ phải đáp lại nước đi đã được niêm phong có mặt, phong bì sẽ được mở ra, nước đi niêm phong được thực hiện trên bàn cờ và đồng hồ của đấu thủ này bắt đầu chạy.
+I.9.2. Đấu thủ phải đáp lại nước đi đã được niêm phong không có mặt, thì đồng hồ của đấu thủ đó được bấm chạy. Khi có mặt, đấu thủ có thể cho dừng đồng hồ và mời Trọng tài đến. Sau đó phong bì được mở ra và thực hiện nước đi đã được niêm phong trên bàn cờ, đồng hồ của đấu thủ sẽ được cho khởi chạy.
+I.9.3. Đấu thủ có nước đi đã niêm phong không có mặt, đối phương có quyền ghi nước của mình vào biên bản rồi cho vào một phong bì mới, bấm cho đồng hồ của đấu thủ vắng mặt chạy thay vì thực hiện nước đáp lại trên bàn cờ. Trong trường hợp này, phong bì được Trọng tài giữ ở nơi an toàn và chỉ được mở ra khi đấu thủ vắng mặt đã đến.
+I.10. Bất cứ đấu thủ nào đến muộn hơn thời gian cho phép của giải sẽ bị xử thua trừ khi Trọng tài có quyết định khác. Tuy nhiên nếu nước đi đã được niêm phong dẫn đến kết quả ván đấu, kết quả đó vẫn được công nhận.
+I.11. Nếu điều lệ giải chỉ rõ lượng thời gian cho phép đến trễ không phải là số không, điều sau đây sẽ được áp dụng: Nếu không có đấu thủ nào có mặt đúng giờ thì đồng hồ của đấu thủ phải đáp lại nước đi đã được niêm phong sẽ được chạy cho đến khi đấu thủ đó có mặt, trừ khi điều lệ giải hoặc Trọng tài có quyết định khác.
+I.12. Thi đấu trở lại ván hoãn đấu:
+I.12.1. Nếu phong bì có nước đi đã được niêm phong bị mất, ván đấu sẽ được tiếp tục từ vị trí cờ bị hoãn, thời gian trên đồng hồ là thời điểm đã được ghi nhận lại khi hoãn đấu. Nếu thời gian mỗi đấu thủ đã sử dụng không thể thiết lập lại được, Trọng tài sẽ quyết định thời gian trên đồng hồ. Đấu thủ có nước đi đã được niêm phong sẽ thực hiện nước đi đó của mình trên bàn cờ.
+I.12.2. Nếu không thể xếp lại vị trí cờ, ván đấu bị hủy và thi đấu lại ván mới.
+I.13. Nếu tại thời điểm bắt đầu lại ván hoãn đấu, trước khi thực hiện nước đi đầu tiên của mình, một trong hai đấu thủ phát hiện thời gian trên một trong hai đồng hồ không chính xác thì phải được sửa lại cho đúng. Nếu sai sót được phát hiện trễ hơn, ván đấu vẫn sẽ tiếp tục mà không có sự điều chỉnh nào, trừ khi Trọng tài có quyết định khác.
+I.14. Thời gian thi đấu lại của mỗi ván đấu sẽ được kiểm tra bằng đồng hồ của Trọng tài. Thời gian bắt đầu tiếp tục thi đấu phải được thông báo trước.
+Hướng dẫn II. Luật cờ Vua 960
+II.1. Trước khi bắt đầu một ván cờ Vua 960, vị trí ban đầu của các quân sẽ được xếp ngẫu nhiên theo những quy tắc nhất định. Sau đó ván cờ sẽ được thi đấu như cờ Vua thông thường. Cụ thể, các quân cờ và quân Tốt được di chuyển như bình thường và mục tiêu vẫn là chiếu bí quân Vua của đối phương.
+II.2. Vị trí ban đầu:
+Vị trí ban đầu của cờ Vua 960 phải đáp ứng những quy tắc nhất định. Các quân Tốt của bên Trắng vẫn đặt ở hàng thứ hai như cờ Vua thông thường. Tất cả các quân Trắng còn lại được đặt ngẫu nhiên ở hàng thứ nhất nhưng với những giới hạn như sau:
+II.2.1. Quân Vua đặt trong khoảng giữa hai quân Xe, và
+II.2.2. Hai quân Tượng đặt trên hai ô khác màu, và
+II.2.3. Quân bên Đen đặt đối diện tương ứng với các quân của bên Trắng.
+Có thể thiết lập vị trí ban đầu của các quân trước ván đấu bằng việc sử dụng một phần mềm vi tính, bằng xúc xắc, đồng xu, thẻ v. v…
+II.3. Quy tắc nhập thành của cờ Vua 960:
+II.3.1. Cờ Vua 960 cho phép mỗi đấu thủ được nhập thành một lần trong mỗi ván đấu, cùng một nước đi di chuyển cả quân Vua và quân Xe. Tuy nhiên, có một vài hướng dẫn cần thiết cho việc nhập thành bởi trong cờ Vua thông thường vị trí ban đầu của quân Xe và quân Vua là cố định, không áp dụng được cho cờ Vua 960.
+II.3.2. Làm thế nào để nhập thành. Trong cờ Vua 960. Tùy thuộc vào vị trí trước khi nhập thành của quân Vua và quân Xe, việc nhập thành được thực hiện theo một trong bốn cách sau:
+II.3.2.1. Nhập thành nước đôi: thực hiện một nước đi quân Vua và một nước đi quân Xe, hoặc
+II.3.2.2. Nhập thành hoán vị: đổi vị trí của quân Vua và quân Xe, hoặc
+II.3.2.3. Nhập thành đi Vua: chỉ thực hiện nước đi quân Vua, hoặc
+II.3.2.4. Nhập thành đi Xe: chỉ thực hiện nước đi quân Xe.
+II.3.2.5. Lưu ý:
+II.3.2.5.1. Khi nhập thành trên một bàn cờ thật với đấu thủ là người thật, thì nên đưa quân Vua chuyển ra bên ngoài, đặt bên cạnh ô sẽ đến của nó, kế tiếp di chuyển quân Xe từ ô đang đứng sang ô đến, và rồi lúc đó mới đặt quân Vua vào ô đến.
+II.3.2.5.2. Cần đảm bảo rằng vị trí sau cùng của quân Vua và quân Xe sau khi nhập thành phải giống với vị trí nhập thành của cờ Vua thông thường.
+II.3.2.6. Cụ thể:
+Sau khi nhập thành phía bên cột c (ký hiệu là 0-0-0, được xem như nhập thành cánh Hậu trong cờ Vua chính thống), quân Vua nằm trên ô c (c1 với bên Trắng và c8 với bên Đen), quân Xe nằm trên ô d (d1 với bên Trắng và d8 với bên Đen). Sau khi nhập thành phía bên cột g (ký hiệu là 0-0, xem như nhập thành cánh Vua như trong cờ Vua chính thống), quân Vua nằm trên ô g (g1 với bên Trắng và g8 với bên Đen), quân xe nằm trên ô f (f1 với bên Trắng và f8 với bên Đen).
+II.3.2.7. Ghi chú
+II.3.2.7.1. Nhằm tránh bất cứ hiểu lầm nào, nên thông báo “tôi nhập thành” trước khi nhập thành.
+II.3.2.7.2. Trong một số vị trí ban đầu, quân Vua hoặc quân Xe (nhưng không phải cả hai quân) không di chuyển trong quá trình nhập thành.
+II.3.2.7.3. Trong một số vị trí ban đầu, có thể thực hiện nhập thành ngay từ nước đi đầu tiên.
+II.3.2.7.4. Tất cả các ô nằm giữa ô quân Vua đang đứng và ô đích đến (bao gồm cả ô sau cùng) và tất cả các ô nằm giữa ô đang đứng và ô đến của quân Xe (bao gồm cả ô sau cùng) phải trống ngoại trừ quân Vua và quân Xe thực hiện nước nhập thành.
+II.3.2.7.5. Trong một số vị trí ban đầu, một vài ô có thể giữ lại các quân trong quá trình nhập thành mà lẽ ra được làm trống như trong cờ Vua bình thường. Ví dụ, sau khi nhập thành qua phía bên cột c 0-0-0, có thể các ô a, b hoặc e, vẫn có quân đứng, và sau khi nhập thành qua bên cột g (0-0), có thể các ô e và h còn quân đứng.
+Hướng dẫn III. Ván đấu không cộng thêm giờ và thi đấu kết nhanh cuối ván
+III.1. “Thi đấu nhanh cuối ván” là giai đoạn của một ván cờ mà tất cả các nước đi còn lại phải được hoàn thành trong một thời gian có hạn.
+III.2. Các hướng dẫn dưới đây liên quan đến giai đoạn cuối của ván cờ bao gồm cả thi đấu nhanh cuối ván, chỉ sẽ được sử dụng trong giải đấu nếu đã được thông báo trước.
+III.2.2. Các hướng dẫn này chỉ áp dụng cho các ván đấu không có cộng thêm thời gian ở cờ tiêu chuẩn và cờ nhanh, không áp dụng với cờ chớp nhoáng.
+III.3.1. Nếu cả hai bên cùng rụng cờ và không thể xác định được bên nào rụng cờ trước thì:
+III.3.1.1. Ván cờ sẽ tiếp tục nếu điều này xảy ra trong bất cứ giai đoạn nào trừ giai đoạn cuối của ván đấu.
+III.3.1.2. Ván cờ được xử hòa nếu điều này xảy ra trong giai đoạn của ván đấu mà tất cả các nước còn lại được hoàn thành.
+III.4. Nếu đấu thủ đang đến lượt đi chỉ còn dưới 02 phút trên đồng hồ, đấu thủ đó có thể yêu cầu một thể thức cộng thêm 05 giây tích lũy cho mỗi nước đi của cả hai bên. Điều này được xem như lời đề nghị hòa. Nếu đối phương từ chối hòa và Trọng tài chấp thuận, thì các đồng hồ sẽ được xác lập để chơi cộng giờ, đối phương sẽ được thêm hai phút và ván đấu tiếp tục.
+III.5. Nếu Điều III.4. không được áp dụng và đấu thủ có thời gian thi đấu còn dưới 02 phút, đấu thủ đó có thể đề nghị hòa trước khi rụng cờ. Đấu thủ có thể mời Trọng tài đến và tạm dừng đồng hồ (xem Điều 6.12.2). Đấu thủ có thể khiếu nại trên cơ sở là đối phương không thể thắng hoặc không có nỗ lực thực hiện các nước đi để giành chiến thắng bằng các cách thông thường. Điều đó có nghĩa:
+III.5.1. Nếu Trọng tài đồng ý rằng đối phương không thể thắng hoặc không có nỗ lực giành chiến thắng bằng các cách thông thường, Trọng tài sẽ tuyên bố ván cờ hòa. Nếu không, Trọng tài sẽ tạm hoãn đưa ra kết luận hoặc bác bỏ khiếu nại.
+III.5.2. Nếu Trọng tài tạm hoãn đưa ra kết luận, đối phương có thể được cộng thêm 02 phút, ván đấu sẽ tiếp tục dưới sự quan sát của Trọng tài nếu có thể. Trọng tài sẽ tuyên bố kết quả cuối cùng của ván đấu hoặc sớm nhất có thể khi một trong hai đấu thủ bị rụng cờ. Trọng tài sẽ tuyên bố ván cờ hòa nếu cho rằng dù đấu thủ đã hết giờ nhưng đối phương không thể thắng hoặc không có nỗ lực giành chiến thắng bằng các cách thông thường.
+III.5.3. Nếu Trọng tài bác bỏ khiếu nại, đối phương sẽ được cộng thêm 02 phút.
+III.6. Những điều dưới đây sẽ được áp dụng nếu ván đấu không có Trọng tài giám sát:
+III.6.1. Một đấu thủ có quyền yêu cầu xử hòa khi thời gian của còn dưới 02 phút và trước khi bị rụng cờ. Ván đấu dừng tại đây. Đấu thủ có thể khiếu nại trên cơ sở:
+III.6.1.1. Rằng đối phương không thể chiến thắng bằng các cách thông thường hoặc
+III.6.1.2. Rằng đối phương không có nỗ lực giành chiến thắng bằng các cách thông thường.
+với III.6.1.1 Đấu thủ phải ghi rõ vị trí sau cùng của ván cờ và đối phương phải xác nhận điều đó.
+với III.6.1.2 Đấu thủ phải ghi rõ vị trí sau cùng của ván cờ và nộp tờ biên bản đã được ghi bổ sung. Đối phương phải xác nhận trên cả biên bản và vị trí sau cùng của ván cờ.
+III.6.2. Khiếu nại sẽ chuyển đến Trọng tài được chỉ định.
+CHÚ DẪN
+Dưới đây là các chú dẫn của Người biên dịch về những vấn đề thường gặp để người chơi cờ dễ truy tìm trong các điều Luật FIDE như sau:
+Dưới đây là các chú dẫn của Ban biên soạn về những vấn đề thường gặp để người chơi cờ dễ truy tìm trong các điều Luật FIDE như sau:
+Cách chơi cờ Vua: từ Điều 1 đến 3.
+Chiếu, chiếu bí và bắt Vua: Điều 1.4 đến 1.5, 3.9, 5.1.1, 5.1.2.
+Bắt Tốt qua đường: từ Điều 3.7.4.1, 3.7.4.2, 9.2.3.1 (trong trường hợp đề nghị hòa).
+Phong cấp cho Tốt: từ Điều 3.7.3.3 đến 3.7.3.5; Điều 4.7.3 (chạm quân khi phong cấp) và Điều 7.5.2 (bất hợp lệ, bắt buộc phong Hậu).
+Nhập thành: Điều 3.8.2, và Điều 4.4.1 đến 4.4.3, 4.7.2 (chạm quân khi nhập thành), 9.2.3.2 (trong trường hợp đề nghị hòa).
+Chạm quân: từ Điều 4.2 đến 4.8; Điều 9.4 (trong trường hợp đề nghị hòa); D.2.2 đến D.2.5 (đối với người khiếm thị).
+Nước đi hoàn thành: Điều 4.7.
+Hoàn thành nước đi: Điều 6.2.1 đến 6.2.2; Điều 7.5 (nước đi bất hợp lệ được tính là hoàn thành); D.2.3 (đối với người khiếm thị).
+Sử dụng một tay: Điều 4.1, 6.2.3 và 7.5.4 (nước đi bất hợp lệ).
+Đến trễ: Điều 6.7.
+Rụng cờ: Điều 6.1, 6.4, 6.8, 6.9; 8.5.1, 8.5.2, A.5.5, III.3.1.
+Nước đi bất hợp lệ: Điều 3.10; 7.5; A.5.2.
+Ván cờ hòa: Điều 1.5; 5.2.1 đến 5.2.3 và toàn bộ Điều 9.
+Hòa do hết nước đi: Điều 5.2.1.
+Hòa do bất biến 3 lần: Điều 9.2.1 đến 9.2.2.2; 11.12 (kiểm tra).
+Hòa do bất biến ít nhất 5 lần: Điều 9.6.1.
+Hòa trong trường hợp 50 nước đi: Điều 9.3.1 đến 9.3.2; 11.12 (kiểm tra).
+Hòa trong trường hợp 75 nước đi: Điều 9.6.2.
+Cộng thêm thời gian cho đối phương: các Điều 7.5.5, 9.5.3, B.2, III.5.2, II.5.3.
+Đấu thủ tự ghi điểm vào biên bản: Điều 8.7.
+Địa điểm thi đấu và khu vực thi đấu: Điều 11.2.
+Cấm mang thiết bị điện tử: Điều 11.3.
+Đồng hồ hỏng: Điều 6.10.1 đến 6.10.2.
+All rights reserved 5447/2020/QTG - Ho Chi Minh City Chess Federation
+Designed by Nguyen Phuoc Trung - VIETNAMCHESS COMPANY LIMITED
