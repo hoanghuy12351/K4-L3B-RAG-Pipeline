@@ -143,6 +143,7 @@ section[data-testid="stSidebar"] { background: var(--panel); border-right: 1px s
 .evidence-bar-track { height: 5px; border-radius: 3px; background: var(--track); }
 .evidence-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
 .evidence-meta { color: var(--text-secondary); font-size: 0.68rem; margin-top: 0.3rem; }
+.evidence-snippet { margin-top: 0.5rem; padding: 0.5rem 0.6rem; background: var(--track); border-radius: 8px; font-size: 0.78rem; line-height: 1.4; color: var(--text); }
 .oos-banner { background: rgba(198,40,40,0.08); border: 1px solid var(--danger); color: var(--danger); border-radius: 10px; padding: 0.6rem 0.9rem; font-size: 0.82rem; font-weight: 600; margin-bottom: 0.5rem; }
 .oos-trigger { border: 1px dashed var(--border); border-radius: 12px; padding: 0.6rem 0.9rem; margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.8rem; }
 .compare-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.6rem 0.8rem; margin-bottom: 0.4rem; box-shadow: 0 1px 3px rgba(36,30,20,0.06); }
@@ -345,7 +346,9 @@ def render_confidence_meter(score: float, threshold: float, retrieval_source: st
     )
 
 
-def render_evidence_card(source: dict, rank: int, max_score: float) -> None:
+def render_evidence_card(
+    source: dict, rank: int, max_score: float, show_snippet: bool = False
+) -> None:
     metadata = source.get("metadata", {})
     relative = (source.get("score", 0.0) / max_score * 100) if max_score else 0.0
     doc_type = metadata.get("doc_type", "doc")
@@ -353,6 +356,14 @@ def render_evidence_card(source: dict, rank: int, max_score: float) -> None:
     title = metadata.get("title") or metadata.get("source", "Untitled")
     method = source.get("retrieval_method", "")
     chunk_index = metadata.get("chunk_index", "?")
+    content = source.get("content", "")
+
+    snippet_html = ""
+    if show_snippet:
+        snippet = content[:240].strip()
+        if len(content) > 240:
+            snippet += "…"
+        snippet_html = f'<div class="evidence-snippet">{html_lib.escape(snippet)}</div>'
 
     st.markdown(
         '<div class="evidence-card">'
@@ -366,12 +377,13 @@ def render_evidence_card(source: dict, rank: int, max_score: float) -> None:
         f'<div class="evidence-bar-fill" style="width:{relative:.0f}%"></div>'
         "</div>"
         f'<div class="evidence-meta">Relative rank score · chunk #{chunk_index}</div>'
+        f"{snippet_html}"
         "</div>",
         unsafe_allow_html=True,
     )
 
-    with st.expander(f"📄 Xem ngữ cảnh — {title}"):
-        st.markdown(source.get("content", ""))
+    with st.expander(f"📄 Xem toàn bộ ngữ cảnh — {title}"):
+        st.markdown(content)
         url = metadata.get("url")
         if url:
             st.markdown(f"[Mở tài liệu gốc]({url})")
@@ -379,19 +391,13 @@ def render_evidence_card(source: dict, rank: int, max_score: float) -> None:
 
 def render_developer_view(message: dict) -> None:
     with st.expander("⚙ Developer View — raw retrieval trace"):
+        st.markdown("**Dense search (semantic) — điểm dùng cho confidence meter**")
+        for hit in message.get("dense_hits", [])[:5]:
+            st.text(f"{hit['score']:.3f}  {hit['metadata']['title'][:42]}")
         st.caption(
-            "Dense = cosine similarity qua ChromaDB · BM25 = lexical score. "
-            "Hai thang đo khác nhau, không so sánh trực tiếp."
+            "So sánh với BM25 và hybrid (RRF): xem tab 🆚 Semantic vs Hybrid — "
+            "không lặp lại truy vấn ở đây để tránh chậm mỗi lượt chat."
         )
-        col_a, col_b = st.columns(2)
-        with col_a:
-            st.markdown("**Dense search (semantic)**")
-            for hit in message.get("dense_hits", [])[:5]:
-                st.text(f"{hit['score']:.3f}  {hit['metadata']['title'][:42]}")
-        with col_b:
-            st.markdown("**BM25 (lexical)**")
-            for hit in message.get("sparse_hits", [])[:5]:
-                st.text(f"{hit['score']:.3f}  {hit['metadata']['title'][:42]}")
         st.markdown("**Fused sources gửi vào LLM**")
         st.json(
             [
@@ -428,7 +434,7 @@ def render_answer_extras(message: dict, dev_view: bool) -> None:
         st.markdown('<div class="section-label">🔎 Evidence</div>', unsafe_allow_html=True)
         max_score = max(s["score"] for s in sources) or 1.0
         for rank, source in enumerate(sources, start=1):
-            render_evidence_card(source, rank, max_score)
+            render_evidence_card(source, rank, max_score, show_snippet=rank <= 3)
     else:
         st.info("Không tìm thấy evidence đủ tin cậy trong knowledge base.")
 
@@ -710,28 +716,23 @@ with tab_chat:
         with st.chat_message("assistant"):
             stepper_slot = st.empty()
             render_stepper(stepper_slot, "ask")
-            time.sleep(0.2)
 
             try:
                 dense_hits = semantic_search(query, top_k=top_k)
             except Exception:
                 dense_hits = []
-            try:
-                sparse_hits = lexical_search(query, top_k=top_k)
-            except Exception:
-                sparse_hits = []
             best_dense_score = dense_hits[0]["score"] if dense_hits else 0.0
 
             render_stepper(stepper_slot, "retrieve")
-            time.sleep(0.3)
+            time.sleep(0.15)
             render_stepper(stepper_slot, "rerank")
-            time.sleep(0.25)
+            time.sleep(0.1)
             render_stepper(stepper_slot, "generate")
 
             result = generate_with_citation(query, top_k=top_k)
 
             render_stepper(stepper_slot, "done")
-            time.sleep(0.3)
+            time.sleep(0.15)
             stepper_slot.empty()
 
             st.markdown(result["answer"])
@@ -743,7 +744,6 @@ with tab_chat:
                 "retrieval_source": result["retrieval_source"],
                 "best_dense_score": best_dense_score,
                 "dense_hits": dense_hits,
-                "sparse_hits": sparse_hits,
             }
             render_answer_extras(assistant_message, dev_view)
             st.session_state.messages.append(assistant_message)
